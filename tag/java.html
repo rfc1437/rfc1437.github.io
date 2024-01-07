@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hugo's House of Blog Horror - Java</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="rfc1437">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="https://rfc1437.github.io/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="https://rfc1437.github.io/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="https://rfc1437.github.io/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="https://rfc1437.github.io/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="https://rfc1437.github.io/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://rfc1437.github.io/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://rfc1437.github.io/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://rfc1437.github.io/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="https://rfc1437.github.io/" type="application/atom+xml" rel="alternate" title="Hugo's House of Blog Horror ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="https://rfc1437.github.io/index.html">Hugo's House of Blog Horror </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                  <li><a href="/impressum.html">Imprint</a></li>
+                  <li><a href="/about.html">About</a></li>
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/artikel.html">
+						<i class="icon-folder-open icon-large"></i>Artikel
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/asides.html">
+						<i class="icon-folder-open icon-large"></i>Asides
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/galerie.html">
+						<i class="icon-folder-open icon-large"></i>Galerie
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/kochbuch.html">
+						<i class="icon-folder-open icon-large"></i>Kochbuch
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/metaowl.html">
+						<i class="icon-folder-open icon-large"></i>Metaowl
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/misc.html">
+						<i class="icon-folder-open icon-large"></i>misc
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/spielelog.html">
+						<i class="icon-folder-open icon-large"></i>Spielelog
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="https://rfc1437.github.io/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/forge-slightly-magic.html">Forge - Slightly Magic</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-08-04T12:38:00+02:00">
+        <i class="icon-calendar"></i>So 04 August 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/magicthegathering.html"><i class="icon-tag"></i>MagicTheGathering</a>
+	<a href="https://rfc1437.github.io/tag/spielen.html"><i class="icon-tag"></i>Spielen</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.slightlymagic.net/wiki/Forge">Forge - Slightly Magic</a>. Für Magic-Einsteiger wie mich echt praktische Software. Man kann Decks zusammenstellen, fertige Decks benutzen, randomisierte Decks bekommen - und diese dann gegen eine AI spielen. Die AI soll nicht die stärkste sein, aber hey, ich bin da auch weit von entfernt. Das ganze ist Java und läuft tatsächlich …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/forge-slightly-magic.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/heuermhleap-motion-processing.html">heuermh/leap-motion-processing</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-07-23T19:59:00+02:00">
+        <i class="icon-calendar"></i>Di 23 Juli 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/leapmotion.html"><i class="icon-tag"></i>LeapMotion</a>
+	<a href="https://rfc1437.github.io/tag/processing.html"><i class="icon-tag"></i>Processing</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/heuermh/leap-motion-processing">heuermh/leap-motion-processing</a>. Sehr interessant, weil ich damit mit meinem LeapMotion Controller mit Processing spielen kann - der Overhead damit was zustande zu bekommen ist deutlich niedriger als auf native Programme zu gehen. Ausserdem ist es Plattform-übergreifend.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/heuermhleap-motion-processing.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/mrzlleapmotionp5.html">mrzl/LeapMotionP5</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-07-23T19:14:00+02:00">
+        <i class="icon-calendar"></i>Di 23 Juli 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/leapmotion.html"><i class="icon-tag"></i>LeapMotion</a>
+	<a href="https://rfc1437.github.io/tag/processing.html"><i class="icon-tag"></i>Processing</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/mrzl/LeapMotionP5">mrzl/LeapMotionP5</a>. Und noch eine Processing Library für Leap Motion. Die hier scheint etwas vollständiger zu sein, mit Gestures und so. Auch mal angucken.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/mrzlleapmotionp5.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/getting-started-with-android-studio-android-developers.html">Getting Started with Android Studio | Android Developers</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-05-16T19:51:00+02:00">
+        <i class="icon-calendar"></i>Do 16 Mai 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/ide.html"><i class="icon-tag"></i>IDE</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://developer.android.com/sdk/installing/studio.html">Getting Started with Android Studio | Android Developers</a>. Oh, Google sieht das Licht und bietet eine Alternative zu Eclipse als IDE für Android-Programmierung an. Und dann ausgerechnet IntelliJ, mit dem ich sowieso schon arbeite. Nett!</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/getting-started-with-android-studio-android-developers.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/java-3d-engine-learn-java-programming-in-3d.html">Java 3D Engine | Learn Java Programming in 3D</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-12-27T12:09:00+01:00">
+        <i class="icon-calendar"></i>Do 27 Dezember 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://env3d.org/beta/">Java 3D Engine | Learn Java Programming in 3D</a>. Sieht sehr interessant aus, vor allem weil es eine enge Integration in eine IDE (BlueJ) mit Fokus auf Programmieren lernen hat. Und mittlerweile kann man daraus auch direkt Android Applikationen generieren und damit zum Beispiel eigene Spiele oder Spielereien bauen.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/java-3d-engine-learn-java-programming-in-3d.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pyjnius-accessing-java-classes-from-python-txzone.html">Pyjnius: Accessing Java classes from Python | Txzone</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-10-01T10:03:00+02:00">
+        <i class="icon-calendar"></i>Mo 01 Oktober 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://txzone.net/2012/08/pyjnius-accessing-java-classes-from-python/">Pyjnius: Accessing Java classes from Python | Txzone</a>. Sehr interessantes Seitenprojekt von <a href="http://kivy.org/#home">Kivy</a> - damit kann man recht einfach Java-Klassen in Python integrieren und benutzen, ohne auf Jython wechseln zu müssen. Es basiert auf Cython und JNI und integriert sich so direkt in das native Python. So langsam wird Kivy wirklich zu …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pyjnius-accessing-java-classes-from-python-txzone.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/commonsguycwac-anddown.html">commonsguy/cwac-anddown</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-08-28T19:49:00+02:00">
+        <i class="icon-calendar"></i>Di 28 August 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/markdown.html"><i class="icon-tag"></i>Markdown</a>
+	<a href="https://rfc1437.github.io/tag/ndk.html"><i class="icon-tag"></i>NDK</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/commonsguy/cwac-anddown">commonsguy/cwac-anddown</a>. Noch eine Markdown-Implementierung - diese benutzt intern sundown und JNI und das NDK um unter Android eine schnelle Implementierung von Markdown zu haben. Hat bei mir problemlos funktioniert mit dem Nexus.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/commonsguycwac-anddown.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/arduino-macosx.html">Arduino - MacOSX</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-08-27T16:02:00+02:00">
+        <i class="icon-calendar"></i>Mo 27 August 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/embedded.html"><i class="icon-tag"></i>Embedded</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://arduino.cc/en/Guide/MacOSX">Arduino - MacOSX</a>. Was mich an Arduino fasziniert: die einfache Oberfläche der IDE (die einfach ein erweitertes Processing ist) und der Haufen an verrückten Projekten rundherum, wie zum Beispiel <a href="http://www.kickstarter.com/projects/digistump/digispark-the-tiny-arduino-enabled-usb-dev-board">Digispark</a>, einem Mini-Board das zwar weniger kann, aber dafür winzig ist und direkt vom USB Port betrieben wird. Da kann man ja …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/arduino-macosx.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/myabcmarkdownj.html">myabc/markdownj</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-08-27T15:00:00+02:00">
+        <i class="icon-calendar"></i>Mo 27 August 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/markdown.html"><i class="icon-tag"></i>Markdown</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/myabc/markdownj">myabc/markdownj</a> muss ich mir mal angucken, denn JMD ist irgendwie doch etwas buggy und der Developer macht damit nichts mehr. Das hier ist ein Port der originalen Perl-Sourcen, benutzt also massiv Regular Expressions, aber das sollte bei meiner Programmstruktur von UniversalBrain nicht wirklich große Probleme machen, denn ich cache …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/myabcmarkdownj.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/cletusjmd.html">cletus/jmd</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-08-01T19:59:00+02:00">
+        <i class="icon-calendar"></i>Mi 01 August 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/cletus/jmd">cletus/jmd</a>. Da PegDown nicht auf Android läuft, weil der zugrundeliegende Parser gerne eine dynamische Parserklasse generieren will, was da nicht erlaubt ist, mal das hier angucken. Soll auch recht vollständig sein, basiert auf dem Markdown# Projekt für C#.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/cletusjmd.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/mitmelsimplecontentprovider.html">mitmel/SimpleContentProvider</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-08-01T12:04:00+02:00">
+        <i class="icon-calendar"></i>Mi 01 August 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/datenbank.html"><i class="icon-tag"></i>Datenbank</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/mitmel/SimpleContentProvider">mitmel/SimpleContentProvider</a>. Sieht aus wie ein einfacher ORM der automatisch einen Android Content Provider generiert. Dadurch wird das Erstellen deutlich schlanker im Code.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/mitmelsimplecontentprovider.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/actionbarsherlock-home.html">ActionBarSherlock - Home</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-07-31T10:01:00+02:00">
+        <i class="icon-calendar"></i>Di 31 Juli 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://actionbarsherlock.com/">ActionBarSherlock - Home</a>. For later use: damit kann man die ActionBar auch auf älteren Android Versionen im Code benutzen, es wird automatisch ein Backport benutzt wenn keine native ActionBar verfügbar ist.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/actionbarsherlock-home.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/sirthiaspegdown.html">sirthias/pegdown</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-07-29T10:55:00+02:00">
+        <i class="icon-calendar"></i>So 29 Juli 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/markdown.html"><i class="icon-tag"></i>Markdown</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/sirthias/pegdown/">sirthias/pegdown</a>. Interessante Markdown-Implementierung in Java, basierend auf einem echten Parser und nicht den sonst oft so üblichen Adhoc-Parsern oder Regex-Sammlungen. Könnte ein interessanter Startpunkt für mich sein, zumal es auch als Idea Projekt daher kommt und ich es daher recht leicht integrieren können müsste.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sirthiaspegdown.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/mpeltonensbt-idea.html">mpeltonen/sbt-idea</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-07-23T12:29:00+02:00">
+        <i class="icon-calendar"></i>Mo 23 Juli 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/ide.html"><i class="icon-tag"></i>IDE</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/scala.html"><i class="icon-tag"></i>Scala</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/mpeltonen/sbt-idea">mpeltonen/sbt-idea</a>. Hmm, interessant - ein sbt Plugin mit dem man Idea Projektstrukturen generiert. Damit kann man dann an den Stellen wo man die IDE benutzen will sie auf das gleiche Projekt loslassen. Zum Beispiel für die Remote-Debug-Einbindung ist die IDE dann doch recht nett.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/mpeltonensbt-idea.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/ormlite-lightweight-object-relational-mapping-orm-java-package.html">OrmLite - Lightweight Object Relational Mapping ORM Java Package</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-07-13T22:18:00+02:00">
+        <i class="icon-calendar"></i>Fr 13 Juli 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/datenbank.html"><i class="icon-tag"></i>Datenbank</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://ormlite.com/">OrmLite - Lightweight Object Relational Mapping ORM Java Package</a>. Mal genauer angucken, ein ORM der auch in Android benutzbar ist. Die nackte Programmierung von SQLite mit SQLiteDatabaseHelper macht mir irgendwie nicht so richtig viel Spaß. Das ist mir dann doch etwas zu low-level.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/ormlite-lightweight-object-relational-mapping-orm-java-package.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/new-app-impressive-aide-is-an-ide-that-lets-you-write-and-compile-android-apps-on-your-android-device-begs-for-the-yo-dawg-treatment.html">[New App] Impressive: AIDE Is An IDE That Lets You Write And Compile Android Apps On Your Android Device, Begs For The Yo Dawg Treatment</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-07T16:23:00+01:00">
+        <i class="icon-calendar"></i>Mi 07 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.androidpolice.com/2012/03/06/android-gets-a-native-ide-lets-you-write-android-apps-on-your-android-tablet-is-begging-for-the-yo-dawg-treatment/">[New App] Impressive: AIDE Is An IDE That Lets You Write And Compile Android Apps On Your Android Device, Begs For The Yo Dawg Treatment</a>. Android-Entwicklung auf Android-Geräten (vorzugsweise Tablets). Das ist ja sowas von meta.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/new-app-impressive-aide-is-an-ide-that-lets-you-write-and-compile-android-apps-on-your-android-device-begs-for-the-yo-dawg-treatment.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/faq-kotlin-confluence.html">FAQ - Kotlin - Confluence</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-20T09:51:00+02:00">
+        <i class="icon-calendar"></i>Mi 20 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://confluence.jetbrains.net/display/Kotlin/FAQ">FAQ - Kotlin - Confluence</a>. Die Drölfundfünfzigste Java-Killer-Sprache für die JVM, die hier auch gleich Scala attackiert (das übliche Argument "Scala ist zu kompliziert", welches auf den ersten Blick auch durchaus stimmt - Scala hat wenige zentrale Basisfeatures, die durch die Standardlibrary und die gute DSL Möglichkeit die eigentliche Sprache an der Oberfläche …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/faq-kotlin-confluence.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/mixing-it-up-when-f-meets-c.html">Mixing it up: when F# meets C#</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-05-10T10:06:00+02:00">
+        <i class="icon-calendar"></i>Di 10 Mai 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/c.html"><i class="icon-tag"></i>C#</a>
+	<a href="https://rfc1437.github.io/tag/f.html"><i class="icon-tag"></i>F#</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/scala.html"><i class="icon-tag"></i>Scala</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.voyce.com/index.php/2011/05/09/mixing-it-up-when-f-meets-c/">Mixing it up: when F# meets C#</a>. Da man ja nie in einem abgeschlossenen Raum programmiert, sind die Verbindungen zwischen Sprachen recht wichtig - und besonders auf Plattformen wie .NET und JVM. Die Abbildungen von F# Datentypen auf C# Datentypen und die Nutzung dieser sieht recht interessant aus. C# Daten von …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/mixing-it-up-when-f-meets-c.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/the-plan-for-mods-the-word-of-notch.html">The plan for mods : The Word of Notch</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-26T15:59:00+02:00">
+        <i class="icon-calendar"></i>Di 26 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/minecraft.html"><i class="icon-tag"></i>Minecraft</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/spielen.html"><i class="icon-tag"></i>Spielen</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://notch.tumblr.com/post/4955141617/the-plan-for-mods">The plan for mods : The Word of Notch</a>. So sollten andere Spieleschmieden auch mit Mods umgehen. Nicht die Leute, die auf deinem Game aufbauen verklagen, sondern sie offen aufnehmen. Notch gibt gleich den ganzen Source dafür raus an Mod-Entwickler.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/the-plan-for-mods-the-word-of-notch.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/jess-the-rule-engine-for-the-java-platform.html">Jess, the Rule Engine for the Java Platform</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-18T15:55:00+02:00">
+        <i class="icon-calendar"></i>Mo 18 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/scala.html"><i class="icon-tag"></i>Scala</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.jessrules.com/">Jess, the Rule Engine for the Java Platform</a>. Falls man mal eine Rules-Engine für Java braucht, Jess basiert in den Ideen auf dem Kern von CLIPS, welches ja nun schon seit einiger Zeit existiert (so Mitte der 80er), integriert aber eben in die Java-Welt. Eine Alternative wäre da auch noch …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/jess-the-rule-engine-for-the-java-platform.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/agronholm-jython-swingutils-source-%e2%80%93-bitbucket.html">agronholm / jython-swingutils / source – Bitbucket</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-11T13:08:00+02:00">
+        <i class="icon-calendar"></i>Mo 11 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://bitbucket.org/agronholm/jython-swingutils/src">agronholm / jython-swingutils</a>. Noch keine Idee was ich damit machen könnte, aber falls mal die Java-Welt interessant ist, könnte das als GUI Bibliothek interessant werden (Swing für Jython).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/agronholm-jython-swingutils-source-%e2%80%93-bitbucket.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/sunng87jip-github.html">sunng87/jip - GitHub</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-06T11:45:00+02:00">
+        <i class="icon-calendar"></i>Mi 06 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/sunng87/jip">sunng87/jip</a>. Im Moment mache ich nicht so viel mit Jython, aber jip klingt sehr praktisch: es ist ein Analog zu pip, aber für Java-Libraries. Also ein einfaches Kommandotool, welches die notwendigen Jar-Files runterlädt und an den richtigen Ort packt. Integriert mit virtualenv. Für mich deutlich angenehmer als zum Beispiel …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sunng87jip-github.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/nathanmarzcascalog-github.html">nathanmarz/cascalog - GitHub</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-03-28T10:28:00+02:00">
+        <i class="icon-calendar"></i>Mo 28 März 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/distributed.html"><i class="icon-tag"></i>Distributed</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/nathanmarz/cascalog">nathanmarz/cascalog</a> - mal näher beobachten, eine Verheiratung von Clojure und Hadoop zur einfacheren Auswertung großer Datenbestände. Das Interessante an Cascalog: es greift Ideen aus Datalog auf und bildet in Clojure eine Abfragesprache für Hadoop Datenbestände.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/nathanmarzcascalog-github.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/enterprise-java-development-tools-springsource.html">Enterprise Java Development Tools | SpringSource</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-03-25T16:23:00+01:00">
+        <i class="icon-calendar"></i>Fr 25 März 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.springsource.com/developer/spring">Enterprise Java Development Tools | SpringSource</a>. Muss ich mir mal genauer angucken, weils letztens um J2EE und EJB Alternativen ging, und das ja nun eine der bekannteren Alternativen ist.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/enterprise-java-development-tools-springsource.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/threads-sind-ein-hammer-aber-nicht-jedes-problem-ist-ein-nagel.html">Threads sind ein Hammer, aber nicht jedes Problem ist ein Nagel</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-03-13T12:05:00+01:00">
+        <i class="icon-calendar"></i>So 13 März 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/artikel.html"><i class="icon-folder-open"></i>Artikel</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>Wer mal herzhaft lachen will: <a href="http://java.dzone.com/articles/node-js-and-server-side-java">Node JS and Server side Java Script</a>. Da meckert jemand aus dem Java-Lager darüber, das Node.JS ja nun wirklich nicht ernstzunehmen sei und produziert doch selber gleich das beste Beispiel, warum sowas wie Node.JS (und viele andere Alternativen für Serverprogrammierung) existieren - denn der …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/threads-sind-ein-hammer-aber-nicht-jedes-problem-ist-ein-nagel.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/ikvm-net-home-page.html">IKVM.NET Home Page</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-11-26T23:17:00+01:00">
+        <i class="icon-calendar"></i>Fr 26 November 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/mono.html"><i class="icon-tag"></i>Mono</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.ikvm.net/">IKVM.NET Home Page</a> liefert eine Java VM in .NET - man soll damit sogar so verrückte Sachen machen können, wie z.B. Scala 2.8 auf .NET laufen zu lassen.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/ikvm-net-home-page.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://palletsprojects.com/p/jinja/"><i class="icon-external-link"></i>Jinja2</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="https://rfc1437.github.io/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://github.com/rfc1437/"><i class="icon-github-sign icon-large"></i>github</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="https://rfc1437.github.io/category/artikel.html">
+    <i class="icon-folder-open icon-large"></i>Artikel
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/asides.html">
+    <i class="icon-folder-open icon-large"></i>Asides
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/galerie.html">
+    <i class="icon-folder-open icon-large"></i>Galerie
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/kochbuch.html">
+    <i class="icon-folder-open icon-large"></i>Kochbuch
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/metaowl.html">
+    <i class="icon-folder-open icon-large"></i>Metaowl
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/misc.html">
+    <i class="icon-folder-open icon-large"></i>misc
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/spielelog.html">
+    <i class="icon-folder-open icon-large"></i>Spielelog
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://rfc1437.github.io/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="https://rfc1437.github.io/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

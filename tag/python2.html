@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hugo's House of Blog Horror - Python</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="rfc1437">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="https://rfc1437.github.io/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="https://rfc1437.github.io/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="https://rfc1437.github.io/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="https://rfc1437.github.io/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="https://rfc1437.github.io/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://rfc1437.github.io/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://rfc1437.github.io/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://rfc1437.github.io/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="https://rfc1437.github.io/" type="application/atom+xml" rel="alternate" title="Hugo's House of Blog Horror ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="https://rfc1437.github.io/index.html">Hugo's House of Blog Horror </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                  <li><a href="/impressum.html">Imprint</a></li>
+                  <li><a href="/about.html">About</a></li>
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/artikel.html">
+						<i class="icon-folder-open icon-large"></i>Artikel
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/asides.html">
+						<i class="icon-folder-open icon-large"></i>Asides
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/galerie.html">
+						<i class="icon-folder-open icon-large"></i>Galerie
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/kochbuch.html">
+						<i class="icon-folder-open icon-large"></i>Kochbuch
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/metaowl.html">
+						<i class="icon-folder-open icon-large"></i>Metaowl
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/misc.html">
+						<i class="icon-folder-open icon-large"></i>misc
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/spielelog.html">
+						<i class="icon-folder-open icon-large"></i>Spielelog
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="https://rfc1437.github.io/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/wsgi-and-the-pluggable-pipe-dream-armin-ronachers-thoughts-and-writings.html">WSGI and the Pluggable Pipe Dream | Armin Ronachers Thoughts and Writings</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-29T11:54:00+02:00">
+        <i class="icon-calendar"></i>Fr 29 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://lucumr.pocoo.org/2011/7/27/the-pluggable-pipedream/#">WSGI and the Pluggable Pipe Dream | Armin Ronachers Thoughts and Writings</a>. Einfach mal lesen, damit man einen guten Überblick bekommt, was WSGI eigentlich so alles ist und was damit machbar ist und wo es vielleicht auch mal klemmt.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/wsgi-and-the-pluggable-pipe-dream-armin-ronachers-thoughts-and-writings.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/webkit-in-pyqt-rendering-web-pages.html">WebKit in PyQt - rendering web pages</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-28T22:36:00+02:00">
+        <i class="icon-calendar"></i>Do 28 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/qt.html"><i class="icon-tag"></i>Qt</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.rkblog.rk.edu.pl/w/p/webkit-pyqt-rendering-web-pages/">WebKit in PyQt - rendering web pages</a>. Da ich mal wieder über GUI Bibliotheken und Tools grüble und mit Python und Qt rumspiele sollte ich natürlich nicht die WebKit-Integration von Qt vergessen, die ist wirklich schön einfach realisiert, wie diese recht simplen Beispiele zeigen. Und die Qt-Oberflächen unter OSX sind  zwar …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/webkit-in-pyqt-rendering-web-pages.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/orange-data-mining-fruitful-fun.html">Orange - Data Mining Fruitful & Fun</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-27T15:18:00+02:00">
+        <i class="icon-calendar"></i>Mi 27 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/mathematik.html"><i class="icon-tag"></i>Mathematik</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/visualisierung.html"><i class="icon-tag"></i>Visualisierung</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://orange.biolab.si/">Orange - Data Mining Fruitful &amp; Fun</a>. Wow, gerade drüber gestolpert, das kannte ich noch nicht, glaub ich. Eine GUI-Oberfläche mit einem Node-Interface zur Definition von Datenanalysen und Visualisierungen, wobei diese Knoten in Python programmiert sind. Das ganze Interface ist mit QT gebaut, daher gibts da auch eine OSX Version davon. Wenn …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/orange-data-mining-fruitful-fun.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/sage-open-source-mathematics-software.html">Sage: Open Source Mathematics Software</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-27T12:51:00+02:00">
+        <i class="icon-calendar"></i>Mi 27 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/mathematik.html"><i class="icon-tag"></i>Mathematik</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.sagemath.org/index.html">Sage: Open Source Mathematics Software</a>. Einfach weil ich ja letztens über Worksheet-Interfaces gegrübelt habe und drüber nachdenke, was es da alles so an Auswahl gibt - Sage ist ja nicht nur ein Mathematik-Paket, sondern primär erstmal eine gigantische Modulsammlung für Python und ein Worksheet-Interface ebenfalls für Python. Ok, man benutzt einen …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sage-open-source-mathematics-software.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/xmppflask-%e2%80%94-xmppflask-v0-1-documentation.html">XMPPFLASK — XmppFlask v0.1 documentation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-25T12:55:00+02:00">
+        <i class="icon-calendar"></i>Mo 25 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/xmpp.html"><i class="icon-tag"></i>XMPP</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://xmppflask.org/">XMPPFLASK — XmppFlask v0.1 documentation</a>. Definitiv ein interessantes Projekt - ein XMPP Bot in Python, der eine ähnliche Struktur hat wie Flask, also einfache Definition für XMPP Handler mit Routing von Events. Da ich immer mal wieder vor hatte mir XMPP als Backbone für verteilte (also weit verteilte) Anwendungen mit Online …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/xmppflask-%e2%80%94-xmppflask-v0-1-documentation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pattern-matching-in-python.html">Pattern Matching In Python</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-20T13:41:00+02:00">
+        <i class="icon-calendar"></i>Mi 20 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.wilmott.ca/python/patternmatching.html">Pattern Matching In Python</a>. Interessanter Artikel für Leute wie mich, also für Leute die <a href="http://www.snobol4.org/">Snobol4</a> oder dessen "Nachfolger" (in Tüddelchen, weil es ja dann doch eine gänzlich andere Sprache ist) <a href="http://www.cs.arizona.edu/icon/">Icon</a> mögen und mal eine Alternative zu regulären Ausdrücken haben möchten. Implementiert ein dem Icon-Modell sehr ähnliches Pattern-Matching-System, komplett mit …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pattern-matching-in-python.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/wsgid-when-your-wsgi-app-becomes-a-nix-daemon.html">WSGID When your WSGI app becomes a nix daemon</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-18T16:22:00+02:00">
+        <i class="icon-calendar"></i>Mo 18 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/webservice.html"><i class="icon-tag"></i>Webservice</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://wsgid.com/">WSGID When your WSGI app becomes a nix daemon</a>. <a href="http://mongrel2.org/">Mongrel2</a> von Zed Shaw hat mich schon geraume Zeit interessiert, aber das grösste Manko war, dass es nicht viele Python Frameworks gibt, die direkt mit Mongrel2 arbeiten. wsgid löst das Problem, es ist ein WSGI Server für Mongrel2 und kann damit …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/wsgid-when-your-wsgi-app-becomes-a-nix-daemon.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/kivy-a-crossplatform-framework-for-creating-nui-applications.html">Kivy: a crossplatform framework for creating NUI applications</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-18T10:22:00+02:00">
+        <i class="icon-calendar"></i>Mo 18 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://kivy.org/">Kivy: a crossplatform framework for creating NUI applications</a>. Interessante neue GUI-Library für Python, läuft auf verschiedensten Plattformen (und neben den drei Großen Desktopumgebungen ist mit Android ist auch schon eine mobile dabei) und kann OpenGL zur Beschleunigung der Ausgabe einsetzen (intern haben die einen JIT, der die Basisfunktionen compiliert und …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/kivy-a-crossplatform-framework-for-creating-nui-applications.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/bulbflow-a-new-python-framework-for-graph-databases.html">Bulbflow: a New Python Framework for Graph Databases</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-17T13:27:00+02:00">
+        <i class="icon-calendar"></i>So 17 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/datenbank.html"><i class="icon-tag"></i>Datenbank</a>
+	<a href="https://rfc1437.github.io/tag/nosql.html"><i class="icon-tag"></i>NoSQL</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://bulbflow.com/overview/">Bulbflow: a New Python Framework for Graph Databases</a>. Auch wenn ich immer wieder denke, Graphdatenbanken sind eigentlich sowas von 70er Jahre, nicht alles was alt ist ist automatisch schlecht - IMS ist ja auch immer noch da und für manche Zwecke sehr interessant. Und das hier klingt interessant, sowas wie DBAPI …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/bulbflow-a-new-python-framework-for-graph-databases.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/happy-overview-%e2%80%93-bitbucket.html">happy / overview – Bitbucket</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-13T10:11:00+02:00">
+        <i class="icon-calendar"></i>Mi 13 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/php.html"><i class="icon-tag"></i>PHP</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://bitbucket.org/asuhan/happy/overview">asuhan / happy</a>. Auch nicht uninteressant: ein PHP Interpreter bzw. Compiler in Python auf Basis der PyPy Toolchain. Ok, ist jetzt nicht der Brüller, ich glaube nicht, dass ich schon sehr oft die Frage hatte "wie kann ich jetzt in Python PHP Code ausführen" - aber z.B. wenn eine Site auf …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/happy-overview-%e2%80%93-bitbucket.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pyrolog-overview-%e2%80%93-bitbucket.html">Pyrolog / overview – Bitbucket</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-13T10:07:00+02:00">
+        <i class="icon-calendar"></i>Mi 13 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/prolog.html"><i class="icon-tag"></i>Prolog</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://bitbucket.org/cfbolz/pyrolog/overview">cfbolz / Pyrolog</a>. Hatte ich den schon mal? Ein Prolog-Interpreter in Python, der die PyPy Toolchain benutzt. Könnte sehr interessant werden wenn man mal wieder ein bischen Regellogik in seinen Programmen braucht aber nicht unbedingt externe Tools dafür anwerfen will.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pyrolog-overview-%e2%80%93-bitbucket.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/paverpaver-github.html">paver/paver - GitHub</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-12T11:33:00+02:00">
+        <i class="icon-calendar"></i>Di 12 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/paver/paver">paver/paver</a>. Klingt interessant, wie eine Mischung aus SetupTools/DistUtils und Make (bzw. deren high-level Kumpel Rake/Cake). Könnte ich mir mal angucken, denn für Python-Projekte wäre das vielleicht doch recht praktisch - allerdings sind die Standardtools von Python auch schon ganz brauchbar.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/paverpaver-github.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/stiivi-cubes-overview-%e2%80%93-bitbucket.html">Stiivi / cubes / overview – Bitbucket</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-07-08T15:05:00+02:00">
+        <i class="icon-calendar"></i>Fr 08 Juli 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://bitbucket.org/Stiivi/cubes">Stiivi / cubes</a>. Mal für später geblogmarkt: eine OLAP Library in Python die auf SQL Datenbanken oder MongoDB aufbauen kann. Für so einige Sachen auf der Arbeit könnte das mal interessant werden.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/stiivi-cubes-overview-%e2%80%93-bitbucket.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/sympy.html">SymPy</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-06-30T14:00:00+02:00">
+        <i class="icon-calendar"></i>Do 30 Juni 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://sympy.org/">SymPy</a>. Symbolische Mathematik mit Python direkt in der Python Shell. Zusammen mit <a href="http://numpy.org/">NumPy</a> für Matrizenoperationen und <a href="http://scipy.org/">SciPy</a> für diverse weitere wissenschaftliche Funktionen wird aus Python damit ganz fix ein schon recht veritables Mathematiksystem. Nichts wirklich groß neues außer vielleicht SymPy selber.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sympy.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pypy-status-blog-global-interpreter-lock-or-how-to-kill-it.html">PyPy Status Blog: Global Interpreter Lock, or how to kill it</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-06-30T13:54:00+02:00">
+        <i class="icon-calendar"></i>Do 30 Juni 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://morepypy.blogspot.com/2011/06/global-interpreter-lock-or-how-to-kill.html">PyPy Status Blog: Global Interpreter Lock, or how to kill it</a>. Wow, das klingt gut - das PyPy Projekt will das GIL durch STM (Software Transactional Memory) entschärfen - und hat dafür durchaus einen interessanten Ansatz. Manche Sachen sind auch erst durch PyPy möglich, weil dort entsprechende Infrastruktur für Codetransformationen vorhanden ist …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pypy-status-blog-global-interpreter-lock-or-how-to-kill-it.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/the-larch-environment.html">The Larch Environment</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-06-24T12:54:00+02:00">
+        <i class="icon-calendar"></i>Fr 24 Juni 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://sites.google.com/site/larchenv/home">The Larch Environment</a>. Mal angucken - eine visuelle Programmierumgebung für Python. Interessantes Detail: Objekte werden nicht einfach nur textuell dargestellt, sondern über einen eigenen Mechanismus auch grafisch dargestellt - klingt ein bischen wie Output-Recording von CLIM. Zusätzlich ist das ganze eher als interaktives Dokument aufgebaut - also vergleichbar zu diversen Mathematik-Systemen (z.B …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/the-larch-environment.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/django-gae2django-django-based-implementation-of-app-engine-apis-google-project-hosting.html">django-gae2django - Django-based implementation of App Engine APIs - Google Project Hosting</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-06-24T12:45:00+02:00">
+        <i class="icon-calendar"></i>Fr 24 Juni 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/webservice.html"><i class="icon-tag"></i>Webservice</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://code.google.com/p/django-gae2django/">django-gae2django - Django-based implementation of App Engine APIs - Google Project Hosting</a>.  Müsste ich mir mal angucken - damit kann man AppEngine Programme auf eigenen Servern laufen lassen, die dann auf Django basieren (die AppEngine-APIs werden also über Django-Mittel nachgebildet). Sicherlich besser als direkt den AppEngine Dev-Server zu benutzen.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/django-gae2django-django-based-implementation-of-app-engine-apis-google-project-hosting.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/technical-discovery-speeding-up-python-numpy-cython-and-weave.html">Technical Discovery: Speeding up Python NumPy, Cython, and Weave</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-06-22T12:10:00+02:00">
+        <i class="icon-calendar"></i>Mi 22 Juni 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://technicaldiscovery.blogspot.com/2011/06/speeding-up-python-numpy-cython-and.html">Technical Discovery: Speeding up Python NumPy, Cython, and Weave</a>. Interessant für Zahlenfresser die nicht unbedingt auf PyPy wechseln wollen, sondern in der normalen CPython Welt bleiben wollen. Gibt einen schnellen Vergleich von NumPy, Weave und Cython.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/technical-discovery-speeding-up-python-numpy-cython-and-weave.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/leos-home-page.html">Leos Home Page</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-06-22T11:50:00+02:00">
+        <i class="icon-calendar"></i>Mi 22 Juni 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://webpages.charter.net/edreamleo/front.html">Leos Home Page</a>. Leo ist ein Outliner und Datenorganisator - das ist erstmal nix besonderes. Aber dieser ist in Python geschrieben und Portabel (überall hin wo es PyQT gibt, zumindestens in der Version 4.9, ältere hatten auch Tkinter als Oberflächenlibrary). Kann auch als IDE für Python eingesetzt werden.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/leos-home-page.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pythonharmattan-meego-wiki.html">Python/Harmattan - MeeGo wiki</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-06-22T10:36:00+02:00">
+        <i class="icon-calendar"></i>Mi 22 Juni 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/meego.html"><i class="icon-tag"></i>MeeGo</a>
+	<a href="https://rfc1437.github.io/tag/nokia.html"><i class="icon-tag"></i>Nokia</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://wiki.meego.com/Harmattan_Python">Python/Harmattan - MeeGo wiki</a>. Im Zusammenhang mit dem N9 sehr interessant: eine vollständige (und das meinen die wirklich Ernst - fast alle Teile des Systems sind erreichbar) API für MeeGo in Python. Damit kann man das ganze Telefon komplett in Python programmieren und auch die so erstellten Applikationen im Ovi Store …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pythonharmattan-meego-wiki.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/gcc-python-plugin-and-static-analyser-for-cpython-sources-comp-lang-python-announce-google-groups.html">gcc python plugin and static analyser for CPython sources - comp.lang.python.announce | Google Groups</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-06-22T10:28:00+02:00">
+        <i class="icon-calendar"></i>Mi 22 Juni 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://groups.google.com/group/comp.lang.python.announce/browse_thread/thread/e6a5097786f46055/83d38683f3eb88d0?show_docid=83d38683f3eb88d0&amp;pli=1">gcc python plugin and static analyser for CPython sources</a>. Auf sehr seltsame Art und Weise Cool. Ich mein, mal ernsthaft: wer guckt sich gcc an und denkt da spontan "oh, da sollte ich einen Python-Interpreter einbetten"? Ja, ich weiss, die Antwort ist "der Autor dieses Plugins". Seltsame Dinge tun manche …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/gcc-python-plugin-and-static-analyser-for-cpython-sources-comp-lang-python-announce-google-groups.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/skulpt.html">Skulpt</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-06-16T21:39:00+02:00">
+        <i class="icon-calendar"></i>Do 16 Juni 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.skulpt.org/">Skulpt</a>. Eine Python-Implementierung in JavaScript, Client-Side. Also im Browser. Nett der Hinweis, man solle garnicht erst probieren den Server zu crashen, man würde nur seinen eigenen Zeh stoßen ... (ansonsten ist das aber wohl eines der vielen Projekte "weil es geht")</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/skulpt.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/burrahobbit.html">burrahobbit</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-06-11T08:57:00+02:00">
+        <i class="icon-calendar"></i>Sa 11 Juni 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>Florian (Autor) meint, ich könnte an <a href="http://segfaulthunter.github.com/burrahobbit/">burrahobbit</a> interessiert sein und er hat Recht: persistente Datenstrukturen (also funktionale Persistenz) in Python, mit zu den normalen Datenstrukturen vergleichbarem Zeitverhalten. Bisher hat er Dictionaries und Sets.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/burrahobbit.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/comparison-to-python-cobra.html">Comparison to Python | Cobra</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-06-04T11:08:00+02:00">
+        <i class="icon-calendar"></i>Sa 04 Juni 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://cobra-language.com/docs/python/">Comparison to Python | Cobra</a> - nur der Vollständigkeit halber geblogmarkt, da die Sprache einige interessante Ideen hat. Speziell die Kontrakte fände ich als explizite Syntax gut, Python erlaubt ähnliches nur auf Umwegen. Allerdings ist die Sprache ansonsten halt eine der vielen Nischensprachen. Und ehrlich gesagt ist Python mehr als nur die …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/comparison-to-python-cobra.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/writing-plugins-for-gedit-3-with-python.html">Writing Plugins for gedit 3 with Python</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-05-13T11:36:00+02:00">
+        <i class="icon-calendar"></i>Fr 13 Mai 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.micahcarrick.com/writing-plugins-for-gedit-3-in-python.html">Writing Plugins for gedit 3 with Python</a>. Schaut so aus als ob Gnome 3 tatsächlich eine recht generische Schnittstelle für Python-Scripting bekommt. PyGTK war zwar auch schon da, aber das ist einfach nur eine GUI Lib. Jetzt wird aber über GObject und Friends gearbeitet und damit sind weitaus mehr Elemente …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/writing-plugins-for-gedit-3-with-python.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/python-interpreter-by-noam-gat-unity-asset-store.html">Python Interpreter by Noam Gat -- Unity Asset Store</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-05-13T11:20:00+02:00">
+        <i class="icon-calendar"></i>Fr 13 Mai 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/spielen.html"><i class="icon-tag"></i>Spielen</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://u3d.as/content/noam-gat/python-interpreter/1Qb">Python Interpreter by Noam Gat -- Unity Asset Store</a>. Und das hier ist eher was für meine privaten Spielereien: ein Plugin, welches in Unity3D eine interaktive Python Shell einbindet. Irgendwie reizt mich Unity3D immer wieder wenn ich es auftauchen sehe. Zumal mitlerweile der Einstieg frei ist (leider ist der Sprung zu …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/python-interpreter-by-noam-gat-unity-asset-store.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/micromongo-%e2%80%94-micromongo-v0-1-documentation.html">micromongo — micromongo v0.1 documentation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-05-13T11:12:00+02:00">
+        <i class="icon-calendar"></i>Fr 13 Mai 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/nosql.html"><i class="icon-tag"></i>NoSQL</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://packages.python.org/micromongo/">micromongo — micromongo v0.1 documentation</a>. Auch mal angucken, micromongo liefert einen minimalen ORM für MongoDB Server. Wobei ich da allerdings mal gucken müsste, ob es nicht mitlerweile bei django-nosql auch schon Unterstützung für MongoDB gibt, dann müsste ich nicht eine andere ORM Syntax benutzen - allerdings ist micromongo wirklich ziemlich schlank …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/micromongo-%e2%80%94-micromongo-v0-1-documentation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/execnet-v1-0-9-documentation.html">execnet v1.0.9 documentation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-05-13T11:09:00+02:00">
+        <i class="icon-calendar"></i>Fr 13 Mai 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://codespeak.net/execnet/">execnet v1.0.9 documentation</a>. Müsste ich mir auch mal angucken, es ist im Prinzip eine Library zur Verteilung von Funktionen über ein Netzwerk von Instanzen - kein volles map/reduce oder ähnliches, mehr sowas wie ein besseres RPC. Speziell interessant um zum Beispiel eine normale cpython Front mit einem Compute-Backend …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/execnet-v1-0-9-documentation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pmundkurodisco-github.html">pmundkur/odisco - GitHub</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-05-13T10:29:00+02:00">
+        <i class="icon-calendar"></i>Fr 13 Mai 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/ocaml.html"><i class="icon-tag"></i>OCaml</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/pmundkur/odisco">pmundkur/odisco</a>. Eine Implementierung für Map/Reduce nach dem Disco Worker Modell in Objective Caml. Sowas <a href="http://discoproject.org/">gibts auch schon für Python</a>. Falls ich mal wieder mit OCaml rumspielen will.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pmundkurodisco-github.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/reinteract-trac.html">Reinteract - Trac</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-05-12T19:17:00+02:00">
+        <i class="icon-calendar"></i>Do 12 Mai 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.reinteract.org/trac/">Reinteract</a> könnte für alle Zahlenfresser und Grafikspieler interessant sein, sofern sie von Python keine Pickel kriegen: eine Implementierung von Worksheets wie man sie von Mathematika und Sage kennt, nur als direkte Python-Anwendung auf Basis von PyGTK. Man kann Python-Source reinhacken und ausführen, älteren Source nachträglich editieren und sein Output im …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/reinteract-trac.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/bconstantin-django_polymorphic-overview-%e2%80%93-bitbucket.html">bconstantin / django_polymorphic / overview – Bitbucket</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-05-10T11:40:00+02:00">
+        <i class="icon-calendar"></i>Di 10 Mai 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/djan.html"><i class="icon-tag"></i>Djan</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://bitbucket.org/bconstantin/django_polymorphic">bconstantin / django_polymorphic</a>. Warum finde ich das erst jetzt? Das ist eine sehr nette Sache für Django-Projekte mit vererbten Modellen - sobald man Zugriffe auf eine gemeinsame Modell-Klasse macht, erhält man bei Django nur Instanzen der gemeinsamen Modell-Klasse - bei Django-Polymorphic aber erhält man Instanzen der konkreten Unterklassen. Im Prinzip wird der …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/bconstantin-django_polymorphic-overview-%e2%80%93-bitbucket.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/birkenfeld-karnickel-overview-%e2%80%93-bitbucket.html">birkenfeld / karnickel / overview – Bitbucket</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-05-09T11:13:00+02:00">
+        <i class="icon-calendar"></i>Mo 09 Mai 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://bitbucket.org/birkenfeld/karnickel">birkenfeld / karnickel</a>. Ziemlich schräges Teil: Makros auf AST Level für Python. Allerdings in einer Form, die dann doch eher an C Makros erinnert - also einfache Expression-Makros (und recht stark limitierte Block-Makros). Vor allem fängt man sich all die bösen Probleme eines solchen unhygienischen Makrosystems ein - wie zum Beispiel Namenskonflikte zwischen …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/birkenfeld-karnickel-overview-%e2%80%93-bitbucket.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/home-%e2%80%94-pygame-subset-for-android.html">Pygame Subset for Android</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-05-06T13:58:00+02:00">
+        <i class="icon-calendar"></i>Fr 06 Mai 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://pygame.renpy.org/">Pygame Subset for Android</a>. Huch - es gibt ein PyGame subset für Android. Nutzung ist etwas hakelig, weil es keine IDE gibt - man muss die Files auf der SD Karte (hmm - ein Nexus S hat keine SD Karte, wo landet das dort?) ablegen und anderweitig editieren.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/home-%e2%80%94-pygame-subset-for-android.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/android-scripting-scripting-layer-for-android-brings-scripting-languages-to-android-google-project-hosting.html">android-scripting - Scripting Layer for Android brings scripting languages to Android. - Google Project Hosting</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-05-06T13:49:00+02:00">
+        <i class="icon-calendar"></i>Fr 06 Mai 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/ruby.html"><i class="icon-tag"></i>Ruby</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://code.google.com/p/android-scripting/">android-scripting - Scripting Layer for Android brings scripting languages to Android.</a>. Interessantes Projekt mit dem man diverse Scriptsprachen auf Android-Telefonen laufen lassen kann. Unterstützung für Shell, Python, Perl, Ruby, Lua, TCL und JavaScript sind schon dabei. Für mich ist natürlich besonders Python interessant. Vor allem weil <a href="http://code.google.com/p/android-scripting/wiki/ApiReference">die API von Android verfügbar …</a></p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/android-scripting-scripting-layer-for-android-brings-scripting-languages-to-android-google-project-hosting.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pypy-status-blog-pypy-1-5-released-catching-up.html">PyPy Status Blog: PyPy 1.5 Released: Catching Up</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-05-01T11:48:00+02:00">
+        <i class="icon-calendar"></i>So 01 Mai 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://morepypy.blogspot.com/2011/04/pypy-15-released-catching-up.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+PyPyStatusBlog+%28PyPy+Status+Blog%29">PyPy Status Blog: PyPy 1.5 Released: Catching Up</a>. Yay! PyPy ist jetzt auf dem Stand von CPython 2.7! Und wieder mal ein paar zusätzliche Performanceverbesserungen. Ausserdem ist das Interface für CPython Erweiterungsmodule (also welche die eben nicht in Python geschrieben sind) verbessert, erste Erfolge sind Tkinter und IDLE …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pypy-status-blog-pypy-1-5-released-catching-up.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/kiorkyspynner-github.html">kiorky/spynner - GitHub</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-28T18:06:00+02:00">
+        <i class="icon-calendar"></i>Do 28 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/kiorky/spynner/">kiorky/spynner</a>. Wow, das klingt echt interessant - ein programmatischer (also ohne Oberfläche) Webbrowser auf Basis von QtWebkit als Python-Erweiterung. Der Vorteil? Dadurch, dass eine vollständige Web-Engine drunter steckt, kann man eben alle Features des Webbrowsers nutzen - zum Beispiel eben auch client-side JavaScript und all die anderen Sachen, die in Webanwendungen …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/kiorkyspynner-github.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/tvon-python-wordpress-overview-%e2%80%93-bitbucket.html">tvon / python-wordpress / overview – Bitbucket</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-25T18:26:00+02:00">
+        <i class="icon-calendar"></i>Mo 25 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://bitbucket.org/tvon/python-wordpress">tvon / python-wordpress</a>. Und um Posts und Bilder in Wordpress zu kriegen, könnte ich hiermit arbeiten - eine Python Library, die diverse Wordpress Funktionen zur Verfügung stellt. Allerdings gibts die in verschiedenen Versionen, in verschiedenem Zustand der Nicht-Pflege, muss ich also mal drübergehen und gucken ob alles so läuft wie ich es …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/tvon-python-wordpress-overview-%e2%80%93-bitbucket.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/backing-up-flickr.html">Backing Up Flickr</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-25T18:25:00+02:00">
+        <i class="icon-calendar"></i>Mo 25 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://hivelogic.com/articles/backing-up-flickr/">Backing Up Flickr</a>. Weil ich grade drüber gestolpet bin (ich suche nach Wegen um Flickr-Uploads automatisch auch in die Mediathek von Wordpress zu schieben, vorzugsweise vom Server aus, ohne dass ich immer nur manuell aktiv werden muss. Dazu müsste ich eigentlich das hier mit Wordpress-Funktionen verheiraten (es ist ein Python-Script …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/backing-up-flickr.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/gondor-%e2%80%94-effortless-production-django-hosting.html">Gondor — effortless production Django hosting</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-20T11:39:00+02:00">
+        <i class="icon-calendar"></i>Mi 20 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://gondor.io/">Gondor — effortless production Django hosting</a>. Hmm, das klingt recht interessant - ein Tool zum  einfacheren Deployment inklusive Datenbankmigrationen (über South). Soviel ich das verstehe ist es aber an deren Infrastruktur gebunden - also eher eine Alternative für die Google AppEngine, direkt auf Python aufbauend.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/gondor-%e2%80%94-effortless-production-django-hosting.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/agronholm-jython-swingutils-source-%e2%80%93-bitbucket.html">agronholm / jython-swingutils / source – Bitbucket</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-11T13:08:00+02:00">
+        <i class="icon-calendar"></i>Mo 11 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://bitbucket.org/agronholm/jython-swingutils/src">agronholm / jython-swingutils</a>. Noch keine Idee was ich damit machen könnte, aber falls mal die Java-Welt interessant ist, könnte das als GUI Bibliothek interessant werden (Swing für Jython).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/agronholm-jython-swingutils-source-%e2%80%93-bitbucket.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/python-package-index-pip-1-0.html">Python Package Index : pip 1.0</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-06T11:48:00+02:00">
+        <i class="icon-calendar"></i>Mi 06 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://pypi.python.org/pypi/pip/1.0">Python Package Index : pip 1.0</a>. Der Vollständigkeit halber hier geblogmarkt, auch wenn pip für mich mitlerweile eh fester Bestandteil der Python Infrastruktur ist. Aber vielleicht hat der eine oder andere ja noch nicht mit pip rumgespielt, dann ist jetzt wohl der richtige Zeitpunkt gekommen. Man sollte es meiner Meinung …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/python-package-index-pip-1-0.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/sunng87jip-github.html">sunng87/jip - GitHub</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-06T11:45:00+02:00">
+        <i class="icon-calendar"></i>Mi 06 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/sunng87/jip">sunng87/jip</a>. Im Moment mache ich nicht so viel mit Jython, aber jip klingt sehr praktisch: es ist ein Analog zu pip, aber für Java-Libraries. Also ein einfaches Kommandotool, welches die notwendigen Jar-Files runterlädt und an den richtigen Ort packt. Integriert mit virtualenv. Für mich deutlich angenehmer als zum Beispiel …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sunng87jip-github.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/philikon-python-weave-client-overview-%e2%80%93-bitbucket.html">philikon / python-weave client / overview – Bitbucket</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-06T11:14:00+02:00">
+        <i class="icon-calendar"></i>Mi 06 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/webservice.html"><i class="icon-tag"></i>Webservice</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://bitbucket.org/philikon/python-weave-client/overview">philikon / python-weave client</a> ist fast noch interessanter als das andere Tool: eine Python-Bibliothek zum Zugriff auf Mozilla Sync. Damit könnte ich mir diverse kleine Tools bauen, die Links automatisch in Bookmarks einmischen oder aus dem Sync rausholen und in andere Bookmarkdateien reinwandern lassen. Oder wie wäre es mit einem Cronjob …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/philikon-python-weave-client-overview-%e2%80%93-bitbucket.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/julienpalardpipe-github.html">JulienPalard/Pipe - GitHub</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-04-04T13:04:00+02:00">
+        <i class="icon-calendar"></i>Mo 04 April 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/JulienPalard/Pipe">Pipe</a> ist ein Modul mit infix-Syntax für verkettete Funktionsaufrufe über potentiell lazy streams (intern sind das Generatoren). Im Gegensatz zu <a href="http://www.trinhhaianh.com/stream.py/">stream</a> (hatte ich hier schon mal) ist es ohne Unterstützung von Parallelität, also einfach nur syntaktischer Zucker. Mir gefällt allerdings der von stream besser (also der Zucker) und die Parallelität …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/julienpalardpipe-github.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/django-nonrel-nosql-support-for-django-all-buttons-pressed.html">Django-nonrel - NoSQL support for Django | All Buttons Pressed</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-03-22T15:44:00+01:00">
+        <i class="icon-calendar"></i>Di 22 März 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/django.html"><i class="icon-tag"></i>Django</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.allbuttonspressed.com/projects/django-nonrel">Django-nonrel - NoSQL support for Django</a>. Liefert einen ersten Ansatz in Django verschiedene NoSQL Datenbanken zu integrieren, und zwar auf Ebene des Django-ORM. Backends für MongoDB (nein Danke), AppEngine und Cassandra sind in der Mache. Besonders Cassandra interessiert mich im Moment.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/django-nonrel-nosql-support-for-django-all-buttons-pressed.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pygui.html">PyGUI</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-03-21T12:48:00+01:00">
+        <i class="icon-calendar"></i>Mo 21 März 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/python_gui/">PyGUI</a> ist eine sehr schlanke GUI-Bibliothek für Windows, OSX und Linux, die auf nativen Toolkits aufbaut (Windows und OSX) bzw. GTK benutzt (Linux). Der Anwendungscode selber ist durch PyGUI allerdings unabhängig von den Systemspezifika. Könnte für kleinere Projekte bei denen man nicht unbedingt die Abhängigkeit von wxPython haben will interessant …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pygui.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pdict-py-at-master-from-segfaulthuntersandbox-github.html">pdict.py at master from segfaulthunter/sandbox - GitHub</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-03-14T12:09:00+01:00">
+        <i class="icon-calendar"></i>Mo 14 März 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/segfaulthunter/sandbox/blob/master/pdict.py">pdict.py at master from segfaulthunter/sandbox - GitHub</a>. Eine PersistentHashMap für Python - also eine funktionale Datenstruktur, welche keine Veränderungen zulässt, sondern eine neue Struktur mit minimaler Änderung gegenüber einer bestehenden Struktur mit Substruktur-Sharing zur originalen Struktur liefert. Eine recht interessante Implementierung. Gibt auch <a href="http://segfaulthunter.blogspot.com/2011/03/persistenttreemap-in-python.html">nähere Erläuterungen zu den Ideen dahinter</a>. Und …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pdict-py-at-master-from-segfaulthuntersandbox-github.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/python-tools-for-visual-studio.html">Python Tools for Visual Studio</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-03-11T12:58:00+01:00">
+        <i class="icon-calendar"></i>Fr 11 März 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://pytools.codeplex.com/wikipage?title=NumPy%20and%20SciPy%20for%20.Net">Python Tools for Visual Studio</a>. Wer auf Windows sitzt und Zahlenfresser ist - SciPy und NumPy sind da jetzt direkt in der .NET Plattform verfügbar mit diesen Tools. Und ich frage mich, warum Apple sowas nicht mit XCode mitliefert, denn das würde sicherlich im Umfeld der Universitäten Anklang finden (man denke …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/python-tools-for-visual-studio.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/fantasm-project-hosting-on-google-code.html">fantasm - Project Hosting on Google Code</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-03-08T06:45:00+01:00">
+        <i class="icon-calendar"></i>Di 08 März 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://code.google.com/p/fantasm/">fantasm - Project Hosting on Google Code</a>. Unbedingt mal angucken, eine Workflow-Engine in Python. Sowas könnte für Projekte auf der Arbeit recht interessant werden.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/fantasm-project-hosting-on-google-code.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pyjamas-python-javascript-compiler-desktop-widget-set-and-ria-web-framework.html">Pyjamas - Python Javascript Compiler, Desktop Widget Set and RIA Web Framework</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-03-07T14:40:00+01:00">
+        <i class="icon-calendar"></i>Mo 07 März 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://pyjs.org/">Pyjamas - Python Javascript Compiler, Desktop Widget Set and RIA Web Framework</a>. Hatte ich im alten Blog schon mal, aber a) hat sich ne Menge getan und b) kams mal wieder heute hoch als Thema, also nochmal geblogmarkt.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pyjamas-python-javascript-compiler-desktop-widget-set-and-ria-web-framework.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pypy-status-blog-pypy-winter-sprint-report.html">PyPy Status Blog: PyPy Winter Sprint Report</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-02-16T13:25:00+01:00">
+        <i class="icon-calendar"></i>Mi 16 Februar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://morepypy.blogspot.com/2011/02/pypy-winter-sprint-report.html">PyPy Status Blog: PyPy Winter Sprint Report</a>. Wichtigster Punkt: fast-forward ist in Trunk, womit die nächste Version von PyPy also definitiv 2.7er Kompatibilität bekommt.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pypy-status-blog-pypy-winter-sprint-report.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/scgi-wsgi-1-1-released-allan-saddis-projects-blog.html">scgi-wsgi 1.1 released - Allan Saddi's projects blog</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-02-08T12:39:00+01:00">
+        <i class="icon-calendar"></i>Di 08 Februar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.saddi.com/software/news/archives/80-scgi-wsgi-1.1-released.html">scgi-wsgi 1.1 released - Allan Saddi's projects blog</a> - bisher benutzen wir seinen FLUP basierten Server, der in Django mitkommt, aber die Möglichkeit auf mod_prox_scgi zu gehen wäre schon interessant, weil wir effektiv einen Server dazwischen einsparen könnten und nicht mehr mit ajp arbeiten müssen. Wobei allerdings ajp auch …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/scgi-wsgi-1-1-released-allan-saddis-projects-blog.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/rur-ple.html">RUR-PLE</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-02-07T11:40:00+01:00">
+        <i class="icon-calendar"></i>Mo 07 Februar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://rur-ple.sourceforge.net/">RUR-PLE</a> ist sowas wie Logo, nur eben mit Python anstelle von Logo als Sprache. Also eigentlich nur die grafische Umgebung von typischen Logo-Implementierungen. Auf jeden Fall ein nettes Spielzeug.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/rur-ple.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/how-to-write-vim-plugins-with-python.html">How to write vim plugins with python</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-02-05T17:07:00+01:00">
+        <i class="icon-calendar"></i>Sa 05 Februar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://brainacle.com/how-to-write-vim-plugins-with-python.html">How to write vim plugins with python</a>. Weil ich Python mag, weil ich Vim mag und weil man immer mal wieder kleinere Sachen bauen will die einem das Leben erleichtern. Und weil die Script-Sprache von Vim selber doch eher grausig ist.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/how-to-write-vim-plugins-with-python.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pyglet.html">pyglet</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-02-01T11:07:00+01:00">
+        <i class="icon-calendar"></i>Di 01 Februar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.pyglet.org/">pyglet</a> könnte ich mir mal angucken, schaut nach einer netten kleinen Library für simple Oberfläche aus. Ok, wird als Game-Library bezeichnet, für mich ist es aber eher als simple GUI-Bibliothek für kleine Python-Tools interessant. Auf der <a href="http://www.cognitiones.de/doku.php/pyglet">Schockwelle</a> gefunden.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pyglet.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/cfbolz-pyrolog-overview-%e2%80%93-bitbucket.html">cfbolz / Pyrolog / overview – Bitbucket</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-01-30T13:55:00+01:00">
+        <i class="icon-calendar"></i>So 30 Januar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://bitbucket.org/cfbolz/pyrolog/overview">cfbolz / Pyrolog</a>. Interessantes Projekt, weil das Prolog in Python geschrieben ist, aber die PyPy Toolchain für den JIT benutzt - das gibt einen schönen Einblick was mit PyPy neben Python alles möglich ist.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/cfbolz-pyrolog-overview-%e2%80%93-bitbucket.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/sho-microsoft-research.html">Sho - Microsoft Research</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-01-28T13:08:00+01:00">
+        <i class="icon-calendar"></i>Fr 28 Januar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://research.microsoft.com/en-us/projects/sho/">Sho - Microsoft Research</a>. So ein bischen wie SciPy und Sage (dem Teil von Sage, der sich mit Datenanalyse und -visualisierung beschäftigt), nur auf IronPython und .NET aufbauend.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sho-microsoft-research.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pypy-status-blog-pypy-wants-you.html">PyPy Status Blog: PyPy wants you!</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-01-21T21:37:00+01:00">
+        <i class="icon-calendar"></i>Fr 21 Januar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://morepypy.blogspot.com/2011/01/pypy-wants-you.html">PyPy Status Blog: PyPy wants you!</a> - yay! Fast-forward in PyPy gemerged! Das bedeutet bald ein 2.7 kompatibles PyPy - das Projekt sucht jetzt Contributoren, die 2.7 Features implementieren, die noch fehlen. Die nächste PyPy Version wird sehr interessant!.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pypy-status-blog-pypy-wants-you.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/tail-call-optimization-decorator-%c2%ab-python-recipes-%c2%ab-activestate-code.html">Tail Call Optimization Decorator « Python recipes « ActiveState Code</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-01-21T11:46:00+01:00">
+        <i class="icon-calendar"></i>Fr 21 Januar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://code.activestate.com/recipes/474088/">Tail Call Optimization Decorator</a> - jemand hat Python Tailrecursion beigebracht, als Dekorator. Sehr cool. Jemand anderes hat das aufgegriffen und <a href="http://code.activestate.com/recipes/496691-new-tail-recursion-decorator/">zwei schnellere Versionen gebaut</a>, die allerdings kleine Einschränkungen in der Nutzung haben. Und bei LTU hat auch <a href="http://lambda-the-ultimate.org/node/1331#comment-15165">jemand eine Version gemacht</a> - besonders cool an der ist eigentlich nur, dass er mein …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/tail-call-optimization-decorator-%c2%ab-python-recipes-%c2%ab-activestate-code.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/appscript.html">appscript</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-01-18T00:20:00+01:00">
+        <i class="icon-calendar"></i>Di 18 Januar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/ruby.html"><i class="icon-tag"></i>Ruby</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://appscript.sourceforge.net/index.html">appscript</a> liefert eine recht interessante Bridge zwischen verschiedenen Sprache (Python, Ruby und Objective-C) und Apple Events (der Basis von AplleScript). Wer wie ich die etwas byzantinische Form von AppleScript nicht so mag, kann also auvh auf andere Sprachen ausweichen..</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/appscript.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pyrates-are-cool-%e2%80%94-a-wiki-about-python-game-development.html">Pyrates are cool — A wiki about python game development</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-01-17T11:01:00+01:00">
+        <i class="icon-calendar"></i>Mo 17 Januar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://pyratesarecool.appspot.com/">Pyrates are cool — A wiki about python game development</a>. Drin was drauf steht. Sicherlich nicht alle Sachen verlinkt, aber ist ja ein Wiki, und als Startpunkt für jemanden der gucken will was so alles rund um Spiele mit Python passiert vielleicht ganz interessant.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pyrates-are-cool-%e2%80%94-a-wiki-about-python-game-development.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/clpython-an-implementation-of-python-in-common-lisp.html">CLPython - an implementation of Python in Common Lisp</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-01-16T21:34:00+01:00">
+        <i class="icon-calendar"></i>So 16 Januar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://common-lisp.net/project/clpython/">CLPython - an implementation of Python in Common Lisp</a>. Einfach weil es zwei meiner Lieblingssprachen verheiratet und pure-Python-Libraries für Common Lisp verfügbar macht. Viellericht sieht jetzt der eine oder andere wohin meine Suche geht - den Kuchen essen und ihn behalten. CLPython ist übrigens zu Python 2.5 kompatibel, also sogar ein …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/clpython-an-implementation-of-python-in-common-lisp.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/about-dirigible.html">About Dirigible</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-01-14T10:37:00+01:00">
+        <i class="icon-calendar"></i>Fr 14 Januar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/webservice.html"><i class="icon-tag"></i>Webservice</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.projectdirigible.com/about/">About Dirigible</a> - für all die, die ein Spreadsheet in der Wolke wollen, aber nicht wie bei Google Docs mit JavaScript programmieren wollen, sondern mit Python. Als selbstgehostete Lösung fänd ich es ja richtig klasse, speziell wegen der dort beschriebenen einfachen Verknüpfung von Spreadsheets über Servergrenzen.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/about-dirigible.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/emscripten-python.html">Emscripten: Python</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-27T16:49:00+01:00">
+        <i class="icon-calendar"></i>Mo 27 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://syntensity.com/static/python.html">Emscripten: Python</a>. Ziemlich cool, eine Crosscompilation des Standard-Python nach JavaScript mit Hilfe von Emscripten. Und damit ein volles Python 2.7  (minus vieler Libraries natürlich) im Browserfenster.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/emscripten-python.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pyfilesystem-project-hosting-on-google-code.html">pyfilesystem - Project Hosting on Google Code</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-27T16:41:00+01:00">
+        <i class="icon-calendar"></i>Mo 27 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://code.google.com/p/pyfilesystem/">pyfilesystem - Project Hosting on Google Code</a>. Könnte mal nützlich sein, wenn man von Python über einheitlichen Code auf verschiedene Filesystemtypen zugreifen will.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pyfilesystem-project-hosting-on-google-code.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/ipython-as-a-system-shell-%e2%80%94-ipython-v0-11-alpha1-git-documentation.html">IPython as a system shell — IPython v0.11.alpha1.git documentation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-24T20:37:00+01:00">
+        <i class="icon-calendar"></i>Fr 24 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://ipython.scipy.org/doc/manual/html/interactive/shell.html">IPython as a system shell</a> erklärt die Funktion des sh Profils für iPython. Muss ich mal mit rumspielen, denn Python als Systemshell kann schon sehr hilfreich sein.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/ipython-as-a-system-shell-%e2%80%94-ipython-v0-11-alpha1-git-documentation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/python-package-index-futures-2-0.html">Python Package Index : futures 2.0</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-22T17:29:00+01:00">
+        <i class="icon-calendar"></i>Mi 22 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://pypi.python.org/pypi/futures">Python Package Index : futures 2.0</a>. Gerade drüber gestolpert, ist eines der Features neu in Python 3.2, die Referenzimplementation läuft aber auch mit Python 2.6. Macht im Prinzip sowas wie mein <a href="https://bitbucket.org/rfc1437/lazypy">lazypy</a> und <a href="https://bitbucket.org/rfc1437/lindypy">lindypy</a> (also löst die gleichen Probleme, aber auf leicht andere Art).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/python-package-index-futures-2-0.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/alex-gaynor-getting-the-most-out-of-tox.html">Alex Gaynor -- Getting the most out of tox</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-20T13:41:00+01:00">
+        <i class="icon-calendar"></i>Mo 20 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://alexgaynor.net/2010/dec/17/getting-most-out-tox/">Alex Gaynor -- Getting the most out of tox</a>. Müsste ich mir mal angucken - derzeit bin ich ja noch recht faul beim Erstellen von unittests für meine Projekte, in der Regel teste ich nur gegen die eine Python-Version mit der ich primär arbeite und auch bei den Abhängigkeiten nehm ich nur …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/alex-gaynor-getting-the-most-out-of-tox.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/coleiferpeewee-at-master-github.html">coleifer/peewee at master - GitHub</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-18T12:36:00+01:00">
+        <i class="icon-calendar"></i>Sa 18 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/coleifer/peewee/">coleifer/peewee at master - GitHub</a>. Hatte ich bestimmt schon, kleiner ORM für Python der an Django angelehnt ist und mit sqlite tut. Gerade für kleine Webservices interessant, wenn man eben nicht ein großes Framework reinziehen will, sondern einfach nur den Code etwas lesbarer gestalten will. Vorsicht: unterstützt direkt keine vom …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/coleiferpeewee-at-master-github.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/middleware_and_utilities-wsgi-wiki.html">Middleware_and_Utilities - WSGI Wiki</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-18T12:13:00+01:00">
+        <i class="icon-calendar"></i>Sa 18 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.wsgi.org/wsgi/Middleware_and_Utilities">Middleware_and_Utilities - WSGI Wiki</a>. Wenn man mit wsgi als Basis arbeitet, ist es eine gute Idee hier zu gucken was es an WSGI Applikationen und Middleware schon so alles gibt.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/middleware_and_utilities-wsgi-wiki.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/python-package-index-urlrelay-0-7-1.html">Python Package Index : urlrelay 0.7.1</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-18T11:59:00+01:00">
+        <i class="icon-calendar"></i>Sa 18 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://pypi.python.org/pypi/urlrelay/">Python Package Index : urlrelay 0.7.1</a>. Webservices mit gevent als Basis brauchen URL dispatching, urlrelay scheint da eine interessante kleine WSGI-Library zu sein, die im Gegensatz zu anderen Systemen nur genau das macht und nichts anderes.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/python-package-index-urlrelay-0-7-1.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/bottle-python-web-framework-%e2%80%94-bottle-v0-9-dev-documentation.html">Bottle: Python Web Framework — Bottle v0.9.dev documentation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-16T00:37:00+01:00">
+        <i class="icon-calendar"></i>Do 16 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://bottle.paws.de/docs/dev/index.html#">Bottle: Python Web Framework</a> sollte ich mir auch mal als Alternative angucken zu web.py - denn in Bottle ist die App einfach eine Sammlung von Funktionen mit Routen und Mappings und nicht immer gleich eine Klasse. Ausserdem können die Funktionen für unterschiedliche Verben verschiedene Parameter haben und JSON wird direkt …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/bottle-python-web-framework-%e2%80%94-bottle-v0-9-dev-documentation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/nicholas-piel-%c2%bb-benchmark-of-python-web-servers.html">Nicholas Piël » Benchmark of Python Web Servers</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-15T11:37:00+01:00">
+        <i class="icon-calendar"></i>Mi 15 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://nichol.as/benchmark-of-python-web-servers">Nicholas Piël » Benchmark of Python Web Servers</a>. Sehr interessantes Benchmarking, ich muss mir definitiv gevent angucken, die Leistung in den Tests ist schon beeindruckend. <strong>Update</strong>: nachdem ich mir gevent angeguckt habe - ich bin beeindruckt. Für Webservices muss man aufpassen: gevent.wsgi unterstützt nur GET und POST, nur gevent.pywsgi unterstützt …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/nicholas-piel-%c2%bb-benchmark-of-python-web-servers.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pyquery-a-jquery-like-library-for-python-%e2%80%94-pyquery-v0-6-1-documentation.html">pyquery: a jquery-like library for python — pyquery v0.6.1 documentation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-07T13:09:00+01:00">
+        <i class="icon-calendar"></i>Di 07 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://packages.python.org/pyquery/">pyquery: a jquery-like library for python — pyquery v0.6.1 documentation</a>. Drin was drauf steht. Im Prinzip ein subset von dem was jQuery kann, da jQuery eigene Selektorerweiterungen hat und das hier einfach auf lxml aufsetzt (aber dafür dann vollständige css3 Selektorenunterstützung hat).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pyquery-a-jquery-like-library-for-python-%e2%80%94-pyquery-v0-6-1-documentation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/stream-%e2%80%93-lazily-evaluated-parallelizable-pipeline-%e2%80%94-stream-v0-8-documentation.html">stream – Lazily-evaluated, parallelizable pipeline — stream v0.8 documentation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-07T11:04:00+01:00">
+        <i class="icon-calendar"></i>Di 07 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.trinhhaianh.com/stream.py/">stream – Lazily-evaluated, parallelizable pipeline — stream v0.8 documentation</a>. Interessantes kleines Modul zur einfacheren Programmierung von Berechnungsketten mit Iteratoren. Macht Sourcecode deutlich kompakter für passende Anwendungsfälle (z.B. Transformationen und Selektionen von Massendaten). Geblogmarkt, da ich sowas diverse male selber adhoc innerhalb Projekten implementiert habe.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/stream-%e2%80%93-lazily-evaluated-parallelizable-pipeline-%e2%80%94-stream-v0-8-documentation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/about-pyconditions-about-the-module-project-hosting-on-google-code.html">About - pyconditions - About the module - Project Hosting on Google Code</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-07T10:28:00+01:00">
+        <i class="icon-calendar"></i>Di 07 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://code.google.com/p/pyconditions/wiki/About">About - pyconditions - About the module - Project Hosting on Google Code</a>. Noch eine andere Implementierung von Common Lisp Conditions in Python.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/about-pyconditions-about-the-module-project-hosting-on-google-code.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/python-package-index-withrestart-0-2-6.html">Python Package Index : withrestart 0.2.6</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-07T10:24:00+01:00">
+        <i class="icon-calendar"></i>Di 07 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://pypi.python.org/pypi/withrestart/0.2.6">Python Package Index : withrestart 0.2.6</a>. Klingt ganz interessant - die interaktiven Restarts von Common Lisp sind oft sehr praktisch, gerade bei interaktivem Arbeiten.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/python-package-index-withrestart-0-2-6.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/home-%e2%80%94-pyclewn.html">Home — pyclewn</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-06T23:40:00+01:00">
+        <i class="icon-calendar"></i>Mo 06 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://pyclewn.sourceforge.net/index.html">pyclewn</a>. Weiss noch nicht ob ich da mich reinwühlen will - ich benutze Debugger eigentlich nicht. Aber der hier ist in Vim integriert und damit direkt aus dem Editor nutzbar. Genutzt werden kann gdb und pdb (für Python).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/home-%e2%80%94-pyclewn.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/vim-taglist-plugin-manual.html">Vim Taglist plugin manual</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-06T20:26:00+01:00">
+        <i class="icon-calendar"></i>Mo 06 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/editor.html"><i class="icon-tag"></i>Editor</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://vim-taglist.sourceforge.net/manual.html">Vim Taglist plugin manual</a>. Ein weiterer wichtiger Baustein um mit dem MacVim richtig arbeiten zu können. Empfehlenswert sich auch mit brew install ctags das exuberant-ctags zu installieren, wenn man richtige Sprachen benutzen will (wie z.B. Python).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/vim-taglist-plugin-manual.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/vim-autocomplete-django-and-virtualenv-rosemanblog.html">Vim autocomplete, Django and virtualenv | rosemanblog</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-04T23:15:00+01:00">
+        <i class="icon-calendar"></i>Sa 04 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://blog.roseman.org.uk/2010/04/21/vim-autocomplete-django-and-virtualenv/">Vim autocomplete, Django and virtualenv | rosemanblog</a>. Besonders die Integration von VirtualEnv und MacVim ist hilfreich, weil sonst Omnicomplete nicht sauber mit VirtualEnv zusammenarbeitet, da es nix von den dort liegenden Modulen weiss. Übrigens ist das Installieren von MacVim mit Homebrew trivial ...</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/vim-autocomplete-django-and-virtualenv-rosemanblog.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/agr-ropevim-source-%e2%80%93-bitbucket.html">agr / ropevim / source – Bitbucket</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-01T10:25:00+01:00">
+        <i class="icon-calendar"></i>Mi 01 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://bitbucket.org/agr/ropevim/src">agr / ropevim / source – Bitbucket</a>. Auch für das andere Tool, das mich an Spyder interessiert hat, gibt es eine Vim-Integration: Rope. Ein Refactoring Tool für Python Code. Bei einer genügend großen Codebasis nicht ganz uninteressant.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/agr-ropevim-source-%e2%80%93-bitbucket.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pyflakes-vim-pyflakes-on-the-fly-python-code-checking-vim-online.html">pyflakes.vim - PyFlakes on-the-fly Python code checking : vim online</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-12-01T10:22:00+01:00">
+        <i class="icon-calendar"></i>Mi 01 Dezember 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.vim.org/scripts/script.php?script_id=2441">pyflakes.vim - PyFlakes on-the-fly Python code checking : vim online</a>. Gucke ich mir auch gerade an, denn es liefert einige interessante Tools für Python und speziell mit MacVim zusammen ist es recht gut zu benutzen.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pyflakes-vim-pyflakes-on-the-fly-python-code-checking-vim-online.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/spyderlib-project-hosting-on-google-code.html">spyderlib - Project Hosting on Google Code</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-11-30T18:52:00+01:00">
+        <i class="icon-calendar"></i>Di 30 November 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/editor.html"><i class="icon-tag"></i>Editor</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://code.google.com/p/spyderlib/">spyderlib - Project Hosting on Google Code</a>. Guck ich mir gerade an, ist ein ziemlich interessantes Python Editor Teil mit vielen IDE Funktionen. Da es selber in Python geschrieben ist, integrieren sich diverse Python Tools sehr gut (Rope, Flake, PyLint).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/spyderlib-project-hosting-on-google-code.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/python-package-index-lupa-0-18.html">Python Package Index : lupa 0.18</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-11-29T12:02:00+01:00">
+        <i class="icon-calendar"></i>Mo 29 November 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/lua.html"><i class="icon-tag"></i>Lua</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://pypi.python.org/pypi/lupa/0.18">Python Package Index : lupa 0.18</a>. Bringt LuaJIT2 und Python zusammen, so dass man von Python auf Lua-Scripte zugreifen kann, die dann von LuaJIT kompiliert werden.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/python-package-index-lupa-0-18.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pypy-status-blog-pypy-1-4-ouroboros-in-practice.html">PyPy Status Blog: PyPy 1.4: Ouroboros in practice</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-11-27T22:15:00+01:00">
+        <i class="icon-calendar"></i>Sa 27 November 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://morepypy.blogspot.com/2010/11/pypy-14-ouroboros-in-practice.html">PyPy Status Blog: PyPy 1.4: Ouroboros in practice</a>. Und damit ist PyPy jetzt auch bei der JIT in 64bit angekommen. Ausserdem funktioniert VirtualEnv jetzt problemlos, wenn man eine aktuelle Version installiert. Und schnell ist es auch immer noch.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pypy-status-blog-pypy-1-4-ouroboros-in-practice.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/blogofile.html">Blogofile</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-11-22T15:48:00+01:00">
+        <i class="icon-calendar"></i>Mo 22 November 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/blogging.html"><i class="icon-tag"></i>Blogging</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.blogofile.com/">Blogofile</a> - bin ich drüber gestolpert, als ich überlegt hab was ich mache. Eine der vielen statischen Blogmaschinen in Python mit Git-Integration. Könnte für kleinere Sites unter Umständen mal interessant werden (oder z.B. für ein Metablog).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/blogofile.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/ultimatevimpythonsetup-launchpad-development.html">UltimateVimPythonSetup - Launchpad Development</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-11-22T11:11:00+01:00">
+        <i class="icon-calendar"></i>Mo 22 November 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>Aus der Abteilung "pimp my Vim": <a href="https://dev.launchpad.net/UltimateVimPythonSetup">UltimateVimPythonSetup</a>. Ich bin ja durchaus Vim Fan, und einige der Tips da drin klingen ganz interessant. Allerdings geht mir manches dann auch ein bischen zu weit, mein Grund Vim zu benutzen ist ja gerade dass ich keine IDE will, sondern einen Editor der hauptsächlich …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/ultimatevimpythonsetup-launchpad-development.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pyfpdf-project-hosting-on-google-code.html">pyfpdf - Project Hosting on Google Code</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-11-19T13:44:00+01:00">
+        <i class="icon-calendar"></i>Fr 19 November 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://code.google.com/p/pyfpdf/">pyfpdf</a> liefert PDF Generierung ohne Abhängigkeiten von anderen Paketen. Allerdings steht da vorne ein "ported from PHP" dran. Aber wen das nicht abschreckt und wer einfache Ausgaben in PDF produzieren will, ist damit vielleicht garnicht so schlecht bedient.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pyfpdf-project-hosting-on-google-code.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/mincemeat-py-mapreduce-on-python.html">mincemeat.py: MapReduce on Python</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-11-19T13:18:00+01:00">
+        <i class="icon-calendar"></i>Fr 19 November 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://remembersaurus.com/mincemeatpy/">mincemeat.py: MapReduce on Python</a> hatte ich glaub ich schon im alten Blog, ist aber so interessant, dass ich mir nochmal einen Marker setzen will. Speziell weil ich da jetzt ein konkretes Beispiel habe wo ich es sinnvoll einsetzen könnte.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/mincemeat-py-mapreduce-on-python.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+
+        <div class="pagination">
+        <ul>
+                        <li class="prev"><a href="https://rfc1437.github.io/tag/python.html">&larr; Previous</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/tag/python.html">1</a></li>
+                        <li class="active"><a href="https://rfc1437.github.io/tag/python2.html">2</a></li>
+                        <li class="next disabled"><a href="#">&rarr; Next</a></li>
+        </ul>
+        </div>
+
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://palletsprojects.com/p/jinja/"><i class="icon-external-link"></i>Jinja2</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="https://rfc1437.github.io/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://github.com/rfc1437/"><i class="icon-github-sign icon-large"></i>github</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="https://rfc1437.github.io/category/artikel.html">
+    <i class="icon-folder-open icon-large"></i>Artikel
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/asides.html">
+    <i class="icon-folder-open icon-large"></i>Asides
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/galerie.html">
+    <i class="icon-folder-open icon-large"></i>Galerie
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/kochbuch.html">
+    <i class="icon-folder-open icon-large"></i>Kochbuch
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/metaowl.html">
+    <i class="icon-folder-open icon-large"></i>Metaowl
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/misc.html">
+    <i class="icon-folder-open icon-large"></i>misc
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/spielelog.html">
+    <i class="icon-folder-open icon-large"></i>Spielelog
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://rfc1437.github.io/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="https://rfc1437.github.io/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

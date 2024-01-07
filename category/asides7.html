@@ -1,0 +1,2450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hugo's House of Blog Horror - Asides</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="rfc1437">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="https://rfc1437.github.io/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="https://rfc1437.github.io/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="https://rfc1437.github.io/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="https://rfc1437.github.io/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="https://rfc1437.github.io/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://rfc1437.github.io/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://rfc1437.github.io/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://rfc1437.github.io/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="https://rfc1437.github.io/" type="application/atom+xml" rel="alternate" title="Hugo's House of Blog Horror ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="https://rfc1437.github.io/index.html">Hugo's House of Blog Horror </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                  <li><a href="/impressum.html">Imprint</a></li>
+                  <li><a href="/about.html">About</a></li>
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/artikel.html">
+						<i class="icon-folder-open icon-large"></i>Artikel
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="https://rfc1437.github.io/category/asides.html">
+						<i class="icon-folder-open icon-large"></i>Asides
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/galerie.html">
+						<i class="icon-folder-open icon-large"></i>Galerie
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/kochbuch.html">
+						<i class="icon-folder-open icon-large"></i>Kochbuch
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/metaowl.html">
+						<i class="icon-folder-open icon-large"></i>Metaowl
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/misc.html">
+						<i class="icon-folder-open icon-large"></i>misc
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/spielelog.html">
+						<i class="icon-folder-open icon-large"></i>Spielelog
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="https://rfc1437.github.io/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/dirq-1-1-2-documentation.html">dirq 1.1.2 documentation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-05-07T11:10:00+02:00">
+        <i class="icon-calendar"></i>Mo 07 Mai 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://dirq.readthedocs.org/en/latest/index.html">dirq 1.1.2 documentation</a>. Hey, sowas hab ich vor kurzem gesucht - eine Queue, die auf dem Dateisystem aufbaut. Der Vorteil: einfachste Persistenz und gutes "Debugging" in dem man einfach im Dateisystem rumprokelt. Der Nachteil ist dann aber oft, dass Queues einige Operationen atomar ausführen müssen - und das kann dann …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/dirq-1-1-2-documentation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/hotcanvas-realtime-coding.html">Hotcanvas: Realtime coding</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-05-07T10:59:00+02:00">
+        <i class="icon-calendar"></i>Mo 07 Mai 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/webservice.html"><i class="icon-tag"></i>Webservice</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://tamats.com/apps/hotcoding/">Hotcanvas: Realtime coding</a>. Bin ja ein fan von <a href="http://processing.org/">Processing</a>-<a href="http://processingjs.org/">ähnlichen</a> Umgebungen, dies hier kommt dem recht nahe, läuft aber als interaktive Umgebung und sieht ganz nett aus. Ok, gibt sicherlich mitlerweile eine ganze Reihe von diesen Dingern, aber trotzdem, ich mag sowas.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/hotcanvas-realtime-coding.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/bilderarchiv-rfc1437.html">Bilderarchiv | rfc1437</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-05-07T10:48:00+02:00">
+        <i class="icon-calendar"></i>Mo 07 Mai 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://hugo.rfc1437.de/bilderarchiv/">Bilderarchiv | rfc1437</a>. Mein Bilderarchiv wurde übrigens am Wochenende überarbeitet und kommt jetzt mit lustigem Javascript-Schnickschnack zum automatischen Kacheln daher. Nicht wirklich weltbewegend, aber interessanter als das vorherige, eher langweilige Format. <a href="http://masonry.desandro.com/">jQuery Masonry</a> ist der Hauptanteil der Arbeit. Nette kleine Javascript Library. Das interessanteste daran ist warscheinlich die Heuristik in meinem …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/bilderarchiv-rfc1437.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/owncloud-org-your-cloud-your-data-your-way.html">ownCloud.org | Your Cloud, Your Data, Your Way!</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-05-07T10:31:00+02:00">
+        <i class="icon-calendar"></i>Mo 07 Mai 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+	<a href="https://rfc1437.github.io/tag/webservice.html"><i class="icon-tag"></i>Webservice</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://owncloud.org/">ownCloud.org | Your Cloud, Your Data, Your Way!</a>. Das werde ich definitiv weiter beobachten, denn wenn da der OSX Desktop Client da ist und der iOS Client, dann wird das eine ganz deutliche Alternative zu Google Drive, Dropbox oder SkyDrive für mich. Den eigenen Server habe ich schließlich sowieso (klassische …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/owncloud-org-your-cloud-your-data-your-way.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/rubymotion-ruby-for-ios.html">RubyMotion - Ruby for iOS</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-05-04T17:30:00+02:00">
+        <i class="icon-calendar"></i>Fr 04 Mai 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/ios.html"><i class="icon-tag"></i>iOS</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/ruby.html"><i class="icon-tag"></i>Ruby</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.rubymotion.com/">RubyMotion - Ruby for iOS</a>. Da mich  MacRuby schon interessiert, klingt das hier auch gut - direkt für iOS programmieren in Ruby. Allerdings gibt es keine freie Version, das schränkt das Ausprobieren dann doch ein bischen ein. Ausserdem ist da nix in einer IDE, das ist Kommandozeile pur. Was zwar ein Vorteil …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/rubymotion-ruby-for-ios.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/mojolicious-perl-real-time-web-framework-2.html">Mojolicious - Perl real-time web framework</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-05-03T11:01:00+02:00">
+        <i class="icon-calendar"></i>Do 03 Mai 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/perl.html"><i class="icon-tag"></i>Perl</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://mojolicio.us/">Mojolicious - Perl real-time web framework</a>. Du hattest ein Problem, du hast Perl genommen. Jetzt hast du zwei Probleme und einen Haufen scharfkantige Klammern, an denen du dich verletzen kannst. Spaß beiseite: nett zu sehen, dass Perl immer noch nicht nur aktiv, sondern auch modern aktiv ist im Web-Umfeld. Immerhin hat …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/mojolicious-perl-real-time-web-framework-2.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/ravendb-2nd-generation-document-database.html">RavenDB - 2nd generation document database</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-27T22:46:00+02:00">
+        <i class="icon-calendar"></i>Fr 27 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/datenbank.html"><i class="icon-tag"></i>Datenbank</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://ravendb.net/">RavenDB - 2nd generation document database</a>. Geblogmarkt weil ich mir das mal in der nicht zu fernen Zukunft angucken will. Klingt von den Features her recht interessant und ist vielleicht für das eine oder andere Projekt,[ ]{style="line-height: 24px;"}[über das ich zur Zeit nachdenke, ]{style="line-height: 24px;"}brauchbar.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/ravendb-2nd-generation-document-database.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/jsil-net-to-javascript-compiler.html">JSIL - .NET to JavaScript compiler</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-27T22:38:00+02:00">
+        <i class="icon-calendar"></i>Fr 27 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/dotnet.html"><i class="icon-tag"></i>DotNet</a>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://jsil.org/">JSIL - .NET to JavaScript compiler</a>. Keine Ahnung, ob ich das schon hatte, aber es ist eines dieser verrückten Projekte die man ruhig zweimal linken kann. Da wird wirklich der .NET IL Code übersetzt - man kann also Programme im Browser laufen lassen, die eigentlich nicht wirklich dafür gedacht waren. Zum Beispiel …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/jsil-net-to-javascript-compiler.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/amazon-com-send-to-kindle-for-mac.html">Amazon.com: Send to Kindle for Mac</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-26T10:05:00+02:00">
+        <i class="icon-calendar"></i>Do 26 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/bucher.html"><i class="icon-tag"></i>Bücher</a>
+	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
+	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.amazon.com/gp/feature.html/?ie=UTF8&amp;docId=1000778781">Amazon.com: Send to Kindle for Mac</a>. Könnte ganz nett sein, um die diversen Online-Dokumentationen einfach auf den Kindle zu "drucken" und dort gemütlich zu lesen. Ausserdem landen sie dann potentiell auch gleich auf dem iPhone für unterwegs ...</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/amazon-com-send-to-kindle-for-mac.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/the-buckblogs-here-maze-generation-ellers-algorithm.html">the { buckblogs :here }: Maze Generation: Ellers Algorithm</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-25T21:56:00+02:00">
+        <i class="icon-calendar"></i>Mi 25 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://weblog.jamisbuck.org/2010/12/29/maze-generation-eller-s-algorithm">the { buckblogs :here }: Maze Generation: Ellers Algorithm</a>. Labyrinthalgorithmen faszinieren mich schon seit meiner Jugend, aber der hier war mir neu. Er generiert perfekte Labyrinthe Zeilenweise, ohne Trackback oder Rekursionen, mit einer Laufzeit linear abhängig von der Größe des Labyrinthes. Ziemlich genial das ganze.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/the-buckblogs-here-maze-generation-ellers-algorithm.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/jquery-masonry.html">jQuery Masonry</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-25T17:56:00+02:00">
+        <i class="icon-calendar"></i>Mi 25 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/jquery.html"><i class="icon-tag"></i>jQuery</a>
+	<a href="https://rfc1437.github.io/tag/plugin.html"><i class="icon-tag"></i>Plugin</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://masonry.desandro.com/">jQuery Masonry</a>. Alternative zu BlocksIt. Auch mal angucken. Schiebt Blöcke sogar etwas aggressiver, ordnet auch die Reihenfolge notfalls um.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/jquery-masonry.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/blocksit-js-dynamic-grid-layout-jquery-plugin.html">BlocksIt.js - Dynamic Grid Layout jQuery Plugin</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-25T17:55:00+02:00">
+        <i class="icon-calendar"></i>Mi 25 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/jquery.html"><i class="icon-tag"></i>jQuery</a>
+	<a href="https://rfc1437.github.io/tag/plugin.html"><i class="icon-tag"></i>Plugin</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.inwebson.com/jquery/blocksit-js-dynamic-grid-layout-jquery-plugin/#.T5dO89AARQo.reddit">BlocksIt.js - Dynamic Grid Layout jQuery Plugin</a>. Drin was dran steht. Klingt ganz interessant, muss ich mir mal angucken.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/blocksit-js-dynamic-grid-layout-jquery-plugin.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/kronuzsublimecodeintel.html">Kronuz/SublimeCodeIntel</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-25T11:05:00+02:00">
+        <i class="icon-calendar"></i>Mi 25 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/plugin.html"><i class="icon-tag"></i>Plugin</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/sublimetext.html"><i class="icon-tag"></i>SublimeText</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/Kronuz/SublimeCodeIntel">Kronuz/SublimeCodeIntel</a>. CodeIndel ist eine Portierung der Komodo-Code-Intelligence nach SublimeText2. Damit kann man dann ST2 schon fast als IDE bezeichnen.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/kronuzsublimecodeintel.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/cubism-js.html">Cubism.js</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-25T10:36:00+02:00">
+        <i class="icon-calendar"></i>Mi 25 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://square.github.com/cubism/">Cubism.js</a>. So viele Projekte, so wenig Zeit. Aber mal geblogmarkt, wenn ich mal in der nächsten Zukunft mit Zeitreihenvisualisierung zu tun habe, denn dafür sieht das richtig gut aus.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/cubism-js.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/jlongsterdcpu-lisp.html">jlongster/dcpu-lisp</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-24T13:44:00+02:00">
+        <i class="icon-calendar"></i>Di 24 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/weird.html"><i class="icon-tag"></i>Weird</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/jlongster/dcpu-lisp">jlongster/dcpu-lisp</a>. Warum das cool ist? Nun ja, <a href="http://notch.tumblr.com/">Notch</a> hat ein <a href="http://0x10c.com/">neues Spiel</a> in der Mache - sowas wie Elite mit integriertem Hacken. Und das Hacken passiert auf einer 16bit CPU die an einen 6502 angelehnt ist. Und jetzt bauen alle möglichen Leute Code für diese CPU. Unter anderem eben hier …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/jlongsterdcpu-lisp.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/subrepository-mercurial.html">Subrepository - Mercurial</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-24T11:08:00+02:00">
+        <i class="icon-calendar"></i>Di 24 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://mercurial.selenic.com/wiki/Subrepository">Subrepository - Mercurial</a>. Schon peinlich, was man so immer mal wieder entdeckt und feststellt, dass man es eigentlich schon lange nutzen sollte, aber nicht macht. Besonders der Tipp mit dem "shallow main repository" klingt gut, das könnte einige der Organisationen meiner Projekte vereinfachen. Bisher habe ich Subrepositories eben genau wegen der …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/subrepository-mercurial.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/645-pro-app-for-iphone-offers-access-to-lossless-camera-output-but-not-raw-digital-photography-review.html">645 PRO app for iPhone offers access to lossless camera output but not Raw: Digital Photography Review</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-23T22:16:00+02:00">
+        <i class="icon-calendar"></i>Mo 23 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/ios.html"><i class="icon-tag"></i>iOS</a>
+	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.dpreview.com/news/2012/04/20/645-PRo-offers-camera-control-and-uncompressed-output">645 PRO app for iPhone offers access to lossless camera output but not Raw</a>. Klingt ganz interessant, aber nicht so sehr wegen des Pseudo-RAW - da werden nicht wirklich so riesige Unterschiede sein - sondern wegen des User-Interfaces, denn das ist deutlich näher an einer normalen Kamera angelehnt und spuckt auch ein …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/645-pro-app-for-iphone-offers-access-to-lossless-camera-output-but-not-raw-digital-photography-review.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/thinkup-social-media-insights-platform.html">ThinkUp: Social Media Insights Platform</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-23T21:57:00+02:00">
+        <i class="icon-calendar"></i>Mo 23 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/asocialnetworks.html"><i class="icon-tag"></i>AsocialNetworks</a>
+	<a href="https://rfc1437.github.io/tag/backup.html"><i class="icon-tag"></i>Backup</a>
+	<a href="https://rfc1437.github.io/tag/plugin.html"><i class="icon-tag"></i>Plugin</a>
+	<a href="https://rfc1437.github.io/tag/wordpress.html"><i class="icon-tag"></i>Wordpress</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://thinkupapp.com/">ThinkUp: Social Media Insights Platform</a>. Das will ich mir definitiv angucken - ein Tool, das die eigenen sozialen Aktivitäten (naja, so sozial sind die ja manchmal nicht) sammelt über die diversen APIs und zusammenführt. Und zwar in einer selbst gehosteten Datenbank. Unterstützt Twitter, Facebook und Google+ und wertet die Datensammlung nach …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/thinkup-social-media-insights-platform.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/google-importer-for-wordpress-sutherland-boswell.html">Google+ Importer for WordPress » Sutherland Boswell</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-23T21:37:00+02:00">
+        <i class="icon-calendar"></i>Mo 23 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/plugin.html"><i class="icon-tag"></i>Plugin</a>
+	<a href="https://rfc1437.github.io/tag/wordpress.html"><i class="icon-tag"></i>Wordpress</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://sutherlandboswell.com/projects/google-plus-importer-for-wordpress/">Google+ Importer for WordPress » Sutherland Boswell</a>. Überlege gerade, ob ich das nicht vielleicht mal einbauen will - dadurch werden automatisch die öffentlichen Google+ Postings importiert. Müsste ich dann zwar warscheinlich etwas anpassen, um Asides aus den Postings zu machen, aber das sollte nicht so kompliziert sein. Vielleicht kann es das Tool …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/google-importer-for-wordpress-sutherland-boswell.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/mozilla-archive-format-with-mht-and-faithful-save-add-ons-fur-firefox.html">Mozilla Archive Format, with MHT and Faithful Save :: Add-ons für Firefox</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-23T10:32:00+02:00">
+        <i class="icon-calendar"></i>Mo 23 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/extension.html"><i class="icon-tag"></i>Extension</a>
+	<a href="https://rfc1437.github.io/tag/firefox.html"><i class="icon-tag"></i>Firefox</a>
+	<a href="https://rfc1437.github.io/tag/web.html"><i class="icon-tag"></i>Web</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://addons.mozilla.org/de/firefox/addon/mozilla-archive-format/">Mozilla Archive Format, with MHT and Faithful Save :: Add-ons für Firefox</a>. Heute gefragt worden nach sowas, mein Stand war dann etwas älter, daher nochmal gegoogelt und das hier scheint die derzeit interessanteste Erweiterung zu sein, um komplette Seiten zu speichern (incl. Bildern und Styles und JS). Praktisch z.B. wenn …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/mozilla-archive-format-with-mht-and-faithful-save-add-ons-fur-firefox.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pycounters.html">pycounters</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-23T10:21:00+02:00">
+        <i class="icon-calendar"></i>Mo 23 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://bitbucket.org/bleskes/pycounters/overview">pycounters</a>. Muss ich mir mal angucken, damit kann man recht einfach Counter in ein Projekt integrieren, die Daten über z.B. Funktionsaufrufe oder ähnliches liefern - im Prinzip sowas wie die Windows Performancecounter, nur eben für Python-Projekte.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pycounters.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/parlament-fraktionen-wollen-rederecht-im-bundestag-beschneiden-politik-zeit-online.html">Parlament: Fraktionen wollen Rederecht im Bundestag beschneiden | Politik | ZEIT ONLINE</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-14T10:11:00+02:00">
+        <i class="icon-calendar"></i>Sa 14 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/bananenrepublik.html"><i class="icon-tag"></i>Bananenrepublik</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.zeit.de/politik/deutschland/2012-04/bundestag-rederecht">Parlament: Fraktionen wollen Rederecht im Bundestag beschneiden</a>. Wann wird das Pack endlich vom Verfassungsschutz überwacht? Denn das ist ein erstklassiger Angriff auf das Grundgesetz. Da gibt es nämlich keine Fraktionen, keinen Fraktionszwang und keine Rederechtbeschränkung für Abgeordnete mit eigener Meinung - im Grundgesetz gibt es nur freie Abgeordnete. Und da wundern …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/parlament-fraktionen-wollen-rederecht-im-bundestag-beschneiden-politik-zeit-online.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/virtualenv-clone-0-2-2-python-package-index.html">virtualenv-clone 0.2.2 : Python Package Index</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-12T17:06:00+02:00">
+        <i class="icon-calendar"></i>Do 12 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://pypi.python.org/pypi/virtualenv-clone">virtualenv-clone 0.2.2 : Python Package Index</a>. Noch nicht ausprobiert, aber nach Beschreibung kopiert es virtualenv Environments und repariert Import-Pfade, Egg-Files und .pth Inhalte sowie Scripte. Und soll vollständiger arbeiten als die relocatable virtualenvs.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/virtualenv-clone-0-2-2-python-package-index.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/introducing-pivot-js.html">Introducing Pivot.js</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-12T12:17:00+02:00">
+        <i class="icon-calendar"></i>Do 12 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://jonathan-jackson.net/2012/04/10/introducing-pivotjs">Introducing Pivot.js</a>. Hmm, definitiv mal angucken, Pivot sieht ganz nett aus, simples API und interessante Möglichkeiten. Ich hab da so ein Projekt auf der Arbeit, das könnte einige Reporting-Features gut gebrauchen. Und Offloading auf den Client ist manchmal eine durchaus gute Idee.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/introducing-pivot-js.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/uwsgi.html">uWSGI</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-10T13:22:00+02:00">
+        <i class="icon-calendar"></i>Di 10 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/django.html"><i class="icon-tag"></i>Django</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://projects.unbit.it/uwsgi/">uWSGI</a>. Hatte ich scheinbar noch nicht - ein Kollege hat mich gerade darauf hingewiesen. Könnte besonders für Django-Projekte interessant sein, weil es wesentlich flexiblere Prozesssteuerung und Monitoring bietet als der flup-basierte runfcgi in Django.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/uwsgi.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/abiquetmfs.html">abique/tmfs</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-10T12:54:00+02:00">
+        <i class="icon-calendar"></i>Di 10 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/linux.html"><i class="icon-tag"></i>Linux</a>
+	<a href="https://rfc1437.github.io/tag/os.html"><i class="icon-tag"></i>OS</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/abique/tmfs">abique/tmfs</a>. Mal geblogmarkt, könnte hilfreich werden irgendwann - ein user-space Filesystem für Time Machine Backups unter Linux.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/abiquetmfs.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/offener-brief-an-die-contentindustrie.html">Offener Brief an die Contentindustrie</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-06T17:55:00+02:00">
+        <i class="icon-calendar"></i>Fr 06 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/rechteabzocker.html"><i class="icon-tag"></i>Rechteabzocker</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.scilogs.de/wblogs/blog/sprachlog/sprachwandel/2012-04-06/offener-brief-an-die-contentindustrie">Offener Brief an die Contentindustrie</a>. Der <a href="http://www.schockwellenreiter.de/blog/2012/04/06/was-fur-ein-rant-2/">Schockwellenreiter</a> empfiehlt es und ich kann nur zustimmen: lesen lohnt sich. Das ist mal ein wirklich runder Rant gegen diese erbärmlichen "Contentproduzenten", die sich in offenen Briefen zu herabwürdigenden Tiraden gegen und Lügen über die Netzgemeinde aufstellen lassen.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/offener-brief-an-die-contentindustrie.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/the-unbearable-finality-of-pixel-space.html">the unbearable finality of pixel space</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-05T20:15:00+02:00">
+        <i class="icon-calendar"></i>Do 05 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/php.html"><i class="icon-tag"></i>PHP</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.aaronland.info/weblog/2011/10/14/pixelspace/#parallel-flickr">the unbearable finality of pixel space</a>. Das dort verlinkte Archivierungstool für Flickr <a href="http://fm.rfc1437.de/photos/rfc1437/">hab ich mal ausprobiert</a> und es läuft richtig gut. Da verzeihe ich auch mal das PHP. Ich hab zwar die Flickr-Bilder auch immer mal wieder hier ins Blog geschoben (die "Neulich auf Flickr" Posts), aber der Vorteil dieses …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/the-unbearable-finality-of-pixel-space.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/flatironplates.html">flatiron/plates</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-04-04T16:42:00+02:00">
+        <i class="icon-calendar"></i>Mi 04 April 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/flatiron/plates">flatiron/plates</a>. Eine interessante JavaScript Templating Engine, die einen etwas anderen Ansatz wählt als viele andere - es gibt keine eigene Template-Sprache, sondern nur HTML und JavaScript. Jegliche Logik ist im JavaScript und jegliche Struktur in HTML und beide sind recht stark getrennt. Anstelle einer Template-Sprache gibt es Funktionen zur genauen …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/flatironplates.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/rq-documentation.html">RQ: Documentation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-29T16:52:00+02:00">
+        <i class="icon-calendar"></i>Do 29 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://nvie.github.com/rq/docs/">RQ: Documentation</a>. Hmm, python-job-queue auf Redis-Basis mit einem recht simplen Interface. Könnte eine interessante Alternative zu <a href="http://celeryproject.org/">Celery</a> sein.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/rq-documentation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/kenko-extensions-tube-with-full-electronic-control.html">Kenko extensions tube with full electronic control!</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-29T16:35:00+02:00">
+        <i class="icon-calendar"></i>Do 29 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.43rumors.com/supernews-kenko-extensions-tube-with-full-electronic-control/">Kenko extensions tube with full electronic control!</a>. Woopdidoo. Ok, Extension-Tubes sind nicht das Optimum an Performance, aber trotzdem durchaus interessant, da sie einen recht einfachen und in der Regel kostengünstigen Weg zu besseren Makrofähigkeiten darstellen.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/kenko-extensions-tube-with-full-electronic-control.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/iphone-what-happens-to-javascript-code-after-app-is-compiled-using-titanium-mobile-stack-overflow.html">iphone - What happens to JavaScript code after app is compiled using Titanium Mobile - Stack Overflow</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-29T10:52:00+02:00">
+        <i class="icon-calendar"></i>Do 29 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://stackoverflow.com/questions/4217551/what-happens-to-javascript-code-after-app-is-compiled-using-titanium-mobile">iphone - What happens to JavaScript code after app is compiled using Titanium Mobile - Stack Overflow</a>. Interessierte mich auch, die Frage, daher mal hier geblogmarked. Ganz interessant, was da passiert, geht deutlich weiter als z.B. was PhoneGap macht.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/iphone-what-happens-to-javascript-code-after-app-is-compiled-using-titanium-mobile-stack-overflow.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/titanium-desktop-node-js-prototype-appcelerator-developer-center.html">Titanium Desktop – Node.js Prototype « Appcelerator Developer Center</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-27T13:11:00+02:00">
+        <i class="icon-calendar"></i>Di 27 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://developer.appcelerator.com/blog/2011/06/titanium-desktop-node-js-prototype.html">Titanium Desktop – Node.js Prototype « Appcelerator Developer Center</a>. Titanium steht ja sowieso auf der Liste zu testender Sachen drauf, weil es neben PhoneGap ja einer der Wege ist, wie man JS+HTML Code zu Apps und Desktop-Anwendungen machen kann. Und hier zeigt einer der Developer, wie man einen node-Server in …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/titanium-desktop-node-js-prototype-appcelerator-developer-center.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/embedding-and-running-node-js-within-a-firefox-xul-extension-captains-blog-rawkes.html">Embedding and running Node.js within a Firefox XUL extension | Captains Blog | Rawkes</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-27T13:08:00+02:00">
+        <i class="icon-calendar"></i>Di 27 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://rawkes.com/blog/2011/12/05/running-node.js-from-within-a-firefox-xul-extension">Embedding and running Node.js within a Firefox XUL extension</a>. Schon beeindruckend, was man mit Firefox und dessen Infrastruktur so alles machen kann. Theoretisch müsste man das auch so umbauen können, dass diese Erweiterung nur in einem single-site-browser läuft, der dann direkt die Homepage des eingebetteten Servers öffnet und so …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/embedding-and-running-node-js-within-a-firefox-xul-extension-captains-blog-rawkes.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/nodobjc.html">NodObjC</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-27T09:54:00+02:00">
+        <i class="icon-calendar"></i>Di 27 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/TooTallNate/NodObjC">NodObjC</a>. Keine Ahnung ob ich das wirklich will, aber mit dieser Library kann man ObjC Frameworks mit JavaScript bridgen. Interessant könnte das zum Beispiel im Context von PhoneGap werden, wenn man Zugriffe auf iOS native APIs machen muss, die noch nicht von PhoneGap zur Verfügung gestellt werden (allerdings braucht es …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/nodobjc.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/topcube.html">topcube</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-27T09:43:00+02:00">
+        <i class="icon-calendar"></i>Di 27 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/creationix/topcube">topcube</a>. Sollte ich mir auch mal genauer angucken - eine Desktop-App, welche einen eingebetteten Webserver (node.js) und Browser (GTKWebKit) beinhaltet. Damit kann man dann Desktop-Anwendungen auf Basis von JavaScript und Node.js bauen - z.B. auch Amber Smalltalk in eine kompakte Desktopanwendung umbauen. Leider ist die OSX Unterstützung noch etwas …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/topcube.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/haypopysandbox.html">haypo/pysandbox</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-26T10:52:00+02:00">
+        <i class="icon-calendar"></i>Mo 26 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/haypo/pysandbox">haypo/pysandbox</a>. Mal wieder was zum Angucken: eine Sandkiste für Pythonscripte. Laut Projektbeschreibung nicht unbedingt eine Sicherheitslösung sondern eher nur ein einfacher Schutz für den Python Prozess. Somit wäre es zumindestens als einfache Absicherung eines Hauptprozesses gegen Fehler in Erweiterungsscripten nutzbar.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/haypopysandbox.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/synthcam-for-iphone.html">SynthCam for iPhone</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-23T13:16:00+01:00">
+        <i class="icon-calendar"></i>Fr 23 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/ios.html"><i class="icon-tag"></i>iOS</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://itunes.apple.com/app/synthcam/id412992079?mt=8#">SynthCam for iPhone</a>. Benutzt das Video-Feature der Kamera um darüber einen Effekt ähnlich geringer Schärfentiefe zu erreichen. Was gemacht wird, ist ein Stich aus vielen Einzelbildern, wobei durch Bewegung der Kamera definierte Bereiche (per Tracking) scharf und andere Bereiche unscharf werden. Ziemlich coole Sache.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/synthcam-for-iphone.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/depth-of-field.html">Depth of field</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-23T13:07:00+01:00">
+        <i class="icon-calendar"></i>Fr 23 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/mathematik.html"><i class="icon-tag"></i>Mathematik</a>
+	<a href="https://rfc1437.github.io/tag/wissenschaft.html"><i class="icon-tag"></i>Wissenschaft</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://graphics.stanford.edu/courses/cs178-11/applets/dof.html">Depth of field</a>. Gute Erläuterung was hinter der Schärfentiefe mathematisch wirklich steckt. Durchaus interessant zu lesen wenn man noch nicht so ganz die Zusammenhänge durchschaut (Hint: primärer Faktor ist das Abbildungsverhältnis, alles andere ist nur eine Funktion davon).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/depth-of-field.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/kein-quick-freeze-kanzlerin-drangt-rosler-zur-vorratsdatenspeicherung.html">Kein Quick-Freeze: Kanzlerin drängt Rösler zur Vorratsdatenspeicherung</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-22T09:18:00+01:00">
+        <i class="icon-calendar"></i>Do 22 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/bananenrepublik.html"><i class="icon-tag"></i>Bananenrepublik</a>
+	<a href="https://rfc1437.github.io/tag/bananenunion.html"><i class="icon-tag"></i>Bananenunion</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.golem.de/news/kein-quick-freeze-kanzlerin-draengt-roesler-zur-vorratsdatenspeicherung-1203-90681.html">Kein Quick-Freeze: Kanzlerin drängt Rösler zur Vorratsdatenspeicherung</a>. Ist doch lustig, oder? Da will eine EU Komission etwas, das in mehreren Mitgliedsländern als verfassungswidrig abgelehnt wurde, teilweise von Gerichten gestoppt. Da ist eine Kanzlerin, die vom Bundesverfassungsgericht schon einen drüber bekommen hat, weil sie ein verfassungswidriges Gesetzt durchgeprügelt hat. Da ist …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/kein-quick-freeze-kanzlerin-drangt-rosler-zur-vorratsdatenspeicherung.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/boo-getting-started.html">BOO - Getting Started</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-19T11:27:00+01:00">
+        <i class="icon-calendar"></i>Mo 19 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/boo.html"><i class="icon-tag"></i>Boo</a>
+	<a href="https://rfc1437.github.io/tag/dotnet.html"><i class="icon-tag"></i>DotNet</a>
+	<a href="https://rfc1437.github.io/tag/mono.html"><i class="icon-tag"></i>Mono</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://boo.codehaus.org/Getting+Started">BOO - Getting Started</a>. Nach langer Zeit mal wieder Boo angeguckt und mir gefällt was dort passiert. Immer noch sehr stark an Python angelehnt was die Syntax angeht, bei der Semantik aber deutlich davon abweichend - zum Beispiel echte Makros in verschiedenen Variationen, so dass es wirklich eine erweiterte Syntax gibt. Oder …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/boo-getting-started.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pyp-python-power-at-the-prompt-google-project-hosting.html">pyp - Python Power at the Prompt - Google Project Hosting</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-16T14:36:00+01:00">
+        <i class="icon-calendar"></i>Fr 16 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://code.google.com/p/pyp/">pyp - Python Power at the Prompt - Google Project Hosting</a>. Da ich lieber mit Python als mit awk oder perl rumspiele, ist das hier ein recht interessantes Tool. Man kann damit Textfiles mit ähnlichen Features bearbeiten wie mit awk und perl. Und auch das ganze als Einzeiler - pyp definiert dafür einfach …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pyp-python-power-at-the-prompt-google-project-hosting.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/gprowl.html">Gprowl</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-15T15:09:00+01:00">
+        <i class="icon-calendar"></i>Do 15 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/mobil.html"><i class="icon-tag"></i>Mobil</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://sourceforge.net/projects/gprowl/">Gprowl</a> ist ein nettes kleines Script, das einen GMail Account überwacht und Messages schickt, wenn da eine Nachricht im Posteingang auftaucht. Damit kann man sich z.B. Push-Notifications bauen, wenn man Sparrow benutzt (das noch keine Push-Notifications unterstützt). Geht natürlich auch mit forwarding und BoxCar, aber ich will eigentlich nicht …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/gprowl.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/clojure-py.html">Clojure-Py</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-13T15:56:00+01:00">
+        <i class="icon-calendar"></i>Di 13 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://clojure-py.blogspot.com/">Clojure-Py</a>. Noch kann ich nicht so genau sagen was ich davon halte, aber jemand baut Clojure (die Sprache) mit Python und PyPy als Zielplattform. Grundsätzlich sicherlich eine interessante Idee, denn die LLVM-basierte JIT Implementierung von PyPy kann ja auch durchaus andere Sachen kompilieren. Und da ich sowohl ein Python als …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/clojure-py.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/lensrentals-com-undressing-an-nex.html">LensRentals.com - Undressing an NEX</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-12T09:16:00+01:00">
+        <i class="icon-calendar"></i>Mo 12 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/nex.html"><i class="icon-tag"></i>NEX</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://www.lensrentals.com/blog/2012/03/undressing-an-nex">LensRentals.com - Undressing an NEX</a>. Sehr interessant, mal ein ganz anderer Blick auf eine Kamera - auf die Innereien. Auch wenn früher bei den mechanischen Kameras das ganze irgendwie interessanter war, ich finde auch die "inneren Werte" der NEX recht beeindruckend. Oh, und als System haben die Linux (leider immer noch …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/lensrentals-com-undressing-an-nex.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/create-a-package-for-ios-kivy-1-1-2-dev-documentation.html">Create a package for IOS — Kivy 1.1.2-dev documentation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-12T09:09:00+01:00">
+        <i class="icon-calendar"></i>Mo 12 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/ios.html"><i class="icon-tag"></i>iOS</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://kivy.org/docs/guide/packaging-ios.html">Create a package for IOS — Kivy 1.1.2-dev documentation</a>. Kivy - ein GUI Framework für Python - bietet jetzt auch einen Weg die Anwendung für iOS zu packen und zum Beispiel auf einem iPad laufen zu lassen. Keine Ahnung ob das dann auch wirklich im AppStore aktzeptiert wird, die Programmierer haben …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/create-a-package-for-ios-kivy-1-1-2-dev-documentation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/wbondsublime_package_control.html">wbond/sublime_package_control</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-10T22:12:00+01:00">
+        <i class="icon-calendar"></i>Sa 10 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/editor.html"><i class="icon-tag"></i>Editor</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/wbond/sublime_package_control">wbond/sublime_package_control</a>. Das ist allerdings sehr interessant - so langsam scheint sich Ecosystem rund um Sublime Text 2 zu bauen, ähnlich wie bei vim oder TextMate. Macht die Integration von Erweiterungen auf Dauer einfacher.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/wbondsublime_package_control.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/julianeberiussublimerope.html">JulianEberius/SublimeRope</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-10T22:07:00+01:00">
+        <i class="icon-calendar"></i>Sa 10 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/editor.html"><i class="icon-tag"></i>Editor</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/JulianEberius/SublimeRope">JulianEberius/SublimeRope</a>. Sehr interessant - eine Integration von Python Rope (eine Refactoring-Library für Python Code, die in Python geschrieben ist) in Sublime Text 2. Damit wird gibt es dann Refactorings direkt in ST2 - eines der Features, die ich in PyCharm lieben gelernt habe (speziell syntaktisch korrektes Rename und extract method) und …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/julianeberiussublimerope.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/hypercard-visual-basic-and-the-importance-of-the-novice-developer.html">HyperCard, Visual Basic and the Importance of the Novice Developer</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-09T11:33:00+01:00">
+        <i class="icon-calendar"></i>Fr 09 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/ios.html"><i class="icon-tag"></i>iOS</a>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://handhelddesigner.com/blog/archive/2011/12/02/hypercard-visual-basic-importance-novice-developer.html">HyperCard, Visual Basic and the Importance of the Novice Developer</a>. Interessanter Artikel, der HyperCard in Relation zu <a href="http://handhelddesigner.com/">Handheld Developer</a> stellt. Und nachdem ich mit Handheld Developer rumgespielt habe, würde ich sagen die liegen garnicht mal so völlig falsch - es ist eine nette visuelle Umgebung zur Erstellung von iOS Webanwendungen mit …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/hypercard-visual-basic-and-the-importance-of-the-novice-developer.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/mtraversheroku-buildpack-cl.html">mtravers/heroku-buildpack-cl</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-09T10:11:00+01:00">
+        <i class="icon-calendar"></i>Fr 09 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/mtravers/heroku-buildpack-cl">mtravers/heroku-buildpack-cl</a>. Und noch so ein Lisp-Link - hier hat sich jemand auf Herokus buildpack-capable stack gestützt und für Clozure CL ein Buildpack aufgebaut, so dass man darüber auch Common Lisp in die cloud stellen kann. Wobei das dann weniger Ähnlichkeit mit Google App Engine hat, sondern wohl eher mit sowas …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/mtraversheroku-buildpack-cl.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/heroku-clojure-on-heroku.html">Heroku | Clojure on Heroku</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-09T09:40:00+01:00">
+        <i class="icon-calendar"></i>Fr 09 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://blog.heroku.com/archives/2011/7/5/clojure_on_heroku/">Heroku | Clojure on Heroku</a>. Und noch mehr Lisp. Mit Clojure kann man jetzt auch auf Herok, der Cloud Plattform, arbeiten. Damit eventuell eine Alternative zu zum Beispiel Google App Engine (auf deren Java-Inkarnation läuft Clojure ja auch).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/heroku-clojure-on-heroku.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/terjenorderhaugecl-iphone-builder.html">TerjeNorderhaug/ecl-iphone-builder</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-09T09:33:00+01:00">
+        <i class="icon-calendar"></i>Fr 09 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>Ganz tief drinnen bin ich ja immer noch ein Lisp-Fan. Deshalb ist der <a href="https://github.com/TerjeNorderhaug/ecl-iphone-builder">ecl-iphone-builder von Terje Norderhaug</a> für mich sehr interessant - damit kann man eine Version von Embeddable Common Lisp für das iPhone oder iPad compilieren und dann über XCode auf ein iOS Gerät bringen, dort einen Swank-Server starten und …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/terjenorderhaugecl-iphone-builder.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/room-101-the-miracle-of-become.html">Room 101: The Miracle of become:</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-08T10:19:00+01:00">
+        <i class="icon-calendar"></i>Do 08 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/smalltalk.html"><i class="icon-tag"></i>Smalltalk</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://gbracha.blogspot.com/2009/07/miracle-of-become.html?x=y">Room 101: The Miracle of become:</a>. Eine der Ecken, in denen Smalltalk deutlich von allen anderen Sprachen abweicht mit denen ich bisher so zu tun hatte (ausser Common Lisp, aber das ist was anderes, da geht ja eh alles), ist die become: Methode, mit denen zwei Objekte im laufenden System …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/room-101-the-miracle-of-become.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/chrome-kann-in-funf-minuten-geknackt-werden-produkte-futurezone-at-technology-news.html">Chrome kann in fünf Minuten geknackt werden | Produkte | futurezone.at: Technology-News</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-08T09:48:00+01:00">
+        <i class="icon-calendar"></i>Do 08 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/sicherheit.html"><i class="icon-tag"></i>Sicherheit</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://futurezone.at/produkte/7880-chrome-kann-in-fuenf-minuten-geknackt-werden.php">Chrome kann in fünf Minuten geknackt werden | Produkte | futurezone.at: Technology-News</a>. Oy Gevalt! Ich glaube, da müssen jetzt einige Leute ein wenig umdenken. Nein, Sandboxing ist nicht eine garantierte Lösung für Security, das ist bestenfalls ein einzelner Baustein einer kompletten Lösung. Und ja, Programme komplexer zu machen erhöht auch die …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/chrome-kann-in-funf-minuten-geknackt-werden-produkte-futurezone-at-technology-news.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/new-app-impressive-aide-is-an-ide-that-lets-you-write-and-compile-android-apps-on-your-android-device-begs-for-the-yo-dawg-treatment.html">[New App] Impressive: AIDE Is An IDE That Lets You Write And Compile Android Apps On Your Android Device, Begs For The Yo Dawg Treatment</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-07T16:23:00+01:00">
+        <i class="icon-calendar"></i>Mi 07 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.androidpolice.com/2012/03/06/android-gets-a-native-ide-lets-you-write-android-apps-on-your-android-tablet-is-begging-for-the-yo-dawg-treatment/">[New App] Impressive: AIDE Is An IDE That Lets You Write And Compile Android Apps On Your Android Device, Begs For The Yo Dawg Treatment</a>. Android-Entwicklung auf Android-Geräten (vorzugsweise Tablets). Das ist ja sowas von meta.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/new-app-impressive-aide-is-an-ide-that-lets-you-write-and-compile-android-apps-on-your-android-device-begs-for-the-yo-dawg-treatment.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/vagrant-virtualized-development-for-the-masses.html">Vagrant - Virtualized development for the masses.</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-07T16:10:00+01:00">
+        <i class="icon-calendar"></i>Mi 07 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://vagrantup.com/?v1">Vagrant - Virtualized development for the masses.</a>. Schaut gut aus, man kann sich per  Kommandozeile mal eben eine Entwicklungsumgebung auf Basis von BSD oder Linux aufbauen - und dann damit arbeiten, ohne dass man haufenweise Sachen manuell installiert. Im Prinzip Appliance-Templates, die per Kommandozeilentool installierbar sind. Und als Host werden eine ganze …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/vagrant-virtualized-development-for-the-masses.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pyside-for-android-thp-io.html">PySide for Android thp.io</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-07T15:05:00+01:00">
+        <i class="icon-calendar"></i>Mi 07 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/qt.html"><i class="icon-tag"></i>Qt</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://thp.io/2011/pyside-android/">PySide for Android thp.io</a>. Das klingt doch schon mal sehr interessant - damit hätte ich dann eine mir deutlich genehmere Programmiersprache zur Verfügung, um Android-Programme zu bauen. Wobei die Startzeit von in Python geschriebenen Activities warscheinlich alleine schon auf Grund der Ladezeiten des Python-Stacks und der Qt Libraries ein bischen …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pyside-for-android-thp-io.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/robin-wong-olympus-e-m5-review.html">Robin Wong Olympus E-M5 Review</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-07T08:09:00+01:00">
+        <i class="icon-calendar"></i>Mi 07 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://robinwong.blogspot.com/2012/03/olympus-om-d-e-m5-review-batu-caves-kl.html">Robin Wong</a> hat die E-M5 von Olympus getestet und einen Berg von Beispielfotos gepostet. Sieht schon mal sehr gut aus, auch die Tests zum Dynamikumfang zeigen gute Ergebnisse. Wird spannend, wann die ersten Pixel-Peeper-Sites einsteigen und Messwerte veröffentlichen, aber so von den Beispielen würde ich sagen, die E-M5 kommt - zumindestens …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/robin-wong-olympus-e-m5-review.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pyprocessing-a-processing-like-environment-for-doing-graphics-with-python-google-project-hosting.html">pyprocessing - A Processing-like environment for doing graphics with Python - Google Project Hosting</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-02T21:51:00+01:00">
+        <i class="icon-calendar"></i>Fr 02 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://code.google.com/p/pyprocessing/">pyprocessing - A Processing-like environment for doing graphics with Python - Google Project Hosting</a>. Processing, für Python. Steht abet ja schon I'm Titel.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pyprocessing-a-processing-like-environment-for-doing-graphics-with-python-google-project-hosting.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/ex-bundesprasident-wulff-erhalt-den-ehrensold-tagesschau-de.html">Ex-Bundespräsident Wulff erhält den Ehrensold | tagesschau.de</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-29T13:47:00+01:00">
+        <i class="icon-calendar"></i>Mi 29 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/bananenrepublik.html"><i class="icon-tag"></i>Bananenrepublik</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.tagesschau.de/inland/wulff1002.html">Ex-Bundespräsident Wulff erhält den Ehrensold</a>. Wir (die Steuerzahler) zahlen also jetzt ernsthaft dem Schnäppchenjäger 200000 Euro jedes Jahr, bis ans Lebensende. Teurer Spaß. Und klar, so ein Rücktritt wegen des Bekanntwerdens seines kreativen Finanzmanagements und seiner vielen Freunde ist voll politisch. Und dann wundert sich der Hinterbänkler im Bundestag noch …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/ex-bundesprasident-wulff-erhalt-den-ehrensold-tagesschau-de.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/41mp-nokia-808-smartphone-hints-at-pixel-binning-future-for-small-sensor-cameras-digital-photography-review.html">41MP Nokia 808 smartphone hints at pixel-binning future for small sensor cameras: Digital Photography Review</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-28T16:18:00+01:00">
+        <i class="icon-calendar"></i>Di 28 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/mobil.html"><i class="icon-tag"></i>Mobil</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.dpreview.com/news/2012/02/27/Nokia-808-PureView-with-41MP-sensor">41MP Nokia 808 smartphone hints at pixel-binning future for small sensor cameras</a>. Ich hab ja beim ersten Lesen auch gestutzt - 41 MPixel in einem Handy klingt bescheuert, und Symbian klingt nicht wirklich zukunftsgerichtet. DPreview nimmt mal etwas auseinander, was diese 41MPixel genau bedeuten - der Chip ist deutlich größer, die Pixel …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/41mp-nokia-808-smartphone-hints-at-pixel-binning-future-for-small-sensor-cameras-digital-photography-review.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/temporal-keys-part-2-experimental-thoughts.html">Temporal Keys, Part 2 | Experimental Thoughts</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-27T10:20:00+01:00">
+        <i class="icon-calendar"></i>Mo 27 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/postgresql.html"><i class="icon-tag"></i>PostgreSQL</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://thoughts.davisjeff.com/2009/11/08/temporal-keys-part-2/">Temporal Keys, Part 2 | Experimental Thoughts</a>. Man lernt doch immer wieder was neues über PostgreSQL - diesmal PERIOD, ein Datentyp, der Zeitspannen umfasst, und EXCLUDES, eine weitere Form von Constraint auf Tabellen, mit denen sich zusammen mit PERIOD dann Überlappungen von Zeiträumen schon im Datendesign vermeiden lassen. Unter Dynamics AX gibt …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/temporal-keys-part-2-experimental-thoughts.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/responsiveslides-js-%c2%b7-responsive-jquery-slideshow.html">ResponsiveSlides.js · Responsive jQuery slideshow</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-26T21:40:00+01:00">
+        <i class="icon-calendar"></i>So 26 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
+	<a href="https://rfc1437.github.io/tag/jquery.html"><i class="icon-tag"></i>jQuery</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://responsive-slides.viljamis.com/">ResponsiveSlides.js · Responsive jQuery slideshow</a>. Bin ja Lightbox-Fan, aber diese kleine Library gefällt mir so auf den ersten Blick auch gut - sie ist simpel und einfach einzusetzen und macht nicht tausend Sachen auf einmal, sondern zeigt einfach nur Bilder in einer Slideshow. Speziell zur Animation von Headergrafiken zum Beispiel könnte …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/responsiveslides-js-%c2%b7-responsive-jquery-slideshow.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/6-sony-infrared-conversion-service.html">6: Sony infrared conversion service</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-21T09:52:00+01:00">
+        <i class="icon-calendar"></i>Di 21 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/infrarot.html"><i class="icon-tag"></i>Infrarot</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://shop.lifepixel.com/1-Convert-your-digital-camera-to-infrared-IR-only-/6-Sony-infrared-conversion-service-p91.html">6: Sony infrared conversion service</a>. Interessant - wenn ich irgendwann mal eine Sony über habe (und mir 250 Euro in der Tasche locker sind - also warscheinlich nie), könnte man das ja in Anspruch nehmen. Infrarot-Fotografie ohne Filter ist jedenfalls recht interessant.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/6-sony-infrared-conversion-service.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/the-julia-manual.html">The Julia Manual</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-18T20:58:00+01:00">
+        <i class="icon-calendar"></i>Sa 18 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/mathematik.html"><i class="icon-tag"></i>Mathematik</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://julialang.org/manual/">The Julia Manual</a>. Hmm, noch nicht so sicher, was ich von dieser Sprache halten soll, aber interessant klingst halt schon - eine Art Matlab, aber auf LLVM aufbauend und sprachlich deutlich renoviert, mit einigen interessanten Ideen (z.B. werden Julia-Ausdrücke intern in einer  Julia-eigenen Datenstruktur gespeichert, so dass man echte Makros …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/the-julia-manual.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/deutsche-tastaturbelegung-unter-parallels-vmware-bootcamp-und-virtualbox-info-schirmacher.html">Deutsche Tastaturbelegung unter Parallels, VMWare, BootCamp und VirtualBox - Info - Schirmacher</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-17T15:13:00+01:00">
+        <i class="icon-calendar"></i>Fr 17 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.schirmacher.de/display/INFO/Deutsche+Tastaturbelegung+unter+Parallels,+VMWare,+BootCamp+und+VirtualBox">Deutsche Tastaturbelegung unter Parallels, VMWare, BootCamp und VirtualBox - Info - Schirmacher</a>. Weil ich es gerade brauchte - damit werden die Sonderzeichen die man bei der Programmierung ja nun doch öfter mal braucht auf Mac-ähnlichere Tasten gelegt. Nicht perfekt, aber deutlich besser als die Standard-PC-Belegung, denn da das MacBook in der Regel keine …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/deutsche-tastaturbelegung-unter-parallels-vmware-bootcamp-und-virtualbox-info-schirmacher.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/mac-developer-tips-how-to-uninstall-xcode.html">Mac Developer Tips » How to Uninstall Xcode</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-16T23:16:00+01:00">
+        <i class="icon-calendar"></i>Do 16 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://macdevelopertips.com/xcode/how-to-uninstall-xcode.html">Mac Developer Tips » How to Uninstall Xcode</a>. Gibt auch einen offiziellen Weg, wie man XCode los wird. Nur mal so verlinkt, denn leider kann XCode zwar dynamisch nachladen aus dem Netz was man braucht, aber nicht wieder loswerden - dafür darf man das XCode-Zeug löschen und dann neu (kleiner) installieren. Alleine …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/mac-developer-tips-how-to-uninstall-xcode.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/xcode-gcc-and-homebrew.html">Xcode, GCC, and Homebrew</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-16T23:03:00+01:00">
+        <i class="icon-calendar"></i>Do 16 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://kennethreitz.com/xcode-gcc-and-homebrew.html">Xcode, GCC, and Homebrew</a>. Schaut gut aus - Apple liefert ein bare-bones GCC Paket mit allen Frameworks, damit braucht man nicht mehr das Monsterinstaller-Teil aus dem AppStore laden, sondern kann sich mit einem 170 MB Paket begnügen und trotzdem zum Beispiel Homebrew benutzen um Open Source OSX Programme zu kompilieren (jedenfalls …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/xcode-gcc-and-homebrew.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/stochastic-technologiesgoatfish-github.html">stochastic-technologies/goatfish - GitHub</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-16T09:54:00+01:00">
+        <i class="icon-calendar"></i>Do 16 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/stochastic-technologies/goatfish">stochastic-technologies/goatfish - GitHub</a>. Schaut interessant aus, ein kleines Python-Modul welches SQLite als Persistenzlayer für beliebige Objekte benutzt. Nicht auf dem Level eines ORM, sondern eher auf dem Level eines komplexeren Key-Value-Stores. Ganz interessant für die üblichen kleinen Hacks bei denen man mal schnell Objekt-Persistenz braucht, aber aufgrund der simplen Strukturen …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/stochastic-technologiesgoatfish-github.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/concatenative-irc-logs-vom-6-1-2012.html">Concatenative IRC Logs vom 6.1.2012</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-14T10:38:00+01:00">
+        <i class="icon-calendar"></i>Di 14 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/factor.html"><i class="icon-tag"></i>Factor</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>Versteckt in diesem <a href="http://bespin.org/~nef/logs/concatenative/12.01.06">Concatenative IRC Log vom 6.1.2012</a> findet man etwas von Slava, dem Factor-Entwickler, über dessen (also Factor, nicht Slava) Zukunft - ein paar Bugfixes für die 0.95 plant er noch, aber dann ist für ihn das Projekt im Prinzip abgeschlossen. Schade, denn Factor war immer wieder …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/concatenative-irc-logs-vom-6-1-2012.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/camelot-see-it.html">Camelot - See it</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-14T09:46:00+01:00">
+        <i class="icon-calendar"></i>Di 14 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.python-camelot.com/">Camelot - See it</a>. Auf jeden Fall mal angucken: das ist ein Python Paket mit dem aus Modellbeschreibungen mit SQLAlchemy automatisch QT GUIs produziert werden. Inspiriert vom Django Administrator liefert es einen schnellen Einstieg in Modell-orientierte Programme, und könnte daher im Bereich von einfachen DB Anwendungen durchaus als eine Art 4GL …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/camelot-see-it.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/generateds-2-7b-python-package-index.html">generateDS 2.7b : Python Package Index</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-14T08:50:00+01:00">
+        <i class="icon-calendar"></i>Di 14 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://pypi.python.org/pypi/generateDS/2.7b">generateDS 2.7b : Python Package Index</a>. Ein Kollege hat das gerade gefunden, schaut ganz interessant aus - es generiert aus XSD Files Python Klassenstrukturen. Nicht das sowas unbedingt nötig wäre in Python, aber gerade diskutierten wir darüber, wie man aus einer XSD ein Django-Modell generieren könnte, das Tool hier könnte da …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/generateds-2-7b-python-package-index.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/zenphoto-publisher-lightroom-3-publisher-plugin-for-zenphoto-google-project-hosting.html">zenphoto-publisher - Lightroom 3 Publisher plugin for Zenphoto - Google Project Hosting</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-13T15:49:00+01:00">
+        <i class="icon-calendar"></i>Mo 13 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/lightroom.html"><i class="icon-tag"></i>Lightroom</a>
+	<a href="https://rfc1437.github.io/tag/plugin.html"><i class="icon-tag"></i>Plugin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://code.google.com/p/zenphoto-publisher/">zenphoto-publisher - Lightroom 3 Publisher plugin for Zenphoto</a>. Vielleicht auch mal angucken - damit kann ich dann von Lightroom aus direkt nach ZenPhoto exportieren. Ich hab zwar in der Regel meine Bilder in meinem Blog, aber für größere Mengen ist das etwas hakelig, da wäre eine alternative Site für Galerien ganz praktisch …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/zenphoto-publisher-lightroom-3-publisher-plugin-for-zenphoto-google-project-hosting.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/collection-publisher-lightroom-plugin.html">“Collection Publisher” Lightroom Plugin</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-13T14:20:00+01:00">
+        <i class="icon-calendar"></i>Mo 13 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/lightroom.html"><i class="icon-tag"></i>Lightroom</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://regex.info/blog/lightroom-goodies/collection-publisher">“Collection Publisher” Lightroom Plugin</a>. Hmm, das sieht gut aus - ich könnte damit aus Lightroom heraus meinen Photos-Folder in der Dropbox einfach und simpel verwalten, wenn man automatisch virtuelle Kopien anlegen lässt (was man bei den Collections angeben kann), tritt man sich nicht mal auf die Füße was Änderungen angeht (und …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/collection-publisher-lightroom-plugin.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/cord-remote-desktop-for-mac-os-x-2.html">CoRD: Remote Desktop for Mac OS X</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-13T13:43:00+01:00">
+        <i class="icon-calendar"></i>Mo 13 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://cord.sourceforge.net/">CoRD: Remote Desktop for Mac OS X</a>. Hmm, mal angucken, soll gut sein - besser als der Client von Microsoft.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/cord-remote-desktop-for-mac-os-x-2.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/die-woche-wie-geht-es-uns-herr-kuppersbusch-taz-de.html">Die Woche: Wie geht es uns, Herr Küppersbusch? - taz.de</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-12T17:55:00+01:00">
+        <i class="icon-calendar"></i>So 12 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/bananenunion.html"><i class="icon-tag"></i>Bananenunion</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>Ich mag ihn ja immer noch gerne lesen und finde, er war einer der besseren Extra 3 Leute. Hier erklärt er, warum das Urheberrecht aus Sicht eines Urhebers vielleicht gar nicht so urheberrechtlich doll ist. Ziehe jeder seine Schlüsse daraus, was das über die EU-Kommission sagt, die immer noch auf …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/die-woche-wie-geht-es-uns-herr-kuppersbusch-taz-de.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/idlex-idle-extensions-for-python.html">IdleX - IDLE Extensions for Python</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-12T14:23:00+01:00">
+        <i class="icon-calendar"></i>So 12 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://idlex.sourceforge.net/index.html">IdleX - IDLE Extensions for Python</a>. Da gibt's tatsächlich ein Projekt, das IDLE auf die Sprünge helfen will und der doch eher stiefmütterlich behandelten Standard-IDE von Python eine ganze Menge neue Tricks beibringt.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/idlex-idle-extensions-for-python.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/practical-common-lisp-crawling-interfacelift-with-common-lisp-second-try.html">Practical Common Lisp - Crawling InterfaceLift with Common Lisp - second try</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-12T11:33:00+01:00">
+        <i class="icon-calendar"></i>So 12 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://christian.ftwca.de:8080/post/practical-common-lisp---crawling-interfacelift-with-common-lisp---second-try">Practical Common Lisp - Crawling InterfaceLift with Common Lisp - second try</a>. Interessanter Durchlauf eines einfachen Projektes in Common Lisp bei Einsatz von Quicklisp. Mach wirklich einiges einfacher als wenn man roh in CL programmiert und die ganzen Pakete und Systeme von Hand verwaltet. Das Beispielscript sollte man allerdings nicht unbedingt laufen …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/practical-common-lisp-crawling-interfacelift-with-common-lisp-second-try.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/arskomrpclib-github.html">arskom/rpclib - GitHub</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-11T22:05:00+01:00">
+        <i class="icon-calendar"></i>Sa 11 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="https://rfc1437.github.io/tag/webservice.html"><i class="icon-tag"></i>Webservice</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/arskom/rpclib">arskom/rpclib - GitHub</a>. Da ich letztens soaplib hatte, das hier ist der Nachfolger dazu. Die Kollegen haben damit wohl auch schon Erfahrungen gesammelt (positive Erfahrungen).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/arskomrpclib-github.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/howto-to-rebuild-debian-packages.html">Howto to rebuild Debian packages</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-09T10:39:00+01:00">
+        <i class="icon-calendar"></i>Do 09 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+	<a href="https://rfc1437.github.io/tag/ubuntu.html"><i class="icon-tag"></i>Ubuntu</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://raphaelhertzog.com/2010/12/15/howto-to-rebuild-debian-packages/">Howto to rebuild Debian packages</a>. Weil ich es gerade mal wieder hatte - wichtig vor allem der Hinweis auf dch --local blah, damit man Versionsnummern bekommt, die von den offiziellen abweichen und damit nicht automatisch mit der aktuellen Version aus dem Debian Repository überschrieben werden.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/howto-to-rebuild-debian-packages.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/laurence-tratt-fast-enough-vms-in-fast-enough-time.html">Laurence Tratt: Fast Enough VMs in Fast Enough Time</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-09T10:04:00+01:00">
+        <i class="icon-calendar"></i>Do 09 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://tratt.net/laurie/tech_articles/articles/fast_enough_vms_in_fast_enough_time">Laurence Tratt: Fast Enough VMs in Fast Enough Time</a>. Interessanter Artikel des Entwicklers von <a href="http://convergepl.org/">Converge</a> (eine Sprache die Ideen von Lisp - Makros - und Python - Einrückung für Scope und teile der Syntax - aufgreift und zusammenführt) über RPython, die Grundsprache hinter PyPy. Damit versteht man auch ein bischen mehr welche Rolle RPython …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/laurence-tratt-fast-enough-vms-in-fast-enough-time.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/google-wallet-pin-cracked-on-rooted-android-devices-the-verge.html">Google Wallet PIN cracked on rooted Android devices | The Verge</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-09T09:22:00+01:00">
+        <i class="icon-calendar"></i>Do 09 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/sicherheit.html"><i class="icon-tag"></i>Sicherheit</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.theverge.com/2012/2/8/2786015/google-wallet-pin-cracked-on-rooted-android-devices">Google Wallet PIN cracked on rooted Android devices | The Verge</a>. Na das ging ja schnell. Ich kann mir ein gewisses Grinsen nicht verkneifen. Google sollte wirklich bessere Leute für die Implementierung von solchen Sachen haben.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/google-wallet-pin-cracked-on-rooted-android-devices-the-verge.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/ladon-0-7-0-python-package-index.html">ladon 0.7.0 : Python Package Index</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-08T14:41:00+01:00">
+        <i class="icon-calendar"></i>Mi 08 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://pypi.python.org/pypi/ladon">ladon 0.7.0 : Python Package Index</a>. Und der hier klingt so ein bischen wie mein alter Toolserver - also ein einfacher Weg um Python-Code als Service bereitzustellen. Dabei wird ebenfalls SOAP unterstützt.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/ladon-0-7-0-python-package-index.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/suds.html">suds</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-08T14:40:00+01:00">
+        <i class="icon-calendar"></i>Mi 08 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://fedorahosted.org/suds/">suds</a>. Nur ein SOAP Client für Python, aber dafür explizit die wichtigen Binding Styles (RPC/Literal, RPC/Encoded und Document/Literal) genannt.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/suds.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/about-soaplib-v2-0-0beta-documentation.html">About — soaplib v2.0.0beta documentation</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-08T14:39:00+01:00">
+        <i class="icon-calendar"></i>Mi 08 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://soaplib.github.com/soaplib/2_0/">About — soaplib v2.0.0beta documentation</a>. Und noch eine neuere SOAP Library für Python, ebenfalls deutlich mehr Aktivität als bei SOAPpy.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/about-soaplib-v2-0-0beta-documentation.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pysimplesoap-python-simple-soap-library-google-project-hosting.html">pysimplesoap - Python Simple SOAP Library - Google Project Hosting</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-08T14:39:00+01:00">
+        <i class="icon-calendar"></i>Mi 08 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://code.google.com/p/pysimplesoap/">pysimplesoap - Python Simple SOAP Library</a>. Klingt als ob ich mir das mal angucken will, denn da sind einige Sachen drin die in SOAPpy fehlen (und da SOAPpy nicht mehr weiter entwickelt wird, ist das eh interessant).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pysimplesoap-python-simple-soap-library-google-project-hosting.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/smile-and-smilelab-home-page.html">Smile and SmileLab Home Page</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-08T10:30:00+01:00">
+        <i class="icon-calendar"></i>Mi 08 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/applescript.html"><i class="icon-tag"></i>AppleScript</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.satimage.fr/software/en/index.html">Smile and SmileLab Home Page</a>. Hmm, zum Rumspielen vielleicht nicht uninteressant - Datenanalyse und grafische Aufbereitung mit AppleScript in einer Scripting-Umgebung. Features sehen ganz interessant aus (Diagramme, XML, TCP, HTTP Server und Client ...) aus.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/smile-and-smilelab-home-page.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/tour-de-france-radprofi-contador-fur-zwei-jahre-gesperrt-sport-zeit-online.html">Tour de France: Radprofi Contador für zwei Jahre gesperrt | Sport | ZEIT ONLINE</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-06T14:28:00+01:00">
+        <i class="icon-calendar"></i>Mo 06 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/doping.html"><i class="icon-tag"></i>Doping</a>
+	<a href="https://rfc1437.github.io/tag/fahrrad.html"><i class="icon-tag"></i>Fahrrad</a>
+	<a href="https://rfc1437.github.io/tag/sport.html"><i class="icon-tag"></i>Sport</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.zeit.de/sport/2012-02/radprofi-contador-sperre">Tour de France: Radprofi Contador für zwei Jahre gesperrt</a>. Gut, dass dieses alberne Gehampel (nur durch den recht absurd agierenden spanischen Radsportverband verursacht) endlich zuende ist. Auch wenn sich mitlerweile bei Aberkennung von Tour-Siegen auch nur noch Gähnen einstellt (und Armstrong ja leider seine Siege gelassen werden).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/tour-de-france-radprofi-contador-fur-zwei-jahre-gesperrt-sport-zeit-online.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/python4delphi-embedding-python-within-a-delphi-application-google-project-hosting.html">python4delphi - Embedding Python within a Delphi application. - Google Project Hosting</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-02-03T21:49:00+01:00">
+        <i class="icon-calendar"></i>Fr 03 Februar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/pascal.html"><i class="icon-tag"></i>Pascal</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://code.google.com/p/python4delphi/">python4delphi - Embedding Python within a Delphi application</a>. Tuts angeblich auch mit Lazarus und Free Pascal, und wohl rudimentär auch unter OSX. Könnte für eines dieser verrückten Projekte die mir immer noch im Kopf rumspuken interessant sein.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/python4delphi-embedding-python-within-a-delphi-application-google-project-hosting.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/bundesprasident-wulff-verschwieg-beziehung-zu-geerkens-tagesschau-de.html">Bundespräsident Wulff verschwieg Beziehung zu Geerkens | tagesschau.de</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-01-30T17:23:00+01:00">
+        <i class="icon-calendar"></i>Mo 30 Januar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/bananenrepublik.html"><i class="icon-tag"></i>Bananenrepublik</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><blockquote>
+<p>Für diese Recherche befragte Anwälte reagieren zudem erstaunt, dass Wulff seinen Namen über mehr als 15 Jahre gratis einer Sozietät zur Verfügung gestellt haben will, ohne dafür honoriert worden zu sein oder Absprachen über eine spätere Kanzlei-Rückkehr getroffen zu haben. Der Geschäftsführer einer Großkanzlei etwa, die selbst ehemalige Regierungsmitglieder beschäftigt …</p></blockquote>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/bundesprasident-wulff-verschwieg-beziehung-zu-geerkens-tagesschau-de.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/inigo-quilez-fractals-computer-graphics-mathematics-demoscene-and-more.html">Iñigo Quilez - fractals, computer graphics, mathematics, demoscene and more</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-01-08T15:43:00+01:00">
+        <i class="icon-calendar"></i>So 08 Januar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/grafik.html"><i class="icon-tag"></i>Grafik</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.iquilezles.org/">Iñigo Quilez - fractals, computer graphics, mathematics, demoscene and more</a>. Interessante kleine Programme die schöne Bilder erzeugen und einiges über die Hintergründe und mathematischen Grundlagen für einige der Algorithmen. Und auch sonst jede Menge interessantes Grafik-Zeug. Was zum durchblättern für ruhige Stunden und vielleicht die eine oder andere Anregung mal das …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/inigo-quilez-fractals-computer-graphics-mathematics-demoscene-and-more.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/technical-documentation-pistosdiaspora.html">Technical Documentation - pistos/diaspora</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-01-06T11:36:00+01:00">
+        <i class="icon-calendar"></i>Fr 06 Januar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/diaspora.html"><i class="icon-tag"></i>Diaspora</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://github.com/Pistos/diaspora/wiki/Technical-Documentation">Technical Documentation</a> des Diaspora-Forks von Pistos mit einer ganzen Menge interessanter Features die über den normalen Diaspora-Code hinausgehen. Da sind einige Sachen drin die mich sehr interessieren, evtl. sollte ich nach Amsterdam mal drüber nachdenken zu wechseln. Deshalb hier geblogmarkt als Erinnerung.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/technical-documentation-pistosdiaspora.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/fpc-new-features-2-6-0-lazarus-wiki.html">FPC New Features 2.6.0 - Lazarus wiki</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-01-05T10:21:00+01:00">
+        <i class="icon-calendar"></i>Do 05 Januar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/pascal.html"><i class="icon-tag"></i>Pascal</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://wiki.lazarus.freepascal.org/FPC_New_Features_2.6.0">FPC New Features 2.6.0 - Lazarus wiki</a>. Und weitere nette Änderungen bei FreePascal, besonders die neuen Delphi-Sachen werden sicherlich den einen oder anderen interessieren, oder auch der weiter ausgebaute ObjectPascal Dialekt für die Cocoa-Programmierung unter OSX. Wenn jetzt noch Lazarus von Carbon auf Standard Cocoa umstellt und damit dann …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/fpc-new-features-2-6-0-lazarus-wiki.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/sony-approves-the-launch-the-new-hybrid-alphanex-mount-camera-sort-of-fullframe-nex-7.html">Sony "approves" the launch the new hybrid AlphaNex mount camera (sort of fullframe NEX-7!)</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-01-04T16:12:00+01:00">
+        <i class="icon-calendar"></i>Mi 04 Januar 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/nex.html"><i class="icon-tag"></i>NEX</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.sonyalpharumors.com/sr4-sony-approves-the-launch-the-new-hyrbid-alphanex-mount-camera-sort-of-fullframe-nex-7/">Sony "approves" the launch the new hybrid AlphaNex mount camera (sort of fullframe NEX-7!)</a>. Weil ist ja viel lustiger wenn man einfach neue Kameras herausbringt anstelle mal endlich das System auszubauen. Irgendwie könnte man die Idee bekommen, Sony verzettelt sich da ganz gewaltig mit den neuen Kameramodellen. Klar, die sind …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sony-approves-the-launch-the-new-hybrid-alphanex-mount-camera-sort-of-fullframe-nex-7.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/charles-leifer-updates-to-peewee-including-atomic-updates-select-related-and-basic-transactions.html">charles leifer | Updates to peewee, including atomic updates, select related and basic transactions</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-12-30T10:06:00+01:00">
+        <i class="icon-calendar"></i>Fr 30 Dezember 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://charlesleifer.com/blog/updates-peewee-including-atomic-updates-select-related-and-basic-transactions/">charles leifer | Updates to peewee, including atomic updates, select related and basic transactions</a>. Der kleine ORM für Python wird langsam erwachsen und lernt Transaktionen und atomare Updates und select related. Gerade für kleinere Tools sehr interessant, weil man sich einfach die ganze Infrastruktur eines vollen Django-Projektes spart und den ORM …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/charles-leifer-updates-to-peewee-including-atomic-updates-select-related-and-basic-transactions.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/linux-l2tpipsec-with-iphone-and-mac-osx-clients-peen-net.html">Linux L2TP/IPSec with iPhone and Mac OS/X clients | PEEN.NET</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-12-29T12:01:00+01:00">
+        <i class="icon-calendar"></i>Do 29 Dezember 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/ios.html"><i class="icon-tag"></i>iOS</a>
+	<a href="https://rfc1437.github.io/tag/mobil.html"><i class="icon-tag"></i>Mobil</a>
+	<a href="https://rfc1437.github.io/tag/mobilemurks.html"><i class="icon-tag"></i>MobileMurks</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://peen.net/2009/04/linux-l2tpipsec-with-iphone-and-mac-osx-clients-2/">Linux L2TP/IPSec with iPhone and Mac OS/X clients | PEEN.NET</a>. Hat mir geholfen ein L2TP/IPSec Gateway auf meinem Server zu installieren, der mit dem iPhone funktioniert. Das ist schon eine ganz nette Lösung um bei Hotspots nicht alle Daten laut in die Welt zu schreien. Allerdings aufgrund …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/linux-l2tpipsec-with-iphone-and-mac-osx-clients-peen-net.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/distribunomicon-learn-you-some-erlang-for-great-good.html">Distribunomicon | Learn You Some Erlang for Great Good!</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-12-28T11:11:00+01:00">
+        <i class="icon-calendar"></i>Mi 28 Dezember 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/erlang.html"><i class="icon-tag"></i>Erlang</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://learnyousomeerlang.com/distribunomicon">Distribunomicon | Learn You Some Erlang for Great Good!</a>. Interessanter Artikel über distributed processing mit Erlang und die Fallen in die man tappen kann (z.B. der Hinweis darauf, dass remote links einem einen Event-Sturm produzieren wenn das Netzwerk ausfällt über das die remote links gehen).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/distribunomicon-learn-you-some-erlang-for-great-good.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/samsung-galaxy-s-phones-ice-cream-sandwich-update.html">Samsung Galaxy S Phones Ice Cream Sandwich Update</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-12-24T10:46:00+01:00">
+        <i class="icon-calendar"></i>Sa 24 Dezember 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/mobilemurks.html"><i class="icon-tag"></i>MobileMurks</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.businessinsider.com/samsung-galaxy-s-phones-ice-cream-sandwich-update-2011-12">Samsung Galaxy S Phones Ice Cream Sandwich Update</a>. Tja, HTC hat für eine Reihe Geräte das gleiche schon mit Gingerbread gemacht - nur weil deren bescheuerte Overlaygeschichte  nicht zusammen mit dem neuen System auf der älteren Hardware (und wir reden hier nicht von wirklich alter Hardware - das sind Geräte die ein …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/samsung-galaxy-s-phones-ice-cream-sandwich-update.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/custom-iphone-backs.html">Custom iPhone Backs</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-12-23T18:01:00+01:00">
+        <i class="icon-calendar"></i>Fr 23 Dezember 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/bastelprojekte.html"><i class="icon-tag"></i>Bastelprojekte</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.woodbacked.com/">Custom iPhone Backs</a>. Nett - Rückwände aus Holz. Da wünscht man sich ja fast, dass einem die Glasrückwand kaputt geht, damit man einen Grund hat, sich sowas zu installieren ...</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/custom-iphone-backs.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/sublime-text.html">Sublime Text</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-12-22T15:25:00+01:00">
+        <i class="icon-calendar"></i>Do 22 Dezember 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/editor.html"><i class="icon-tag"></i>Editor</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.sublimetext.com/2">Sublime Text</a>. Hmm, gerade mal angeguckt und ganz verdutzt festgestellt, das ist ja ein ziemlich netter Editor. Bei diversen anderen in letzter Zeit hab ich zwar gedacht, ok, nett gemacht, aber nicht wirklich sinnvoll nutzbare Features. Aber der 10000-feed-Overview für den gerade aktiven Source zum Beispiel ist erstaunlich gut benutzbar …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sublime-text.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+
+        <div class="pagination">
+        <ul>
+                        <li class="prev"><a href="https://rfc1437.github.io/category/asides6.html">&larr; Previous</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides.html">1</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides2.html">2</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides3.html">3</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides4.html">4</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides5.html">5</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides6.html">6</a></li>
+                        <li class="active"><a href="https://rfc1437.github.io/category/asides7.html">7</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides8.html">8</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides9.html">9</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides10.html">10</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides11.html">11</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides12.html">12</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides13.html">13</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides14.html">14</a></li>
+                        <li class=""><a href="https://rfc1437.github.io/category/asides15.html">15</a></li>
+                        <li class="next"><a href="https://rfc1437.github.io/category/asides8.html">Next &rarr;</a></li>
+        </ul>
+        </div>
+
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://palletsprojects.com/p/jinja/"><i class="icon-external-link"></i>Jinja2</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="https://rfc1437.github.io/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://github.com/rfc1437/"><i class="icon-github-sign icon-large"></i>github</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="https://rfc1437.github.io/category/artikel.html">
+    <i class="icon-folder-open icon-large"></i>Artikel
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/asides.html">
+    <i class="icon-folder-open icon-large"></i>Asides
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/galerie.html">
+    <i class="icon-folder-open icon-large"></i>Galerie
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/kochbuch.html">
+    <i class="icon-folder-open icon-large"></i>Kochbuch
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/metaowl.html">
+    <i class="icon-folder-open icon-large"></i>Metaowl
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/misc.html">
+    <i class="icon-folder-open icon-large"></i>misc
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/spielelog.html">
+    <i class="icon-folder-open icon-large"></i>Spielelog
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://rfc1437.github.io/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="https://rfc1437.github.io/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

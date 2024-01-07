@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hugo's House of Blog Horror - Hardware</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="rfc1437">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="https://rfc1437.github.io/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="https://rfc1437.github.io/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="https://rfc1437.github.io/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="https://rfc1437.github.io/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="https://rfc1437.github.io/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://rfc1437.github.io/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://rfc1437.github.io/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://rfc1437.github.io/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="https://rfc1437.github.io/" type="application/atom+xml" rel="alternate" title="Hugo's House of Blog Horror ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="https://rfc1437.github.io/index.html">Hugo's House of Blog Horror </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                  <li><a href="/impressum.html">Imprint</a></li>
+                  <li><a href="/about.html">About</a></li>
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/artikel.html">
+						<i class="icon-folder-open icon-large"></i>Artikel
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/asides.html">
+						<i class="icon-folder-open icon-large"></i>Asides
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/galerie.html">
+						<i class="icon-folder-open icon-large"></i>Galerie
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/kochbuch.html">
+						<i class="icon-folder-open icon-large"></i>Kochbuch
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/metaowl.html">
+						<i class="icon-folder-open icon-large"></i>Metaowl
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/misc.html">
+						<i class="icon-folder-open icon-large"></i>misc
+					</a>
+                  </li>
+                  <li >
+                    <a href="https://rfc1437.github.io/category/spielelog.html">
+						<i class="icon-folder-open icon-large"></i>Spielelog
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="https://rfc1437.github.io/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/micro-python-python-for-microcontrollers.html">Micro Python - Python for microcontrollers</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2014-06-03T19:48:00+02:00">
+        <i class="icon-calendar"></i>Di 03 Juni 2014
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://micropython.org/">Micro Python - Python for microcontrollers</a>. Ach menno, so viele Boards zum Ausprobieren, so wenig Zeit. Klingt wirklich nett, eine speziell auf Embedded-Systeme ausgelegte Python-Implementierung mit AOT Kompilation und das dann auch noch mit so niedrigen Hardware-Anforderungen ist schon eine spannende Sache.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/micro-python-python-for-microcontrollers.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/jetdrive-500520720-willkommen-auf-der-transcend-webseite.html">JetDrive™ 500/520/720-Willkommen auf der Transcend Webseite</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2014-06-02T22:59:00+02:00">
+        <i class="icon-calendar"></i>Mo 02 Juni 2014
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/mac.html"><i class="icon-tag"></i>Mac</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://de.transcend-info.com/apple/jetdrive/">JetDrive™ 500/520/720-Willkommen auf der Transcend Webseite</a>. Mal nitiert - mehr Speicher könnte mein Air vielleicht doch mal vertragen. Und der Austausch der SSD scheint gar nicht so schwer zu sein,</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/jetdrive-500520720-willkommen-auf-der-transcend-webseite.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/openbuilds-ox-cnc-machine-openbuilds.html">OpenBuilds OX CNC Machine | OpenBuilds</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2014-02-26T19:03:00+01:00">
+        <i class="icon-calendar"></i>Mi 26 Februar 2014
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/maker.html"><i class="icon-tag"></i>Maker</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.openbuilds.com/builds/openbuilds-ox-cnc-machine.341/">OpenBuilds OX CNC Machine | OpenBuilds</a>. Cool - der nächste Schritt nach den 3D Druckern, jetzt die CNC Maschine zum Selberbauen und Sharen.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/openbuilds-ox-cnc-machine-openbuilds.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/hands-on-sailfish-os-intelligenter-baukasten-zum-basteln-und-portieren-golem-de.html">Hands on Sailfish OS: Intelligenter Baukasten zum Basteln und Portieren - Golem.de</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-12-18T18:49:00+01:00">
+        <i class="icon-calendar"></i>Mi 18 Dezember 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/mobil.html"><i class="icon-tag"></i>Mobil</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.golem.de/news/hands-on-sailfish-os-intelligenter-baukasten-zum-basteln-und-portieren-1312-103351.html">Hands on Sailfish OS: Intelligenter Baukasten zum Basteln und Portieren - Golem.de</a>. Hmm - nicht wirklich so weit offen wie man gehofft hätte, aber weiter offen als man hätte befürchten können. Klingt auf jeden Fall nach einer guten Hack-Grundlage für Bastelprojekte. Vor allem die Kombination eines "richtigen" Linux und einer Android-Umgebung …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/hands-on-sailfish-os-intelligenter-baukasten-zum-basteln-und-portieren-golem-de.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/getting-started-with-nrf24l01-on-arduino-maniacbug.html">Getting Started with nRF24L01+ on Arduino | maniacbug</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-03-03T21:18:00+01:00">
+        <i class="icon-calendar"></i>So 03 März 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/arduino.html"><i class="icon-tag"></i>Arduino</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://maniacbug.wordpress.com/2011/11/02/getting-started-rf24/">Getting Started with nRF24L01+ on Arduino | maniacbug</a>. Funkverbindungen für Arduinos die nicht direkt TCP und Internet beeinhalten - halt einfach Daten per 2.4Ghz Radio. Mal für später geblogmarkt.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/getting-started-with-nrf24l01-on-arduino-maniacbug.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pcduino-arduino-compatible-headers.html">pcDuino arduino compatible headers</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-02-20T19:09:00+01:00">
+        <i class="icon-calendar"></i>Mi 20 Februar 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/arduino.html"><i class="icon-tag"></i>Arduino</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.pcduino.com/">pcDuino arduino compatible headers</a>. Hmm, auch nicht uninteressant - ein ARM-basierter Single-Board-PC mit Arduino-kompatibler Steckerleiste zum Anschluß und zur Ansteuerung von Arduino-Shields. Und die Rechenleistung ist auch schon ganz ordentlich. Genauso wie die Grundausstattung mit Schnittstellen.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pcduino-arduino-compatible-headers.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/industruino.html">Industruino</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-02-14T19:11:00+01:00">
+        <i class="icon-calendar"></i>Do 14 Februar 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/arduino.html"><i class="icon-tag"></i>Arduino</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.industruino.com/products.html">Industruino</a>. Cooles Projekt mit dem man Arduino-Lösungen in einem Gehäuse für Wandmontage und Schienenmontage bekommt. Gleich mit Steuertasten und LCD Display und das ganze auch noch zu einem ganz ordentlichen Preis. Derzeit noch Beta und keine I2C Unterstützung, aber auch so schon interessant wenn man einen Arduino irgendwo im permanenten …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/industruino.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/filabot-personal-filament-maker-for-3d-printers-desktop-extruding-system-environmentally-friendly.html">Filabot Personal Filament Maker for 3D Printers - Desktop Extruding System – Environmentally Friendly</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-02-01T22:05:00+01:00">
+        <i class="icon-calendar"></i>Fr 01 Februar 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://filabot.com/">Filabot Personal Filament Maker for 3D Printers - Desktop Extruding System – Environmentally Friendly</a>. Und damit macht man sich sein eigenes Filament aus Plastikschredder. Auch ne coole Idee.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/filabot-personal-filament-maker-for-3d-printers-desktop-extruding-system-environmentally-friendly.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pinoccio-a-complete-ecosystem-for-building-the-internet-of-things-indiegogo.html">Pinoccio - A Complete Ecosystem for Building the Internet of Things | Indiegogo</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-01-15T21:59:00+01:00">
+        <i class="icon-calendar"></i>Di 15 Januar 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/arduino.html"><i class="icon-tag"></i>Arduino</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.indiegogo.com/pinoccio">Pinoccio - A Complete Ecosystem for Building the Internet of Things | Indiegogo</a>. Noch ein spannendes Arduino-kompatibles Projekt. Kompakte Arduino Boards mit integriertem Mesh Networking und Gateway-Möglichkeit über Wifi ins Internet. Das ganze als Open Source Hardware und ohne zwingenden zentralen Server.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pinoccio-a-complete-ecosystem-for-building-the-internet-of-things-indiegogo.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/i-mx233-product-summary-page.html">i.MX233 Product Summary Page</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-01-15T20:28:00+01:00">
+        <i class="icon-calendar"></i>Di 15 Januar 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/chumby.html"><i class="icon-tag"></i>Chumby</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=i.MX233">i.MX233 Product Summary Page</a>. Die vom Chumby One verwendete CPU - schon cool, was da alles im Core schon drin ist.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/i-mx233-product-summary-page.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/zdoc-browse-files-at-sourceforge-net.html">ZDoc - Browse Files at SourceForge.net</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-01-15T20:07:00+01:00">
+        <i class="icon-calendar"></i>Di 15 Januar 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/chumby.html"><i class="icon-tag"></i>Chumby</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://sourceforge.net/projects/zurk/files/?source=navbar">ZDoc - Browse Files at SourceForge.net</a>. Und hier kommt wohl die vorläufige Rettung - eine Firmware, die offline arbeitet und die Widgets und den ganzen Kram von einem Thumbdrive lädt. Da wird sicherlich nicht alles funktionieren, aber wenn ich wenigstens einen Radiowecker damit wieder hin bekomme ist es schon ganz ok …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/zdoc-browse-files-at-sourceforge-net.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/end-of-chumby-as-we-know-it-page-1-chumby-com-chumbysphere-forum.html">End of Chumby as we know it... Page 1 - Chumby.com - chumbysphere forum</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-01-15T19:57:00+01:00">
+        <i class="icon-calendar"></i>Di 15 Januar 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/chumby.html"><i class="icon-tag"></i>Chumby</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/webservice.html"><i class="icon-tag"></i>Webservice</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://forum.chumby.com/viewtopic.php?id=8457">End of Chumby as we know it... Page 1 - Chumby.com - chumbysphere forum</a>. Cloud ist eben nicht immer die gute Idee - ich habe auch noch so ein Chumby-Teil zu Hause, aber wenn der Rettungsplan hier nicht klappt, ist es nicht mal mehr als Wecker benutzbar. Sieht so aus als sollte …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/end-of-chumby-as-we-know-it-page-1-chumby-com-chumbysphere-forum.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/permaduino-indiegogo.html">Permaduino | Indiegogo</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-01-14T10:50:00+01:00">
+        <i class="icon-calendar"></i>Mo 14 Januar 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/arduino.html"><i class="icon-tag"></i>Arduino</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.indiegogo.com/permaduino">Permaduino | Indiegogo</a>. Interessantes Projekt: ein Arduino-kompatibles Board, welches eher als permanente Installation gedacht ist, aber trotzdem Prototyping-Charakter hat (also mit Breadboard kommt für die Verkablung der zusätzlichen Elemente). Idee dahinter: Prototyp mit einem der klassischen Systeme machen und dann mit diesem Board neu aufbauen um es dann dauerhaft einzusetzen - als …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/permaduino-indiegogo.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/spt100-pan-tilt-system.html">SPT100 Pan & Tilt System</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-01-11T11:07:00+01:00">
+        <i class="icon-calendar"></i>Fr 11 Januar 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/arduino.html"><i class="icon-tag"></i>Arduino</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.servocity.com/html/spt100_pan___tilt_system.html">SPT100 Pan &amp; Tilt System</a>. Ok, ich glaube, ich weiss was ich brauche. Mit so einem Gerät und zum Beispiel einer Kamera mit einfacher Bildauswertung dahinter kann man sich einen Follower bauen, mit dem man zum Beispiel Himmelsbeobachtungen machen könnte. Oder automatisch erstellte Panoramaabläufe für Google+. Oder optische Bereichsüberwachung mit Erkennung …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/spt100-pan-tilt-system.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/reflow-controller-shield-arduino-compatible-rocket-scream.html">Reflow Controller Shield Arduino Compatible - Rocket Scream</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2013-01-11T11:03:00+01:00">
+        <i class="icon-calendar"></i>Fr 11 Januar 2013
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/arduino.html"><i class="icon-tag"></i>Arduino</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.rocketscream.com/wiki/index.php/Reflow_Controller_Shield_Arduino_Compatible">Reflow Controller Shield Arduino Compatible - Rocket Scream</a>. Ofensteuerung mit Arduino. In diesem Fall für die optimale Verteilung von Lötzinn über Platinen - aber sowas kann man sicherlich auch modifizieren für optimale Backergebnisse oder zum Aushärten von Prototypen oder whatever. Schon cool.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/reflow-controller-shield-arduino-compatible-rocket-scream.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/ioio-for-android-sparkfun-electronics.html">IOIO for Android - SparkFun Electronics</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-12-28T19:28:00+01:00">
+        <i class="icon-calendar"></i>Fr 28 Dezember 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/embedded.html"><i class="icon-tag"></i>Embedded</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://www.sparkfun.com/products/10748?">IOIO for Android - SparkFun Electronics</a>. Auch ein interessantes Projekt, bin von einem Bekannten heute darauf hingewiesen worden: ein IO Board für Android-Smartphones. Es wird einfach über USB angesteckt und wird über eine simple Java Library angesprochen. Da drauf sind dann diverse analoge und digitale Eingänge und Ausgänge, I2C und andere …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/ioio-for-android-sparkfun-electronics.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/arduino-due-mit-32-bit-arm-mikrokontroller-pro-linux.html">Arduino Due mit 32-Bit-ARM-Mikrokontroller - Pro-Linux</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-10-23T13:49:00+02:00">
+        <i class="icon-calendar"></i>Di 23 Oktober 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/embedded.html"><i class="icon-tag"></i>Embedded</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.pro-linux.de/news/1/19024/arduino-due-mit-32-bit-arm-mikrokontroller.html">Arduino Due mit 32-Bit-ARM-Mikrokontroller - Pro-Linux</a>. Jau, 32bit embedded boards. Irgendwie schon cool. Nur bei den 84 Mhz Taktfrequenz kommen fast schon nostalgische Gefühle auf.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/arduino-due-mit-32-bit-arm-mikrokontroller-pro-linux.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/android-x86-porting-android-to-x86.html">Android-x86 - Porting Android to x86</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-10-01T17:05:00+02:00">
+        <i class="icon-calendar"></i>Mo 01 Oktober 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/mobil.html"><i class="icon-tag"></i>Mobil</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://sites.google.com/a/android-x86.org/web/">Android-x86 - Porting Android to x86</a>. Hmm, ob das ein lustiges Spielzeug für mein altes eeeBook sein könnte? Ich mein, das wäre ein ziemlich fettes tablet mit integrierter Tastatur und einem inkompatiblen Prozessor, was kann da schon schief gehen?</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/android-x86-porting-android-to-x86.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pymcu-the-python-controlled-microcontroller.html">pyMCU - The Python Controlled Microcontroller</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-09-17T11:11:00+02:00">
+        <i class="icon-calendar"></i>Mo 17 September 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.pymcu.com/index.html">pyMCU - The Python Controlled Microcontroller</a>. Alternative für diejenigen, die statt Arduino und seine Processing-basierte Entwicklungsumgebung lieber Python benutzen würden. Seid ich mit Android rumspiele hat Java für mich ja deutlich an Schrecken verloren, man gewöhnt sich halt an alles. Vermutlich hilft mir da meine Cobol-Erfahrung aus den ersten 10 Berufsjahren …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pymcu-the-python-controlled-microcontroller.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/arduino-macosx.html">Arduino - MacOSX</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-08-27T16:02:00+02:00">
+        <i class="icon-calendar"></i>Mo 27 August 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/embedded.html"><i class="icon-tag"></i>Embedded</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/java.html"><i class="icon-tag"></i>Java</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://arduino.cc/en/Guide/MacOSX">Arduino - MacOSX</a>. Was mich an Arduino fasziniert: die einfache Oberfläche der IDE (die einfach ein erweitertes Processing ist) und der Haufen an verrückten Projekten rundherum, wie zum Beispiel <a href="http://www.kickstarter.com/projects/digistump/digispark-the-tiny-arduino-enabled-usb-dev-board">Digispark</a>, einem Mini-Board das zwar weniger kann, aber dafür winzig ist und direkt vom USB Port betrieben wird. Da kann man ja …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/arduino-macosx.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/samsung-kompaktkamera-ex2f-mit-extra-lichtstarkem-objektiv-golem-de.html">Samsung: Kompaktkamera EX2F mit extra lichtstarkem Objektiv - Golem.de</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-07-05T19:28:00+02:00">
+        <i class="icon-calendar"></i>Do 05 Juli 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.golem.de/news/samsung-kompaktkamera-ex2f-mit-extra-lichtstarkem-objektiv-1207-92942.html">Samsung: Kompaktkamera EX2F mit extra lichtstarkem Objektiv - Golem.de</a>. Die kam dann so ganz unerwartet aus dem Off rein ins Spiel. Hat glaub ich keiner auf dem Schirm gehabt - wäre ich noch unterwegs auf der Suche nach einer interessanten Kompakten, dann wär das neben der Sony RX100 wohl eines der …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/samsung-kompaktkamera-ex2f-mit-extra-lichtstarkem-objektiv-golem-de.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/blackmagic-design-blackmagic-cinema-camera.html">Blackmagic Design: Blackmagic Cinema Camera</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-07-04T09:14:00+02:00">
+        <i class="icon-calendar"></i>Mi 04 Juli 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.blackmagic-design.com/products/blackmagiccinemacamera/">Blackmagic Design: Blackmagic Cinema Camera</a>. Wow, das Teil ist echt cool. Sozusagen die mirror-less Video Option für Canon, könnte man sagen - denn es hat EF Bajonett. Sieht echt schick aus, der Preis von 3000 Dollar ohne SSD allerdings auch.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/blackmagic-design-blackmagic-cinema-camera.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/sphero.html">Sphero</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-05-22T22:45:00+02:00">
+        <i class="icon-calendar"></i>Di 22 Mai 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/roboter.html"><i class="icon-tag"></i>Roboter</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.gosphero.com/">Sphero</a>. Oh mann, das Teil will ich haben. Wieso gibts so viel cooles Spielzeug jetzt wo ich erwachsen bin? (wer nicht klicken will: Roboter in Kugelform mit präziser Steuerung und der Möglichkeit den zusätzlich als Controller einzusetzen - und gesteuert durch Apps auf dem Smartphone).</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sphero.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/pocket-sized-fuel-cell-charges-phones-for-two-weeks-mobile-phones-cnet-cnet-asia.html">Pocket-sized fuel cell charges phones for two weeks - Mobile Phones - CNET - CNET Asia</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-05-09T13:28:00+02:00">
+        <i class="icon-calendar"></i>Mi 09 Mai 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/mobil.html"><i class="icon-tag"></i>Mobil</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://asia.cnet.com/pocket-sized-fuel-cell-charges-phones-for-two-weeks-62215008.htm">Pocket-sized fuel cell charges phones for two weeks - Mobile Phones - CNET - CNET Asia</a>. Wenn das Teil Realität wird, will ich eines haben. Endlich mobiler Strom, der lagerfähig ist und den man dann irgendwo draußen einfach aktivieren kann, wenn man ihn braucht. Dazu dann noch einen über USB angeschlossenen Akkulader für …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pocket-sized-fuel-cell-charges-phones-for-two-weeks-mobile-phones-cnet-cnet-asia.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/kenko-extensions-tube-with-full-electronic-control.html">Kenko extensions tube with full electronic control!</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-29T16:35:00+02:00">
+        <i class="icon-calendar"></i>Do 29 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.43rumors.com/supernews-kenko-extensions-tube-with-full-electronic-control/">Kenko extensions tube with full electronic control!</a>. Woopdidoo. Ok, Extension-Tubes sind nicht das Optimum an Performance, aber trotzdem durchaus interessant, da sie einen recht einfachen und in der Regel kostengünstigen Weg zu besseren Makrofähigkeiten darstellen.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/kenko-extensions-tube-with-full-electronic-control.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/lensrentals-com-undressing-an-nex.html">LensRentals.com - Undressing an NEX</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2012-03-12T09:16:00+01:00">
+        <i class="icon-calendar"></i>Mo 12 März 2012
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/nex.html"><i class="icon-tag"></i>NEX</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://www.lensrentals.com/blog/2012/03/undressing-an-nex">LensRentals.com - Undressing an NEX</a>. Sehr interessant, mal ein ganz anderer Blick auf eine Kamera - auf die Innereien. Auch wenn früher bei den mechanischen Kameras das ganze irgendwie interessanter war, ich finde auch die "inneren Werte" der NEX recht beeindruckend. Oh, und als System haben die Linux (leider immer noch …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/lensrentals-com-undressing-an-nex.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/custom-iphone-backs.html">Custom iPhone Backs</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-12-23T18:01:00+01:00">
+        <i class="icon-calendar"></i>Fr 23 Dezember 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/bastelprojekte.html"><i class="icon-tag"></i>Bastelprojekte</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.woodbacked.com/">Custom iPhone Backs</a>. Nett - Rückwände aus Holz. Da wünscht man sich ja fast, dass einem die Glasrückwand kaputt geht, damit man einen Grund hat, sich sowas zu installieren ...</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/custom-iphone-backs.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/using-hardware-controllers-with-lightroom-valokuvaaja-max-edin.html">Using hardware controllers with Lightroom | Valokuvaaja Max Edin</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-12-01T16:13:00+01:00">
+        <i class="icon-calendar"></i>Do 01 Dezember 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/bildbearbeitung.html"><i class="icon-tag"></i>Bildbearbeitung</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://maxedin.net/2011/11/using-hardware-controllers-with-lightroom/">Using hardware controllers with Lightroom | Valokuvaaja Max Edin</a>. Holy-Moly, das ist ja mal ne klasse Idee. Einfach einen MIDI-Controller mit Lightroom verdrahten und die ganzen Slider über Drehknöpfe steuern. Da kriegt man ja fast Lust sich so einen Controller zu besorgen nur um das mal auszuprobieren.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/using-hardware-controllers-with-lightroom-valokuvaaja-max-edin.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/nokia-n9-first-hands-on-update-video-engadget.html">Nokia N9 first hands-on! update: video -- Engadget</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-06-22T10:34:00+02:00">
+        <i class="icon-calendar"></i>Mi 22 Juni 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/meego.html"><i class="icon-tag"></i>MeeGo</a>
+	<a href="https://rfc1437.github.io/tag/mobil.html"><i class="icon-tag"></i>Mobil</a>
+	<a href="https://rfc1437.github.io/tag/nokia.html"><i class="icon-tag"></i>Nokia</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.engadget.com/2011/06/21/nokia-n9-first-hands-on/">Nokia N9 first hands-on!</a>. Ok, es ist ein MeeGo Telefon und nach der Kooperationserklärung Nokias mit Microsoft weiss keiner so genau, wohin MeeGo (Nokias Linux-basiertes Telefonsystem) gehen wird, aber das <a href="http://europe.nokia.com/find-products/devices/nokia-n9/features">N9</a> ist absolut cool. Und MeeGo hat unten drunter das Linux-System, das mit den den N770/N800/N810 Tabletts und …</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/nokia-n9-first-hands-on-update-video-engadget.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/get-inpulse-and-hack-your-watch-home.html">Get inPulse and Hack Your Watch | Home</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2011-02-16T13:34:00+01:00">
+        <i class="icon-calendar"></i>Mi 16 Februar 2011
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/embedded.html"><i class="icon-tag"></i>Embedded</a>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.getinpulse.com/">Get inPulse and Hack Your Watch</a>. Sieht ganz cool aus, einfach nur ein kleiner Computer und ein Display, programmierbar, Anschluß über Bluetooth. Könnte man nette Spielereien mit machen. Vielleicht sogar die Uhrzeit anzeigen lassen.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/get-inpulse-and-hack-your-watch-home.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="https://rfc1437.github.io/super-secret-debugger-discovered-in-amd-cpus-%e2%80%a2-the-register.html">'Super-secret' debugger discovered in AMD CPUs • The Register</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2010-11-15T22:02:00+01:00">
+        <i class="icon-calendar"></i>Mo 15 November 2010
+</abbr>
+<span class="label">By</span>
+<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
+<span class="label">Category</span>
+<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://rfc1437.github.io/tag/hardware.html"><i class="icon-tag"></i>Hardware</a>
+	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="http://www.theregister.co.uk/2010/11/15/amd_secret_debugger/">'Super-secret' debugger discovered in AMD CPUs • The Register</a>. Wow. Hardware Backdoor.</p>
+                        <a class="btn primary xsmall" href="https://rfc1437.github.io/super-secret-debugger-discovered-in-amd-cpus-%e2%80%a2-the-register.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://palletsprojects.com/p/jinja/"><i class="icon-external-link"></i>Jinja2</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="https://rfc1437.github.io/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://github.com/rfc1437/"><i class="icon-github-sign icon-large"></i>github</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="https://rfc1437.github.io/category/artikel.html">
+    <i class="icon-folder-open icon-large"></i>Artikel
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/asides.html">
+    <i class="icon-folder-open icon-large"></i>Asides
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/galerie.html">
+    <i class="icon-folder-open icon-large"></i>Galerie
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/kochbuch.html">
+    <i class="icon-folder-open icon-large"></i>Kochbuch
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/metaowl.html">
+    <i class="icon-folder-open icon-large"></i>Metaowl
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/misc.html">
+    <i class="icon-folder-open icon-large"></i>misc
+</a>
+</li>
+<li>
+<a href="https://rfc1437.github.io/category/spielelog.html">
+    <i class="icon-folder-open icon-large"></i>Spielelog
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://rfc1437.github.io/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="https://rfc1437.github.io/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>
