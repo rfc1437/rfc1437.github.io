@@ -1,1370 +1,558 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Hugo's House of Blog Horror - Software</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="rfc1437">
-
-    <!-- Le styles -->
-    <link rel="stylesheet" href="https://rfc1437.github.io/theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="https://rfc1437.github.io/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="https://rfc1437.github.io/theme/css/font-awesome.css" rel="stylesheet">
-
-    <link href="https://rfc1437.github.io/theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="https://rfc1437.github.io/theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="https://rfc1437.github.io/theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://rfc1437.github.io/theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="https://rfc1437.github.io/theme/images/apple-touch-icon-114x114.png">
-
-    <link href="https://rfc1437.github.io/" type="application/atom+xml" rel="alternate" title="Hugo's House of Blog Horror ATOM Feed" />
-
-  </head>
-
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="https://rfc1437.github.io/index.html">Hugo's House of Blog Horror </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                  <li><a href="/impressum.html">Imprint</a></li>
-                  <li><a href="/about.html">About</a></li>
-                          <li class="divider-vertical"></li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/artikel.html">
-						<i class="icon-folder-open icon-large"></i>Artikel
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/asides.html">
-						<i class="icon-folder-open icon-large"></i>Asides
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/galerie.html">
-						<i class="icon-folder-open icon-large"></i>Galerie
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/kochbuch.html">
-						<i class="icon-folder-open icon-large"></i>Kochbuch
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/metaowl.html">
-						<i class="icon-folder-open icon-large"></i>Metaowl
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/misc.html">
-						<i class="icon-folder-open icon-large"></i>misc
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/spielelog.html">
-						<i class="icon-folder-open icon-large"></i>Spielelog
-					</a>
-                  </li>
-
-                          <ul class="nav pull-right">
-                                <li><a href="https://rfc1437.github.io/archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/un-peu-de-math-installing-and-using-sage-just-got-even-easier.html">Un peu de math...: Installing and using Sage just got even easier.</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-12-19T18:35:00+01:00">
-        <i class="icon-calendar"></i>Do 19 Dezember 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/mathematik.html"><i class="icon-tag"></i>Mathematik</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://drvinceknight.blogspot.de/2013/12/installing-and-using-sage-just-got-even.html">Un peu de math...: Installing and using Sage just got even easier.</a>. - und zwar einfach ein git pull und ein make und das wars. Ok, und größere Mengen Kaffee während man auf den Build wartet. Way cool. Wer Sage nicht kennt: ein Mathematik-Paket mit ähnlicher Komplexität und Ausrichtung wie Mathematica …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/un-peu-de-math-installing-and-using-sage-just-got-even-easier.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/black-and-white-hugos-house-of-photo-horror.html">Black and White - Hugos House of Photo Horror</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-03-30T11:50:00+01:00">
-        <i class="icon-calendar"></i>Sa 30 März 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://photo.rfc1437.de/black_and_white_3">Black and White - Hugos House of Photo Horror</a>. Bin mal wieder am Rumspielen mit Koken  und es gefällt mir immer noch ganz gut. Ich habe dort als Testalbum erst und jetzt als dauerhafte Einrichtung meine Schwarzweiß-Sammlung untergebracht, weil die Updates dahin deutlich einfacher gehen als in mein Hauptblog. Im Moment …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/black-and-white-hugos-house-of-photo-horror.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/sim-on-a-stick.html">Sim-on-a-Stick</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-03-25T19:46:00+01:00">
-        <i class="icon-calendar"></i>Mo 25 März 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/opensim.html"><i class="icon-tag"></i>OpenSim</a>
-	<a href="https://rfc1437.github.io/tag/secondlife.html"><i class="icon-tag"></i>SecondLife</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://simonastick.com/">Sim-on-a-Stick</a>. Wer OpenSim mal ausprobieren will, da gehts wahrscheinlich am einfachsten mit, fertig konfigurierte Installationen für einen USB Stick.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sim-on-a-stick.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/everythingserverubuntu-ryzom-ryzom-core-development-site.html">EverythingServerUbuntu - Ryzom - Ryzom Core Development Site</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-03-18T19:54:00+01:00">
-        <i class="icon-calendar"></i>Mo 18 März 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-	<a href="https://rfc1437.github.io/tag/spielen.html"><i class="icon-tag"></i>Spielen</a>
-	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://dev.ryzom.com/projects/ryzom/wiki/EverythingServerUbuntu">EverythingServerUbuntu - Ryzom - Ryzom Core Development Site</a>. Sollte ich mir mal genauer angucken - im Moment daddel ich ein bischen Ryzom, einfach so zur Entspannung am Wochenende, und das ist ja seit einiger Zeit alles Open Source - man kann also seinen eigenen Server aufsetzen mit seiner eigenen kleinen Welt. Die ist dann …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/everythingserverubuntu-ryzom-ryzom-core-development-site.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/hugos-house-of-photo-horror.html">Hugos House of Photo Horror</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-27T19:50:00+01:00">
-        <i class="icon-calendar"></i>Mi 27 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p>Da ich ja gerade von Koken schrieb, hab ich mal meine Photo-Test-Site umgestellt und Bilder hochgeladen: <a href="http://photo.rfc1437.de/">Hugos House of Photo Horror</a>. Ich muss sagen, ich bin begeistert. Die mitgelieferten Themes sind wirklich gut und das Backend ist um Welten besser als alles was Wordpress da zu bieten hat im Medienmanagement …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/hugos-house-of-photo-horror.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/koken-creative-website-publishing.html">Koken - Creative website publishing</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-27T19:00:00+01:00">
-        <i class="icon-calendar"></i>Mi 27 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/koken.html"><i class="icon-tag"></i>Koken</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://koken.me/">Koken - Creative website publishing</a>. Schon gestern getweetet, finde das hier recht interessant - sieht gut aus und das <a href="http://help.koken.me/customer/portal/articles/828699-lightroom-publish-services-plugin">Lightroom Publish Plugin</a> klingt auch sehr interessant. Bin am Überlegen ob ich nicht doch eher ein Fotozentrisches System brauche anstelle von Wordpress, zumindestens für meine ganzen Bilder. Und eine brauchbare Integration mit Lightroom …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/koken-creative-website-publishing.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/reprap-development-and-further-adventures-in-diy-3d-printing-slic3r-is-nicer-part-1-settings-and-extruder-calibration.html">Reprap development and further adventures in DIY 3D printing: Slic3r is Nicer - Part 1 - Settings and Extruder Calibration</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-25T22:39:00+01:00">
-        <i class="icon-calendar"></i>Mo 25 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/reprap.html"><i class="icon-tag"></i>RepRap</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://richrap.blogspot.de/2012/01/slic3r-is-nicer-part-1-settings-and.html">Slic3r is Nicer - Part 1 - Settings and Extruder Calibration</a> liefert gute Tipps zur Kalibrierung und Konfiguration von 3D Druckern.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/reprap-development-and-further-adventures-in-diy-3d-printing-slic3r-is-nicer-part-1-settings-and-extruder-calibration.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/reconstruct-your-world-with-reconstructme.html">Reconstruct your world with ReconstructMe</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-19T19:58:00+01:00">
-        <i class="icon-calendar"></i>Di 19 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://reconstructme.net/">Reconstruct your world with ReconstructMe</a>. Hey, cool, 3D Scanning mit Kinect. Damit wird das ganze tatsächlich Hobbyistentauglich - allerdings ist die Frage, ob man damit auch Sachen unterhalb Kopfgröße sinnvoll scannen kann, die Kinect ist ja eher für größere Scanbereiche ausgelegt.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/reconstruct-your-world-with-reconstructme.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/fooseloctoprint-at-devel-%c2%b7-github.html">foosel/OctoPrint at devel · GitHub</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-19T19:35:00+01:00">
-        <i class="icon-calendar"></i>Di 19 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/foosel/OctoPrint/tree/devel">foosel/OctoPrint at devel · GitHub</a>. Auch nett - ein 3D Drucker Steuerungsprogramm, welches auf einem Webserver läuft und auf einem RaspberryPi installiert werden kann. Dem ganzen noch ein Wifi-Modul spendieren und ein kleines nettes Gehäuse und schon kann man seinen 3D Drucker im Nachbarzimmer oder Keller aufbauen und bequem vom Sofa …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/fooseloctoprint-at-devel-%c2%b7-github.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/cura.html">Cura</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-15T20:11:00+01:00">
-        <i class="icon-calendar"></i>Fr 15 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/reprap.html"><i class="icon-tag"></i>RepRap</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://daid.github.com/Cura/">Cura</a>. Das  wäre so eine Software die den Druckprozess effizienter machen kann - ein all-in-one Paket mit integrierter Modellvorschau, Slicing, Printing und allen möglichen Parametern. Und auch Systemübergreifend verfügbar (was mich sowieso begeistert: fast alles an Software in dem Bereich ist Systemübergreifend verfügbar).</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/cura.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/freecad-an-open-source-parametric-3d-cad-modeler.html">FreeCAD: An Open Source parametric 3D CAD modeler</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-12T20:00:00+01:00">
-        <i class="icon-calendar"></i>Di 12 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://free-cad.sourceforge.net/">FreeCAD: An Open Source parametric 3D CAD modeler</a>. Und weil ich berade 3D Software sammel, hier noch eine freie (diesmal auch Open Source) Software für technische Modelle. Müsste ich mir auch mal näher angucken.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/freecad-an-open-source-parametric-3d-cad-modeler.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/pixologic-sculptris.html">Pixologic :: Sculptris</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-12T19:57:00+01:00">
-        <i class="icon-calendar"></i>Di 12 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.pixologic.com/sculptris/">Pixologic :: Sculptris</a>. Noch ein Modeller und der hier interessiert mich besonders - es ist nämlich eine abgespeckte, freie (wie in Freibier) Version von ZBrush. Ich hab zwar noch eine ältere ZBrush Lizenz rumfliegen, aber für meine Pläne wäre die hier warscheinlich sogar völlig ausreichend.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pixologic-sculptris.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/openscad-the-programmers-solid-3d-cad-modeller.html">OpenSCAD - The Programmers Solid 3D CAD Modeller</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-12T19:54:00+01:00">
-        <i class="icon-calendar"></i>Di 12 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.openscad.org/">OpenSCAD - The Programmers Solid 3D CAD Modeller</a>. Nicht uninteressant - ein parametrisches, nicht-interaktives CAD-System. Im Prinzip stopft man eine Basis rein und schreibt Scripte, die diese Basis dann weiter verwenden. Oder arbeitet gleich mit Scripten die aus Vollkörpern die Modelle zusammenbringen. Für technische Elemente kann das sehr viel übersichtlicher und flexibler …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/openscad-the-programmers-solid-3d-cad-modeller.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/repetier-software-the-software-driving-your-3d-printer.html">Repetier Software | The software driving your 3d printer</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-04T19:50:00+01:00">
-        <i class="icon-calendar"></i>Mo 04 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.repetier.com/">Repetier Software | The software driving your 3d printer</a>. Interessant, das ist eine Software die alle Schritte des Prints in einer Oberfläche zusammenfasst und soll deutlich schneller sein als pronterface. Mac-Version gibt es auch, von daher wäre das mal einen Versuch wert. Es kommt auch mit einer eigenen Firmware, da muss …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/repetier-software-the-software-driving-your-3d-printer.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/slic3r-g-code-generator-for-3d-printers.html">Slic3r - G-code generator for 3D printers</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-01T21:41:00+01:00">
-        <i class="icon-calendar"></i>Fr 01 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://slic3r.org/">Slic3r - G-code generator for 3D printers</a>. Ah ja, auch noch eine wichtige 3D Printing Software. Mit Slic3r wird aus dem STL Modell der eigentliche Druckplan erstellt, mit dem dann der Drucker das Werkstück produziert. Hier geht es also um die Layerdicke, wie der Kopf bewegt wird, wie die Infills aussehen …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/slic3r-g-code-generator-for-3d-printers.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/meshlab.html">MeshLab</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-01T20:00:00+01:00">
-        <i class="icon-calendar"></i>Fr 01 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://meshlab.sourceforge.net/">MeshLab</a>. Software zur Reparatur von Meshes, Löcher füllen, Überlappungen bereinigen etc. Kannte ich noch gar nicht.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/meshlab.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/lightzone-open-source-digital-darkroom-software-for-windowsmaclinux.html">LightZone | Open-source digital darkroom software for Windows/Mac/Linux</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-01T19:13:00+01:00">
-        <i class="icon-calendar"></i>Fr 01 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/bildbearbeitung.html"><i class="icon-tag"></i>Bildbearbeitung</a>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://lightzoneproject.org/">LightZone | Open-source digital darkroom software for Windows/Mac/Linux</a>. Gerade dran erinnert, das ist ja jetzt frei. Und dadurch, dass es Java ist, ist es auch über mehrere Plattformen erhältlich. Bei meinen Experimenten damals war es für Linux durchaus eine coole Alternative. Speziell die Kontraststeuerung durch ein digitales Zonensystem ist …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/lightzone-open-source-digital-darkroom-software-for-windowsmaclinux.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/repetierrepetier-host-mac-%c2%b7-github.html">repetier/Repetier-Host-Mac · GitHub</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-01T11:17:00+01:00">
-        <i class="icon-calendar"></i>Fr 01 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/reprap.html"><i class="icon-tag"></i>RepRap</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/repetier/Repetier-Host-Mac">repetier/Repetier-Host-Mac · GitHub</a>. Und die nötige Software zur Ansteuerung des Druckers.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/repetierrepetier-host-mac-%c2%b7-github.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/postbox-awesome-email.html">Postbox — Awesome Email</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-07-23T11:09:00+02:00">
-        <i class="icon-calendar"></i>Mo 23 Juli 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/mac.html"><i class="icon-tag"></i>Mac</a>
-	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www3.postbox-inc.com/index.php">Postbox — Awesome Email</a>. Von Thunderbird war ich eh nie so begeistert, daher hat mich die Ankündigung, dass es nicht weiter entwickelt werden soll, nicht sonderlich gestört. Aber dass Sparrow jetzt Google gehört und laut den Ankündigungen da wohl auch nichts mehr zu erwarten ist, hat mich schon ziemlich angefressen - das …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/postbox-awesome-email.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/soulvers-features-acqualia.html">Soulvers Features | Acqualia</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-07-05T20:48:00+02:00">
-        <i class="icon-calendar"></i>Do 05 Juli 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.acqualia.com/soulver/features.php">Soulvers Features | Acqualia</a>. "Taschenrechner" rethought. Ich wundere mich eh warum so viele Rechner für den Computerdesktop verzweifelt das UI von alten Taschenrechnern nachbauen. Bei mobilen Geräten macht es durchaus Sinn - das Taschenrechner-UI mit mehrfach belegten Tasten ist durchaus für so kleine Formfaktoren effizient - aber auf dem Computer nehme ich weitaus …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/soulvers-features-acqualia.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/jwbs-blog-ema-personal-wiki-for-android-and-windows.html">JWBs blog: Ema Personal Wiki for Android and Windows</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-07-04T14:18:00+02:00">
-        <i class="icon-calendar"></i>Mi 04 Juli 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-	<a href="https://rfc1437.github.io/tag/wiki.html"><i class="icon-tag"></i>Wiki</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://jwbs-blog.blogspot.de/2010/09/ema-personal-wiki-for-android-and.html">JWBs blog: Ema Personal Wiki for Android and Windows</a>. Weil ich gerade bei Markdown war - hier gibts ein Markdown-nutzendes persönliches Wiki für verschiedene Systeme, unter anderem Android. Der Beschreibung nach ist das ganze recht ähnlich zu <a href="https://code.google.com/p/vimwiki/">Vim Wiki</a>.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/jwbs-blog-ema-personal-wiki-for-android-and-windows.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/mumble.html">Mumble</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-05-23T09:23:00+02:00">
-        <i class="icon-calendar"></i>Mi 23 Mai 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://mumble.sourceforge.net/">Mumble</a>. Ist zwar irgendwie lustig, wenn man seine Tipps für Software von einer politischen Partei bekommt, aber egal. Mumble ist sowas wie Teamspeak (oder auch ein entfernter Verwandter von Skype Gruppenchats oder Google+  Hangouts), nur halt open source und zum selber betreiben. Clients auch für OSX, Windows, Linux und iOS …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/mumble.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/amazon-com-send-to-kindle-for-mac.html">Amazon.com: Send to Kindle for Mac</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-04-26T10:05:00+02:00">
-        <i class="icon-calendar"></i>Do 26 April 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/bucher.html"><i class="icon-tag"></i>Bücher</a>
-	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.amazon.com/gp/feature.html/?ie=UTF8&amp;docId=1000778781">Amazon.com: Send to Kindle for Mac</a>. Könnte ganz nett sein, um die diversen Online-Dokumentationen einfach auf den Kindle zu "drucken" und dort gemütlich zu lesen. Ausserdem landen sie dann potentiell auch gleich auf dem iPhone für unterwegs ...</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/amazon-com-send-to-kindle-for-mac.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/645-pro-app-for-iphone-offers-access-to-lossless-camera-output-but-not-raw-digital-photography-review.html">645 PRO app for iPhone offers access to lossless camera output but not Raw: Digital Photography Review</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-04-23T22:16:00+02:00">
-        <i class="icon-calendar"></i>Mo 23 April 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/ios.html"><i class="icon-tag"></i>iOS</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.dpreview.com/news/2012/04/20/645-PRo-offers-camera-control-and-uncompressed-output">645 PRO app for iPhone offers access to lossless camera output but not Raw</a>. Klingt ganz interessant, aber nicht so sehr wegen des Pseudo-RAW - da werden nicht wirklich so riesige Unterschiede sein - sondern wegen des User-Interfaces, denn das ist deutlich näher an einer normalen Kamera angelehnt und spuckt auch ein …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/645-pro-app-for-iphone-offers-access-to-lossless-camera-output-but-not-raw-digital-photography-review.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/forger-the-digital-sculpting-app-for-ipad.html">forger the digital sculpting app for iPad</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-11-10T13:30:00+01:00">
-        <i class="icon-calendar"></i>Do 10 November 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/ios.html"><i class="icon-tag"></i>iOS</a>
-	<a href="https://rfc1437.github.io/tag/mobil.html"><i class="icon-tag"></i>Mobil</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://forgerapp.com/">forger the digital sculpting app for iPad</a>. 3D Modellierung für unterwegs auf dem iPad nach dem Lehm-Formen-Modell. Könnte ja für den einen oder anderen interessant sein, der das dann über Blender nach Collada bringen will um es in Second Life zu importieren zum Beispiel.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/forger-the-digital-sculpting-app-for-ipad.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/pixelmator.html">Pixelmator</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-10-31T21:26:00+01:00">
-        <i class="icon-calendar"></i>Mo 31 Oktober 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/bildbearbeitung.html"><i class="icon-tag"></i>Bildbearbeitung</a>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.pixelmator.com/">Pixelmator</a>. Billiger, kleiner und optisch deutlich ansprechender als Photoshop Elements Editor. Und hat den Healing Brush (und eine interessante Alternative, bei der man einfach eine Selektion malt und dann diese ganze Selektion heilt). Und unterstützt die Features von Lion - also Versionen, Vollbildschirm etc. Habs mir mal gegriffen, PSE wird dann …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pixelmator.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/adobe-carousel-mini-lightroom-fur-iphone-und-ipad-verfugbar-golem-de.html">Adobe Carousel: Mini-Lightroom für iPhone und iPad verfügbar - Golem.de</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-10-28T09:31:00+02:00">
-        <i class="icon-calendar"></i>Fr 28 Oktober 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.golem.de/1110/87342.html">Adobe Carousel: Mini-Lightroom für iPhone und iPad verfügbar</a>. Hmm - von der Beschreibung her klingt das eigentlich einfach wie das was Apple mit Photostream auch bietet. Ok, non-destruktive Änderungen hat Photostream nicht, und die Bearbeitungsmöglichkeiten sind schon deutlich größer, aber sowas kann man mittels Snapseed ja auch erledigen, genauso wie das …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/adobe-carousel-mini-lightroom-fur-iphone-und-ipad-verfugbar-golem-de.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/pixelmator-2-sneak-preview.html">Pixelmator 2 Sneak Preview</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-10-24T11:30:00+02:00">
-        <i class="icon-calendar"></i>Mo 24 Oktober 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/bildbearbeitung.html"><i class="icon-tag"></i>Bildbearbeitung</a>
-	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.pixelmator.com/sneak-preview/">Pixelmator 2 Sneak Preview</a>. Hmm. Klingt so, als ob es eine gute Alternative zu Photoshop Express sein könnte - das Healing Tool und er content-aware Fill wären ja genau die beiden Features die ich bei PSE benutze (und die nicht von LR oder anderen Tools auch geliefert werden). Müsste ich wirklich …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pixelmator-2-sneak-preview.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/ach-apple%e2%80%a6-ach-aperture%e2%80%a6-massenbelichtungswaffen-de.html">Ach, Apple… ach, Aperture… | massenbelichtungswaffen.de</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-10-24T09:44:00+02:00">
-        <i class="icon-calendar"></i>Mo 24 Oktober 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://massenbelichtungswaffen.de/2011/10/ach-apple/">Ach, Apple… ach, Aperture… | massenbelichtungswaffen.de</a>. Da ich immer mal wieder grübel, ob ich nicht doch mal Aperture ausprobieren sollte - der Artikel hier hat mich erstmal von der Ausgabe der 70 Euro geheilt für längere Zeit. Denn was nützt  mir ein Bildverwalter und Bildeditor, der unter Umständen mit meinen (jetzigen …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/ach-apple%e2%80%a6-ach-aperture%e2%80%a6-massenbelichtungswaffen-de.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/airprint-activator-v2-0-%c2%ab-netputing.html">AirPrint Activator v2.0 « Netputing</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-10-17T13:06:00+02:00">
-        <i class="icon-calendar"></i>Mo 17 Oktober 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/ios.html"><i class="icon-tag"></i>iOS</a>
-	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://netputing.com/airprintactivator/airprint-activator-v2-0/">AirPrint Activator v2.0 « Netputing</a>. Geblogmarkt für später - damit kann man seine Drucker im Netz und den PDF-Konverter auf dem Mac als AirPrint Drucker freigeben, so dass man auch vom Sofa vom iPad aus Drucken kann (und da man auch auf einen PDF Konverter drucken kann, muss man nicht einmal …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/airprint-activator-v2-0-%c2%ab-netputing.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/textastic-%e2%80%93-syntax-highlighting-text-editor-ftp-sftp-dropbox-%e2%80%93-for-ipad.html">Textastic – Syntax highlighting text editor, FTP, SFTP, Dropbox – for iPad</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-10-14T23:54:00+02:00">
-        <i class="icon-calendar"></i>Fr 14 Oktober 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/editor.html"><i class="icon-tag"></i>Editor</a>
-	<a href="https://rfc1437.github.io/tag/ios.html"><i class="icon-tag"></i>iOS</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.textasticapp.com/">Textastic – Syntax highlighting text editor, FTP, SFTP, Dropbox – for iPad</a>. Den Editor benutze ich auf dem iPad - integriert auch mit PythonMath, denn es hat "open in..." und Dropbox integriert.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/textastic-%e2%80%93-syntax-highlighting-text-editor-ftp-sftp-dropbox-%e2%80%93-for-ipad.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/trunkdesk-mac-desktop-companion-for-trunk-notes-google-project-hosting.html">trunkdesk - Mac desktop companion for Trunk Notes - Google Project Hosting</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-09-28T14:34:00+02:00">
-        <i class="icon-calendar"></i>Mi 28 September 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-	<a href="https://rfc1437.github.io/tag/wiki.html"><i class="icon-tag"></i>Wiki</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://code.google.com/p/trunkdesk/">trunkdesk - Mac desktop companion for Trunk Notes - Google Project Hosting</a>. Da ich immer wieder mit Desktop-Wikis rumspiele und generell das Problem habe, dass ich auch unterwegs auf Daten zugreifen will - und zwar auch ändernd, nicht nur anschauend, und bitte schön mit vergleichbaren Features und nicht nur eingeschränkt (wodurch leider VoodooPad …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/trunkdesk-mac-desktop-companion-for-trunk-notes-google-project-hosting.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/launchpad-control-chaosspace-de.html">Launchpad-Control | chaosspace.de</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-09-26T11:03:00+02:00">
-        <i class="icon-calendar"></i>Mo 26 September 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://chaosspace.de/launchpad-control/">Launchpad-Control | chaosspace.de</a>. Mal geblogmarkt, weil mich das Auto-Layout des Launchpad manchmal dann doch etwas nervt und etwas mehr Einfluss gut wäre. Hiermit kann man zumindestens etwas auf das Launchpad einwirken und Icons rausfiltern, etc.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/launchpad-control-chaosspace-de.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/adobe-announces-carousel-cloud-based-image-service-digital-photography-review.html">Adobe announces Carousel - cloud-based image service: Digital Photography Review</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-09-07T22:14:00+02:00">
-        <i class="icon-calendar"></i>Mi 07 September 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.dpreview.com/news/1109/11090715AdobeCarousel.asp">Adobe announces Carousel - cloud-based image service: Digital Photography Review</a>. Klingt gar nicht mal so uninteressant. Als Engine soll da drin die von Lightroom eingesetzt werden, das ganze dann voll automatisch synchronisiert zwischen den Geräten und Bearbeitungen auf allen Geräten möglich. Wird interessant zu sehen ob das eine Integration mit  Lighroom …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/adobe-announces-carousel-cloud-based-image-service-digital-photography-review.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/el34-the-home-of-eddie-about.html">EL34 - The home of Eddie - About</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-07-27T10:07:00+02:00">
-        <i class="icon-calendar"></i>Mi 27 Juli 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/editor.html"><i class="icon-tag"></i>Editor</a>
-	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.el34.com/aboutEddie.html">EL34 - The home of Eddie - About</a>. Hmm, sollte ich mir auch mal angucken - die MPW-geerbten Worksheets klingen interessant, die von BBEdit sind leider immer eher hakelig als wirklich rund. Vielleicht ist Eddie da ja etwas besser bestückt. Allerdings "SVN Integration" als einzige Versionsverwaltung? Autsch. Kommt mal ins aktuelle Jahrtausend, Leute …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/el34-the-home-of-eddie-about.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/elements.html">Elements+</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-07-22T17:45:00+02:00">
-        <i class="icon-calendar"></i>Fr 22 Juli 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.elementsplus.net/v3/de/overview.htm">Elements+</a>. Lustig - scheinbar ist Photoshop Elements nicht wirklich eine abgespeckte Photoshop Version, sondern in Wirklichkeit nur eine abgespeckte GUI für den Photoshop-Kernel - viele Funktionen sind intern noch verfügbar. Und mit dem Patch soll man diese Funktionen wieder zugänglich machen können.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/elements.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/scripts-tagged-fluid-userscripts-org.html">Scripts Tagged fluid - Userscripts.org</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-07-14T15:47:00+02:00">
-        <i class="icon-calendar"></i>Do 14 Juli 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://userscripts.org/tags/fluid">Scripts Tagged fluid - Userscripts.org</a>. Mal verlinkt, denn Fluid ist ein wirklich cooler site-specific Browser für OSX und mit zum Beispiel dem Google+ Dock Badget echt praktisch. Und mit den getrennten Cookiespeichern von Fluid kann man auch mehrere Google+ Profile offen halten (oder auch andere Sites, die mit Cookies arbeiten …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/scripts-tagged-fluid-userscripts-org.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/circus-ponies-notebook-for-ipad-take-great-notes.html">Circus Ponies NoteBook for iPad - Take Great Notes</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-06-22T12:00:00+02:00">
-        <i class="icon-calendar"></i>Mi 22 Juni 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/ios.html"><i class="icon-tag"></i>iOS</a>
-	<a href="https://rfc1437.github.io/tag/outliner.html"><i class="icon-tag"></i>Outliner</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.circusponies.com/notebook-ipad/take-great-notes">Circus Ponies NoteBook for iPad - Take Great Notes</a>. Hmm, Circus Ponies NoteBook ist auf dem Mac eines der mächtigsten Notebooks (mit integriertem Outliner) - die Reviews für die iPad Version sind aber nicht so prall. Und es gibt keinen vernünftigen Sync - ich frag mich echt, warum Productivity-App-Hersteller nicht generell erstmal die …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/circus-ponies-notebook-for-ipad-take-great-notes.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/omnioutliner-for-ipad-products-the-omni-group.html">OmniOutliner for iPad - Products - The Omni Group</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-06-22T11:54:00+02:00">
-        <i class="icon-calendar"></i>Mi 22 Juni 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/ios.html"><i class="icon-tag"></i>iOS</a>
-	<a href="https://rfc1437.github.io/tag/outliner.html"><i class="icon-tag"></i>Outliner</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.omnigroup.com/products/omnioutliner-ipad/">OmniOutliner for iPad</a>. Huch! Wieso hab ich das nicht mitbekommen? Es gibt jetzt den OmniOutliner für das iPad! OmniOutliner ist auf dem Mac mein bevorzugter Outliner, unter anderem weil er sich in vielen Punkten sehr ähnlich zum Frontier Outliner konfigurieren lässt (speziell das Splitten eines Punktes durch einfaches Enter ist …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/omnioutliner-for-ipad-products-the-omni-group.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/sparkleshare-sharing-work-made-easy.html">SparkleShare - Sharing work made easy</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-06-20T10:10:00+02:00">
-        <i class="icon-calendar"></i>Mo 20 Juni 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-	<a href="https://rfc1437.github.io/tag/synchronisation.html"><i class="icon-tag"></i>Synchronisation</a>
-	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://sparkleshare.org/">SparkleShare - Sharing work made easy</a>. Mal geblogmarkt, denn das sieht erstmal recht vielversprechend aus - als Server kommt einfach ein Git zum Einsatz. Leider scheinbar grundsätzlich nur ssh basiertes Git, nicht https, zumindestens sehe ich in den Docs nichts dazu - https wäre universeller (auch wenn dann natürlich Passwörter abgelegt werden müssen …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sparkleshare-sharing-work-made-easy.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/sony-prs-505-firmware-update-customizing-mobileread-forums.html">SONY PRS-505 Firmware-Update + Customizing - MobileRead Forums</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-06-19T19:47:00+02:00">
-        <i class="icon-calendar"></i>So 19 Juni 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/bucher.html"><i class="icon-tag"></i>Bücher</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.mobileread.com/forums/showthread.php?t=27519">SONY PRS-505 Firmware-Update + Customizing - MobileRead Forums</a>. Wichtig für die Russifizierung meines alten PRS 505 - danach tuts der jetzt komplett in Russisch und mit russischen eBooks. Und war - nachdem ich es gefunden habe - auch garnicht so kompliziert. Die russischen Menüs kommen erst, wenn man einmal in die Locale-Einstellung gegangen ist. Und …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sony-prs-505-firmware-update-customizing-mobileread-forums.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/download-adobe-lens-profile-creator-preview-adobe-labs.html">Download Adobe Lens Profile Creator Preview - Adobe Labs</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-04-27T10:22:00+02:00">
-        <i class="icon-calendar"></i>Mi 27 April 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://labs.adobe.com/downloads/lensprofile_creator.html">Download Adobe Lens Profile Creator Preview - Adobe Labs</a>.  Unten auf der Seite sind Download-Links. Einmal der angesprochene Profile Creator, mit dem man eigene Profile für Kameras und Linsen machen kann. Aber fast noch interessanter ein Profile Downloader - mit dem kann man Profile von anderen Lighroom-Usern herunterladen. Das kann schon mal …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/download-adobe-lens-profile-creator-preview-adobe-labs.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/virtuawin-virtual-desktops-for-windows.html">VirtuaWin - Virtual Desktops for Windows</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-04-15T10:03:00+02:00">
-        <i class="icon-calendar"></i>Fr 15 April 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-	<a href="https://rfc1437.github.io/tag/windows.html"><i class="icon-tag"></i>Windows</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://virtuawin.sourceforge.net/">VirtuaWin - Virtual Desktops for Windows</a>. Weil gerade jemand fragte, ob es sowas gibt. Ich brauchs ja nicht. Ich benutz ja ein Betriebssystem.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/virtuawin-virtual-desktops-for-windows.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/philikon-weaveclient-chromium-overview-%e2%80%93-bitbucket.html">philikon / weaveclient-chromium / overview – Bitbucket</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-04-06T11:11:00+02:00">
-        <i class="icon-calendar"></i>Mi 06 April 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/chrome.html"><i class="icon-tag"></i>Chrome</a>
-	<a href="https://rfc1437.github.io/tag/extension.html"><i class="icon-tag"></i>Extension</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://bitbucket.org/philikon/weaveclient-chromium">philikon / weaveclient-chromium</a>. Noch nicht ausprobiert, es ist eine Chrome-Erweiterung die Mozilla Sync in Chrome und Chromium integriert. Damit könnte man endlich die Bookmarks zwischen Chrome und Firefox austauschen ohne über XMarks gehen zu müssen. Wenn jetzt noch jemand diese Extension auch für Safari baut, wäre ich glücklich - die Tatsache, dass …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/philikon-weaveclient-chromium-overview-%e2%80%93-bitbucket.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/video-lightbox-binden-sie-videos-mit-lightbox-effekt-in-ihre-internetseite-ein.html">Video LightBox - binden Sie Videos mit Lightbox Effekt in Ihre Internetseite ein!</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-04-06T10:29:00+02:00">
-        <i class="icon-calendar"></i>Mi 06 April 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-	<a href="https://rfc1437.github.io/tag/video.html"><i class="icon-tag"></i>Video</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://videolightbox.com/de/index.html">Video LightBox - binden Sie Videos mit Lightbox Effekt in Ihre Internetseite ein!</a>. Ich mach ja nix mit Video, aber sieht ganz interessant aus - das ist ein standalone Tool, welches die Files für die Video-Einbettung erzeugt und z.B. per FTP irgendwohin schicken kann. Mac und Windows Versionen.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/video-lightbox-binden-sie-videos-mit-lightbox-effekt-in-ihre-internetseite-ein.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/adobe-photoshop-lightroom-3-exporting-using-publish-services.html">Adobe Photoshop Lightroom 3 * Exporting using Publish Services</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-03-16T10:35:00+01:00">
-        <i class="icon-calendar"></i>Mi 16 März 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-	<a href="https://rfc1437.github.io/tag/webservice.html"><i class="icon-tag"></i>Webservice</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://help.adobe.com/en_US/Lightroom/3.0/Using/WS43660fa5a9ec95a81172e08124a15d684d-7ffe.html">Adobe Photoshop Lightroom 3 * Exporting using Publish Services</a>. Tja, Adobe hat Photoshop.com - und gerade erst dieses ausgeweitet. Und propagiert es als eine bessere Alternative zu Flickr. Wie ernst es Adobe damit ist, sieht man an den Publish Services in Lightroom 3. Es werden von Hause aus Facebook, Flickr und …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/adobe-photoshop-lightroom-3-exporting-using-publish-services.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/shuttersnitch.html">ShutterSnitch</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-03-13T20:13:00+01:00">
-        <i class="icon-calendar"></i>So 13 März 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/ipad.html"><i class="icon-tag"></i>iPad</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.shuttersnitch.com/">ShutterSnitch</a>. Interessante kleine App mit der man Bilder über WiFi auf dem iPad empfangen und automatisch mit Metadaten und Geocodierung versehen kann - könnte eine recht interessante Kombination mit einer EyeFi-Karte in meiner Sony oder meinen Panasonics sein (die M8 kann leider nicht mit EyeFi - der SD-Slot ist bei der M8 …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/shuttersnitch.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/bluemarine-home.html">blueMarine - Home</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-03-09T12:22:00+01:00">
-        <i class="icon-calendar"></i>Mi 09 März 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/linux.html"><i class="icon-tag"></i>Linux</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://bluemarine.tidalwave.it/">blueMarine</a> ist noch ein mir bisher unbekanntes Projekt, das Lightroom und Aperture als Inspiration nimmt. Allerdings hat es bisher keinerlei RAW-Edit-Funktionen (während Darktable non-destruktives Editieren hat), sondern konzentriert sich rein auf das Image Management. Was mir aber unter Umständen für Linux sogar entgegen käme, da ich dort meistens nur reingucken …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/bluemarine-home.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/darktable-news.html">darktable | news</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-03-09T12:03:00+01:00">
-        <i class="icon-calendar"></i>Mi 09 März 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/linux.html"><i class="icon-tag"></i>Linux</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://darktable.sourceforge.net/index.shtml">darktable</a> ist scheinbar komplett an mir unbemerkt vorbeigerauscht - eine OpenSource Alternative zu Adobe Lightroom für Linux. Sollte ich mir wirklich mal angucken. Lightroom gefällt mir zwar sehr gut, aber macht absolut nichts da eine Alternative für zu kennen, denn ob mir Adobe in späteren Versionen immer noch gefallen wird ist …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/darktable-news.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/bracketeer-exposure-processing-software.html">Bracketeer: Exposure Processing Software</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-02-15T19:33:00+01:00">
-        <i class="icon-calendar"></i>Di 15 Februar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.pangeasoft.net/pano/bracketeer/">Bracketeer: Exposure Processing Software</a>. Hmm, ich hab ja bisher nur mit dem eingebauten HDR in der Sony NEX gespielt, und mit <a href="http://www.ohanaware.com/hdrtist/">HDRTist</a> (in der freien Version glaub ich). Aber das hier könnte ich auch mal ausprobieren. Gibts zur Zeit für 5 Euros im AppStore.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/bracketeer-exposure-processing-software.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/sparrow-the-new-mail-for-mac.html">sparrow - The New Mail for Mac</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-20T12:56:00+01:00">
-        <i class="icon-calendar"></i>Mo 20 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.sparrowmailapp.com/">sparrow - The New Mail for Mac</a>. Sieht richtig gut aus und ist der erste Mailclient, der mich überlegen lässt ob ich nicht von MailPlane wechseln sollte. Denn MailPlain unterstützt zwar - zwangsläufig - alle GMail Features, aber sieht eben auch genau so aus wie das was es ist: eine Webseite. Wenn Sparrow …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sparrow-the-new-mail-for-mac.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/printopia-share-your-macs-printers-to-iphone-and-ipad-print-from-iphone-ecamm-network.html">Printopia - Share Your Mac's Printers to iPhone and iPad - Print from iPhone - Ecamm Network</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-11-23T09:35:00+01:00">
-        <i class="icon-calendar"></i>Di 23 November 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
-	<a href="https://rfc1437.github.io/tag/software.html"><i class="icon-tag"></i>Software</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.ecamm.com/mac/printopia/">Printopia</a> wandelt am Mac angeschlossene Drucker in einen virtuellen AirPrint-kompatiblen Drucker um. Ist Apple eigentlich klar, wie lächerlich die Beschränkung auf einige wenige HP Drucker bei AirPrint ist? Die tun gerade so, als wäre Drucken wahnsinnig kompliziert. Warum muss man sich eine Drittsoftware besorgen, wenn man nicht von HP gezwungen …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/printopia-share-your-macs-printers-to-iphone-and-ipad-print-from-iphone-ecamm-network.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-<ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
-    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
-    <li><a href="https://palletsprojects.com/p/jinja/"><i class="icon-external-link"></i>Jinja2</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="https://rfc1437.github.io/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-    <li><a href="https://github.com/rfc1437/"><i class="icon-github-sign icon-large"></i>github</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="https://rfc1437.github.io/category/artikel.html">
-    <i class="icon-folder-open icon-large"></i>Artikel
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/asides.html">
-    <i class="icon-folder-open icon-large"></i>Asides
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/galerie.html">
-    <i class="icon-folder-open icon-large"></i>Galerie
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/kochbuch.html">
-    <i class="icon-folder-open icon-large"></i>Kochbuch
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/metaowl.html">
-    <i class="icon-folder-open icon-large"></i>Metaowl
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/misc.html">
-    <i class="icon-folder-open icon-large"></i>misc
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/spielelog.html">
-    <i class="icon-folder-open icon-large"></i>Spielelog
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://rfc1437.github.io/theme/js/jquery-1.7.2.min.js"></script>
-    <script src="https://rfc1437.github.io/theme/js/bootstrap.min.js"></script>
-  </body>
+<html lang="de-de">
+<head>
+        <title>Hugo's House of Blog Horror - Software tag</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <link href="https://rfc1437.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Hugo's House of Blog Horror Full Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://rfc1437.github.io/">Hugo's House of Blog Horror</a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="/impressum.html">Imprint</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="https://rfc1437.github.io/category/artikel.html">Artikel</a></li>
+            <li><a href="https://rfc1437.github.io/category/asides.html">Asides</a></li>
+            <li><a href="https://rfc1437.github.io/category/galerie.html">Galerie</a></li>
+            <li><a href="https://rfc1437.github.io/category/kochbuch.html">Kochbuch</a></li>
+            <li><a href="https://rfc1437.github.io/category/metaowl.html">Metaowl</a></li>
+            <li><a href="https://rfc1437.github.io/category/misc.html">misc</a></li>
+            <li><a href="https://rfc1437.github.io/category/spielelog.html">Spielelog</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content">
+<h2>Articles tagged with Software</h2>
+
+<ol id="post-list">
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/un-peu-de-math-installing-and-using-sage-just-got-even-easier.html" rel="bookmark" title="Permalink to Un peu de math...: Installing and using Sage just got even easier.">Un peu de math...: Installing and using Sage just got even easier.</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-12-19T18:35:00+01:00"> Do 19 Dezember 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://drvinceknight.blogspot.de/2013/12/installing-and-using-sage-just-got-even.html">Un peu de math...: Installing and using Sage just got even easier.</a>. - und zwar einfach ein git pull und ein make und das wars. Ok, und größere Mengen Kaffee während man auf den Build wartet. Way cool. Wer Sage nicht kennt: ein Mathematik-Paket mit ähnlicher Komplexität und Ausrichtung wie Mathematica …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/black-and-white-hugos-house-of-photo-horror.html" rel="bookmark" title="Permalink to Black and White - Hugos House of Photo Horror">Black and White - Hugos House of Photo Horror</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-03-30T11:50:00+01:00"> Sa 30 März 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://photo.rfc1437.de/black_and_white_3">Black and White - Hugos House of Photo Horror</a>. Bin mal wieder am Rumspielen mit Koken  und es gefällt mir immer noch ganz gut. Ich habe dort als Testalbum erst und jetzt als dauerhafte Einrichtung meine Schwarzweiß-Sammlung untergebracht, weil die Updates dahin deutlich einfacher gehen als in mein Hauptblog. Im Moment …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/sim-on-a-stick.html" rel="bookmark" title="Permalink to Sim-on-a-Stick">Sim-on-a-Stick</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-03-25T19:46:00+01:00"> Mo 25 März 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://simonastick.com/">Sim-on-a-Stick</a>. Wer OpenSim mal ausprobieren will, da gehts wahrscheinlich am einfachsten mit, fertig konfigurierte Installationen für einen USB Stick.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/everythingserverubuntu-ryzom-ryzom-core-development-site.html" rel="bookmark" title="Permalink to EverythingServerUbuntu - Ryzom - Ryzom Core Development Site">EverythingServerUbuntu - Ryzom - Ryzom Core Development Site</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-03-18T19:54:00+01:00"> Mo 18 März 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://dev.ryzom.com/projects/ryzom/wiki/EverythingServerUbuntu">EverythingServerUbuntu - Ryzom - Ryzom Core Development Site</a>. Sollte ich mir mal genauer angucken - im Moment daddel ich ein bischen Ryzom, einfach so zur Entspannung am Wochenende, und das ist ja seit einiger Zeit alles Open Source - man kann also seinen eigenen Server aufsetzen mit seiner eigenen kleinen Welt. Die ist dann …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/hugos-house-of-photo-horror.html" rel="bookmark" title="Permalink to Hugos House of Photo Horror">Hugos House of Photo Horror</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-27T19:50:00+01:00"> Mi 27 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Da ich ja gerade von Koken schrieb, hab ich mal meine Photo-Test-Site umgestellt und Bilder hochgeladen: <a href="http://photo.rfc1437.de/">Hugos House of Photo Horror</a>. Ich muss sagen, ich bin begeistert. Die mitgelieferten Themes sind wirklich gut und das Backend ist um Welten besser als alles was Wordpress da zu bieten hat im Medienmanagement …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/koken-creative-website-publishing.html" rel="bookmark" title="Permalink to Koken - Creative website publishing">Koken - Creative website publishing</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-27T19:00:00+01:00"> Mi 27 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://koken.me/">Koken - Creative website publishing</a>. Schon gestern getweetet, finde das hier recht interessant - sieht gut aus und das <a href="http://help.koken.me/customer/portal/articles/828699-lightroom-publish-services-plugin">Lightroom Publish Plugin</a> klingt auch sehr interessant. Bin am Überlegen ob ich nicht doch eher ein Fotozentrisches System brauche anstelle von Wordpress, zumindestens für meine ganzen Bilder. Und eine brauchbare Integration mit Lightroom …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/reprap-development-and-further-adventures-in-diy-3d-printing-slic3r-is-nicer-part-1-settings-and-extruder-calibration.html" rel="bookmark" title="Permalink to Reprap development and further adventures in DIY 3D printing: Slic3r is Nicer - Part 1 - Settings and Extruder Calibration">Reprap development and further adventures in DIY 3D printing: Slic3r is Nicer - Part 1 - Settings and Extruder Calibration</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-25T22:39:00+01:00"> Mo 25 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://richrap.blogspot.de/2012/01/slic3r-is-nicer-part-1-settings-and.html">Slic3r is Nicer - Part 1 - Settings and Extruder Calibration</a> liefert gute Tipps zur Kalibrierung und Konfiguration von 3D Druckern.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/reconstruct-your-world-with-reconstructme.html" rel="bookmark" title="Permalink to Reconstruct your world with ReconstructMe">Reconstruct your world with ReconstructMe</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-19T19:58:00+01:00"> Di 19 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://reconstructme.net/">Reconstruct your world with ReconstructMe</a>. Hey, cool, 3D Scanning mit Kinect. Damit wird das ganze tatsächlich Hobbyistentauglich - allerdings ist die Frage, ob man damit auch Sachen unterhalb Kopfgröße sinnvoll scannen kann, die Kinect ist ja eher für größere Scanbereiche ausgelegt.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/fooseloctoprint-at-devel-%c2%b7-github.html" rel="bookmark" title="Permalink to foosel/OctoPrint at devel · GitHub">foosel/OctoPrint at devel · GitHub</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-19T19:35:00+01:00"> Di 19 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/foosel/OctoPrint/tree/devel">foosel/OctoPrint at devel · GitHub</a>. Auch nett - ein 3D Drucker Steuerungsprogramm, welches auf einem Webserver läuft und auf einem RaspberryPi installiert werden kann. Dem ganzen noch ein Wifi-Modul spendieren und ein kleines nettes Gehäuse und schon kann man seinen 3D Drucker im Nachbarzimmer oder Keller aufbauen und bequem vom Sofa …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/cura.html" rel="bookmark" title="Permalink to Cura">Cura</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-15T20:11:00+01:00"> Fr 15 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://daid.github.com/Cura/">Cura</a>. Das  wäre so eine Software die den Druckprozess effizienter machen kann - ein all-in-one Paket mit integrierter Modellvorschau, Slicing, Printing und allen möglichen Parametern. Und auch Systemübergreifend verfügbar (was mich sowieso begeistert: fast alles an Software in dem Bereich ist Systemübergreifend verfügbar).</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/freecad-an-open-source-parametric-3d-cad-modeler.html" rel="bookmark" title="Permalink to FreeCAD: An Open Source parametric 3D CAD modeler">FreeCAD: An Open Source parametric 3D CAD modeler</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-12T20:00:00+01:00"> Di 12 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://free-cad.sourceforge.net/">FreeCAD: An Open Source parametric 3D CAD modeler</a>. Und weil ich berade 3D Software sammel, hier noch eine freie (diesmal auch Open Source) Software für technische Modelle. Müsste ich mir auch mal näher angucken.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/pixologic-sculptris.html" rel="bookmark" title="Permalink to Pixologic :: Sculptris">Pixologic :: Sculptris</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-12T19:57:00+01:00"> Di 12 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.pixologic.com/sculptris/">Pixologic :: Sculptris</a>. Noch ein Modeller und der hier interessiert mich besonders - es ist nämlich eine abgespeckte, freie (wie in Freibier) Version von ZBrush. Ich hab zwar noch eine ältere ZBrush Lizenz rumfliegen, aber für meine Pläne wäre die hier warscheinlich sogar völlig ausreichend.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/openscad-the-programmers-solid-3d-cad-modeller.html" rel="bookmark" title="Permalink to OpenSCAD - The Programmers Solid 3D CAD Modeller">OpenSCAD - The Programmers Solid 3D CAD Modeller</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-12T19:54:00+01:00"> Di 12 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.openscad.org/">OpenSCAD - The Programmers Solid 3D CAD Modeller</a>. Nicht uninteressant - ein parametrisches, nicht-interaktives CAD-System. Im Prinzip stopft man eine Basis rein und schreibt Scripte, die diese Basis dann weiter verwenden. Oder arbeitet gleich mit Scripten die aus Vollkörpern die Modelle zusammenbringen. Für technische Elemente kann das sehr viel übersichtlicher und flexibler …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/repetier-software-the-software-driving-your-3d-printer.html" rel="bookmark" title="Permalink to Repetier Software | The software driving your 3d printer">Repetier Software | The software driving your 3d printer</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-04T19:50:00+01:00"> Mo 04 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.repetier.com/">Repetier Software | The software driving your 3d printer</a>. Interessant, das ist eine Software die alle Schritte des Prints in einer Oberfläche zusammenfasst und soll deutlich schneller sein als pronterface. Mac-Version gibt es auch, von daher wäre das mal einen Versuch wert. Es kommt auch mit einer eigenen Firmware, da muss …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/slic3r-g-code-generator-for-3d-printers.html" rel="bookmark" title="Permalink to Slic3r - G-code generator for 3D printers">Slic3r - G-code generator for 3D printers</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-01T21:41:00+01:00"> Fr 01 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://slic3r.org/">Slic3r - G-code generator for 3D printers</a>. Ah ja, auch noch eine wichtige 3D Printing Software. Mit Slic3r wird aus dem STL Modell der eigentliche Druckplan erstellt, mit dem dann der Drucker das Werkstück produziert. Hier geht es also um die Layerdicke, wie der Kopf bewegt wird, wie die Infills aussehen …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/meshlab.html" rel="bookmark" title="Permalink to MeshLab">MeshLab</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-01T20:00:00+01:00"> Fr 01 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://meshlab.sourceforge.net/">MeshLab</a>. Software zur Reparatur von Meshes, Löcher füllen, Überlappungen bereinigen etc. Kannte ich noch gar nicht.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/lightzone-open-source-digital-darkroom-software-for-windowsmaclinux.html" rel="bookmark" title="Permalink to LightZone | Open-source digital darkroom software for Windows/Mac/Linux">LightZone | Open-source digital darkroom software for Windows/Mac/Linux</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-01T19:13:00+01:00"> Fr 01 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://lightzoneproject.org/">LightZone | Open-source digital darkroom software for Windows/Mac/Linux</a>. Gerade dran erinnert, das ist ja jetzt frei. Und dadurch, dass es Java ist, ist es auch über mehrere Plattformen erhältlich. Bei meinen Experimenten damals war es für Linux durchaus eine coole Alternative. Speziell die Kontraststeuerung durch ein digitales Zonensystem ist …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/repetierrepetier-host-mac-%c2%b7-github.html" rel="bookmark" title="Permalink to repetier/Repetier-Host-Mac · GitHub">repetier/Repetier-Host-Mac · GitHub</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-01T11:17:00+01:00"> Fr 01 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/repetier/Repetier-Host-Mac">repetier/Repetier-Host-Mac · GitHub</a>. Und die nötige Software zur Ansteuerung des Druckers.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/postbox-awesome-email.html" rel="bookmark" title="Permalink to Postbox — Awesome Email">Postbox — Awesome Email</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-07-23T11:09:00+02:00"> Mo 23 Juli 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www3.postbox-inc.com/index.php">Postbox — Awesome Email</a>. Von Thunderbird war ich eh nie so begeistert, daher hat mich die Ankündigung, dass es nicht weiter entwickelt werden soll, nicht sonderlich gestört. Aber dass Sparrow jetzt Google gehört und laut den Ankündigungen da wohl auch nichts mehr zu erwarten ist, hat mich schon ziemlich angefressen - das …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/soulvers-features-acqualia.html" rel="bookmark" title="Permalink to Soulvers Features | Acqualia">Soulvers Features | Acqualia</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-07-05T20:48:00+02:00"> Do 05 Juli 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.acqualia.com/soulver/features.php">Soulvers Features | Acqualia</a>. "Taschenrechner" rethought. Ich wundere mich eh warum so viele Rechner für den Computerdesktop verzweifelt das UI von alten Taschenrechnern nachbauen. Bei mobilen Geräten macht es durchaus Sinn - das Taschenrechner-UI mit mehrfach belegten Tasten ist durchaus für so kleine Formfaktoren effizient - aber auf dem Computer nehme ich weitaus …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/jwbs-blog-ema-personal-wiki-for-android-and-windows.html" rel="bookmark" title="Permalink to JWBs blog: Ema Personal Wiki for Android and Windows">JWBs blog: Ema Personal Wiki for Android and Windows</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-07-04T14:18:00+02:00"> Mi 04 Juli 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://jwbs-blog.blogspot.de/2010/09/ema-personal-wiki-for-android-and.html">JWBs blog: Ema Personal Wiki for Android and Windows</a>. Weil ich gerade bei Markdown war - hier gibts ein Markdown-nutzendes persönliches Wiki für verschiedene Systeme, unter anderem Android. Der Beschreibung nach ist das ganze recht ähnlich zu <a href="https://code.google.com/p/vimwiki/">Vim Wiki</a>.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/mumble.html" rel="bookmark" title="Permalink to Mumble">Mumble</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-05-23T09:23:00+02:00"> Mi 23 Mai 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://mumble.sourceforge.net/">Mumble</a>. Ist zwar irgendwie lustig, wenn man seine Tipps für Software von einer politischen Partei bekommt, aber egal. Mumble ist sowas wie Teamspeak (oder auch ein entfernter Verwandter von Skype Gruppenchats oder Google+  Hangouts), nur halt open source und zum selber betreiben. Clients auch für OSX, Windows, Linux und iOS …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/amazon-com-send-to-kindle-for-mac.html" rel="bookmark" title="Permalink to Amazon.com: Send to Kindle for Mac">Amazon.com: Send to Kindle for Mac</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-04-26T10:05:00+02:00"> Do 26 April 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.amazon.com/gp/feature.html/?ie=UTF8&amp;docId=1000778781">Amazon.com: Send to Kindle for Mac</a>. Könnte ganz nett sein, um die diversen Online-Dokumentationen einfach auf den Kindle zu "drucken" und dort gemütlich zu lesen. Ausserdem landen sie dann potentiell auch gleich auf dem iPhone für unterwegs ...</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/645-pro-app-for-iphone-offers-access-to-lossless-camera-output-but-not-raw-digital-photography-review.html" rel="bookmark" title="Permalink to 645 PRO app for iPhone offers access to lossless camera output but not Raw: Digital Photography Review">645 PRO app for iPhone offers access to lossless camera output but not Raw: Digital Photography Review</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-04-23T22:16:00+02:00"> Mo 23 April 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.dpreview.com/news/2012/04/20/645-PRo-offers-camera-control-and-uncompressed-output">645 PRO app for iPhone offers access to lossless camera output but not Raw</a>. Klingt ganz interessant, aber nicht so sehr wegen des Pseudo-RAW - da werden nicht wirklich so riesige Unterschiede sein - sondern wegen des User-Interfaces, denn das ist deutlich näher an einer normalen Kamera angelehnt und spuckt auch ein …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/forger-the-digital-sculpting-app-for-ipad.html" rel="bookmark" title="Permalink to forger the digital sculpting app for iPad">forger the digital sculpting app for iPad</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-11-10T13:30:00+01:00"> Do 10 November 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://forgerapp.com/">forger the digital sculpting app for iPad</a>. 3D Modellierung für unterwegs auf dem iPad nach dem Lehm-Formen-Modell. Könnte ja für den einen oder anderen interessant sein, der das dann über Blender nach Collada bringen will um es in Second Life zu importieren zum Beispiel.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/pixelmator.html" rel="bookmark" title="Permalink to Pixelmator">Pixelmator</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-10-31T21:26:00+01:00"> Mo 31 Oktober 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.pixelmator.com/">Pixelmator</a>. Billiger, kleiner und optisch deutlich ansprechender als Photoshop Elements Editor. Und hat den Healing Brush (und eine interessante Alternative, bei der man einfach eine Selektion malt und dann diese ganze Selektion heilt). Und unterstützt die Features von Lion - also Versionen, Vollbildschirm etc. Habs mir mal gegriffen, PSE wird dann …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/adobe-carousel-mini-lightroom-fur-iphone-und-ipad-verfugbar-golem-de.html" rel="bookmark" title="Permalink to Adobe Carousel: Mini-Lightroom für iPhone und iPad verfügbar - Golem.de">Adobe Carousel: Mini-Lightroom für iPhone und iPad verfügbar - Golem.de</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-10-28T09:31:00+02:00"> Fr 28 Oktober 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.golem.de/1110/87342.html">Adobe Carousel: Mini-Lightroom für iPhone und iPad verfügbar</a>. Hmm - von der Beschreibung her klingt das eigentlich einfach wie das was Apple mit Photostream auch bietet. Ok, non-destruktive Änderungen hat Photostream nicht, und die Bearbeitungsmöglichkeiten sind schon deutlich größer, aber sowas kann man mittels Snapseed ja auch erledigen, genauso wie das …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/pixelmator-2-sneak-preview.html" rel="bookmark" title="Permalink to Pixelmator 2 Sneak Preview">Pixelmator 2 Sneak Preview</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-10-24T11:30:00+02:00"> Mo 24 Oktober 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.pixelmator.com/sneak-preview/">Pixelmator 2 Sneak Preview</a>. Hmm. Klingt so, als ob es eine gute Alternative zu Photoshop Express sein könnte - das Healing Tool und er content-aware Fill wären ja genau die beiden Features die ich bei PSE benutze (und die nicht von LR oder anderen Tools auch geliefert werden). Müsste ich wirklich …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/ach-apple%e2%80%a6-ach-aperture%e2%80%a6-massenbelichtungswaffen-de.html" rel="bookmark" title="Permalink to Ach, Apple… ach, Aperture… | massenbelichtungswaffen.de">Ach, Apple… ach, Aperture… | massenbelichtungswaffen.de</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-10-24T09:44:00+02:00"> Mo 24 Oktober 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://massenbelichtungswaffen.de/2011/10/ach-apple/">Ach, Apple… ach, Aperture… | massenbelichtungswaffen.de</a>. Da ich immer mal wieder grübel, ob ich nicht doch mal Aperture ausprobieren sollte - der Artikel hier hat mich erstmal von der Ausgabe der 70 Euro geheilt für längere Zeit. Denn was nützt  mir ein Bildverwalter und Bildeditor, der unter Umständen mit meinen (jetzigen …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/airprint-activator-v2-0-%c2%ab-netputing.html" rel="bookmark" title="Permalink to AirPrint Activator v2.0 « Netputing">AirPrint Activator v2.0 « Netputing</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-10-17T13:06:00+02:00"> Mo 17 Oktober 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://netputing.com/airprintactivator/airprint-activator-v2-0/">AirPrint Activator v2.0 « Netputing</a>. Geblogmarkt für später - damit kann man seine Drucker im Netz und den PDF-Konverter auf dem Mac als AirPrint Drucker freigeben, so dass man auch vom Sofa vom iPad aus Drucken kann (und da man auch auf einen PDF Konverter drucken kann, muss man nicht einmal …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/textastic-%e2%80%93-syntax-highlighting-text-editor-ftp-sftp-dropbox-%e2%80%93-for-ipad.html" rel="bookmark" title="Permalink to Textastic – Syntax highlighting text editor, FTP, SFTP, Dropbox – for iPad">Textastic – Syntax highlighting text editor, FTP, SFTP, Dropbox – for iPad</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-10-14T23:54:00+02:00"> Fr 14 Oktober 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.textasticapp.com/">Textastic – Syntax highlighting text editor, FTP, SFTP, Dropbox – for iPad</a>. Den Editor benutze ich auf dem iPad - integriert auch mit PythonMath, denn es hat "open in..." und Dropbox integriert.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/trunkdesk-mac-desktop-companion-for-trunk-notes-google-project-hosting.html" rel="bookmark" title="Permalink to trunkdesk - Mac desktop companion for Trunk Notes - Google Project Hosting">trunkdesk - Mac desktop companion for Trunk Notes - Google Project Hosting</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-09-28T14:34:00+02:00"> Mi 28 September 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://code.google.com/p/trunkdesk/">trunkdesk - Mac desktop companion for Trunk Notes - Google Project Hosting</a>. Da ich immer wieder mit Desktop-Wikis rumspiele und generell das Problem habe, dass ich auch unterwegs auf Daten zugreifen will - und zwar auch ändernd, nicht nur anschauend, und bitte schön mit vergleichbaren Features und nicht nur eingeschränkt (wodurch leider VoodooPad …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/launchpad-control-chaosspace-de.html" rel="bookmark" title="Permalink to Launchpad-Control | chaosspace.de">Launchpad-Control | chaosspace.de</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-09-26T11:03:00+02:00"> Mo 26 September 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://chaosspace.de/launchpad-control/">Launchpad-Control | chaosspace.de</a>. Mal geblogmarkt, weil mich das Auto-Layout des Launchpad manchmal dann doch etwas nervt und etwas mehr Einfluss gut wäre. Hiermit kann man zumindestens etwas auf das Launchpad einwirken und Icons rausfiltern, etc.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/adobe-announces-carousel-cloud-based-image-service-digital-photography-review.html" rel="bookmark" title="Permalink to Adobe announces Carousel - cloud-based image service: Digital Photography Review">Adobe announces Carousel - cloud-based image service: Digital Photography Review</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-09-07T22:14:00+02:00"> Mi 07 September 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.dpreview.com/news/1109/11090715AdobeCarousel.asp">Adobe announces Carousel - cloud-based image service: Digital Photography Review</a>. Klingt gar nicht mal so uninteressant. Als Engine soll da drin die von Lightroom eingesetzt werden, das ganze dann voll automatisch synchronisiert zwischen den Geräten und Bearbeitungen auf allen Geräten möglich. Wird interessant zu sehen ob das eine Integration mit  Lighroom …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/el34-the-home-of-eddie-about.html" rel="bookmark" title="Permalink to EL34 - The home of Eddie - About">EL34 - The home of Eddie - About</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-07-27T10:07:00+02:00"> Mi 27 Juli 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.el34.com/aboutEddie.html">EL34 - The home of Eddie - About</a>. Hmm, sollte ich mir auch mal angucken - die MPW-geerbten Worksheets klingen interessant, die von BBEdit sind leider immer eher hakelig als wirklich rund. Vielleicht ist Eddie da ja etwas besser bestückt. Allerdings "SVN Integration" als einzige Versionsverwaltung? Autsch. Kommt mal ins aktuelle Jahrtausend, Leute …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/elements.html" rel="bookmark" title="Permalink to Elements+">Elements+</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-07-22T17:45:00+02:00"> Fr 22 Juli 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.elementsplus.net/v3/de/overview.htm">Elements+</a>. Lustig - scheinbar ist Photoshop Elements nicht wirklich eine abgespeckte Photoshop Version, sondern in Wirklichkeit nur eine abgespeckte GUI für den Photoshop-Kernel - viele Funktionen sind intern noch verfügbar. Und mit dem Patch soll man diese Funktionen wieder zugänglich machen können.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/scripts-tagged-fluid-userscripts-org.html" rel="bookmark" title="Permalink to Scripts Tagged fluid - Userscripts.org">Scripts Tagged fluid - Userscripts.org</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-07-14T15:47:00+02:00"> Do 14 Juli 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://userscripts.org/tags/fluid">Scripts Tagged fluid - Userscripts.org</a>. Mal verlinkt, denn Fluid ist ein wirklich cooler site-specific Browser für OSX und mit zum Beispiel dem Google+ Dock Badget echt praktisch. Und mit den getrennten Cookiespeichern von Fluid kann man auch mehrere Google+ Profile offen halten (oder auch andere Sites, die mit Cookies arbeiten …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/circus-ponies-notebook-for-ipad-take-great-notes.html" rel="bookmark" title="Permalink to Circus Ponies NoteBook for iPad - Take Great Notes">Circus Ponies NoteBook for iPad - Take Great Notes</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-06-22T12:00:00+02:00"> Mi 22 Juni 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.circusponies.com/notebook-ipad/take-great-notes">Circus Ponies NoteBook for iPad - Take Great Notes</a>. Hmm, Circus Ponies NoteBook ist auf dem Mac eines der mächtigsten Notebooks (mit integriertem Outliner) - die Reviews für die iPad Version sind aber nicht so prall. Und es gibt keinen vernünftigen Sync - ich frag mich echt, warum Productivity-App-Hersteller nicht generell erstmal die …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/omnioutliner-for-ipad-products-the-omni-group.html" rel="bookmark" title="Permalink to OmniOutliner for iPad - Products - The Omni Group">OmniOutliner for iPad - Products - The Omni Group</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-06-22T11:54:00+02:00"> Mi 22 Juni 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.omnigroup.com/products/omnioutliner-ipad/">OmniOutliner for iPad</a>. Huch! Wieso hab ich das nicht mitbekommen? Es gibt jetzt den OmniOutliner für das iPad! OmniOutliner ist auf dem Mac mein bevorzugter Outliner, unter anderem weil er sich in vielen Punkten sehr ähnlich zum Frontier Outliner konfigurieren lässt (speziell das Splitten eines Punktes durch einfaches Enter ist …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/sparkleshare-sharing-work-made-easy.html" rel="bookmark" title="Permalink to SparkleShare - Sharing work made easy">SparkleShare - Sharing work made easy</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-06-20T10:10:00+02:00"> Mo 20 Juni 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://sparkleshare.org/">SparkleShare - Sharing work made easy</a>. Mal geblogmarkt, denn das sieht erstmal recht vielversprechend aus - als Server kommt einfach ein Git zum Einsatz. Leider scheinbar grundsätzlich nur ssh basiertes Git, nicht https, zumindestens sehe ich in den Docs nichts dazu - https wäre universeller (auch wenn dann natürlich Passwörter abgelegt werden müssen …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/sony-prs-505-firmware-update-customizing-mobileread-forums.html" rel="bookmark" title="Permalink to SONY PRS-505 Firmware-Update + Customizing - MobileRead Forums">SONY PRS-505 Firmware-Update + Customizing - MobileRead Forums</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-06-19T19:47:00+02:00"> So 19 Juni 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.mobileread.com/forums/showthread.php?t=27519">SONY PRS-505 Firmware-Update + Customizing - MobileRead Forums</a>. Wichtig für die Russifizierung meines alten PRS 505 - danach tuts der jetzt komplett in Russisch und mit russischen eBooks. Und war - nachdem ich es gefunden habe - auch garnicht so kompliziert. Die russischen Menüs kommen erst, wenn man einmal in die Locale-Einstellung gegangen ist. Und …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/download-adobe-lens-profile-creator-preview-adobe-labs.html" rel="bookmark" title="Permalink to Download Adobe Lens Profile Creator Preview - Adobe Labs">Download Adobe Lens Profile Creator Preview - Adobe Labs</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-04-27T10:22:00+02:00"> Mi 27 April 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://labs.adobe.com/downloads/lensprofile_creator.html">Download Adobe Lens Profile Creator Preview - Adobe Labs</a>.  Unten auf der Seite sind Download-Links. Einmal der angesprochene Profile Creator, mit dem man eigene Profile für Kameras und Linsen machen kann. Aber fast noch interessanter ein Profile Downloader - mit dem kann man Profile von anderen Lighroom-Usern herunterladen. Das kann schon mal …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/virtuawin-virtual-desktops-for-windows.html" rel="bookmark" title="Permalink to VirtuaWin - Virtual Desktops for Windows">VirtuaWin - Virtual Desktops for Windows</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-04-15T10:03:00+02:00"> Fr 15 April 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://virtuawin.sourceforge.net/">VirtuaWin - Virtual Desktops for Windows</a>. Weil gerade jemand fragte, ob es sowas gibt. Ich brauchs ja nicht. Ich benutz ja ein Betriebssystem.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/philikon-weaveclient-chromium-overview-%e2%80%93-bitbucket.html" rel="bookmark" title="Permalink to philikon / weaveclient-chromium / overview – Bitbucket">philikon / weaveclient-chromium / overview – Bitbucket</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-04-06T11:11:00+02:00"> Mi 06 April 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://bitbucket.org/philikon/weaveclient-chromium">philikon / weaveclient-chromium</a>. Noch nicht ausprobiert, es ist eine Chrome-Erweiterung die Mozilla Sync in Chrome und Chromium integriert. Damit könnte man endlich die Bookmarks zwischen Chrome und Firefox austauschen ohne über XMarks gehen zu müssen. Wenn jetzt noch jemand diese Extension auch für Safari baut, wäre ich glücklich - die Tatsache, dass …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/video-lightbox-binden-sie-videos-mit-lightbox-effekt-in-ihre-internetseite-ein.html" rel="bookmark" title="Permalink to Video LightBox - binden Sie Videos mit Lightbox Effekt in Ihre Internetseite ein!">Video LightBox - binden Sie Videos mit Lightbox Effekt in Ihre Internetseite ein!</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-04-06T10:29:00+02:00"> Mi 06 April 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://videolightbox.com/de/index.html">Video LightBox - binden Sie Videos mit Lightbox Effekt in Ihre Internetseite ein!</a>. Ich mach ja nix mit Video, aber sieht ganz interessant aus - das ist ein standalone Tool, welches die Files für die Video-Einbettung erzeugt und z.B. per FTP irgendwohin schicken kann. Mac und Windows Versionen.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/adobe-photoshop-lightroom-3-exporting-using-publish-services.html" rel="bookmark" title="Permalink to Adobe Photoshop Lightroom 3 * Exporting using Publish Services">Adobe Photoshop Lightroom 3 * Exporting using Publish Services</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-03-16T10:35:00+01:00"> Mi 16 März 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://help.adobe.com/en_US/Lightroom/3.0/Using/WS43660fa5a9ec95a81172e08124a15d684d-7ffe.html">Adobe Photoshop Lightroom 3 * Exporting using Publish Services</a>. Tja, Adobe hat Photoshop.com - und gerade erst dieses ausgeweitet. Und propagiert es als eine bessere Alternative zu Flickr. Wie ernst es Adobe damit ist, sieht man an den Publish Services in Lightroom 3. Es werden von Hause aus Facebook, Flickr und …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/shuttersnitch.html" rel="bookmark" title="Permalink to ShutterSnitch">ShutterSnitch</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-03-13T20:13:00+01:00"> So 13 März 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.shuttersnitch.com/">ShutterSnitch</a>. Interessante kleine App mit der man Bilder über WiFi auf dem iPad empfangen und automatisch mit Metadaten und Geocodierung versehen kann - könnte eine recht interessante Kombination mit einer EyeFi-Karte in meiner Sony oder meinen Panasonics sein (die M8 kann leider nicht mit EyeFi - der SD-Slot ist bei der M8 …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/bluemarine-home.html" rel="bookmark" title="Permalink to blueMarine - Home">blueMarine - Home</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-03-09T12:22:00+01:00"> Mi 09 März 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://bluemarine.tidalwave.it/">blueMarine</a> ist noch ein mir bisher unbekanntes Projekt, das Lightroom und Aperture als Inspiration nimmt. Allerdings hat es bisher keinerlei RAW-Edit-Funktionen (während Darktable non-destruktives Editieren hat), sondern konzentriert sich rein auf das Image Management. Was mir aber unter Umständen für Linux sogar entgegen käme, da ich dort meistens nur reingucken …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/darktable-news.html" rel="bookmark" title="Permalink to darktable | news">darktable | news</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-03-09T12:03:00+01:00"> Mi 09 März 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://darktable.sourceforge.net/index.shtml">darktable</a> ist scheinbar komplett an mir unbemerkt vorbeigerauscht - eine OpenSource Alternative zu Adobe Lightroom für Linux. Sollte ich mir wirklich mal angucken. Lightroom gefällt mir zwar sehr gut, aber macht absolut nichts da eine Alternative für zu kennen, denn ob mir Adobe in späteren Versionen immer noch gefallen wird ist …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/bracketeer-exposure-processing-software.html" rel="bookmark" title="Permalink to Bracketeer: Exposure Processing Software">Bracketeer: Exposure Processing Software</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-02-15T19:33:00+01:00"> Di 15 Februar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.pangeasoft.net/pano/bracketeer/">Bracketeer: Exposure Processing Software</a>. Hmm, ich hab ja bisher nur mit dem eingebauten HDR in der Sony NEX gespielt, und mit <a href="http://www.ohanaware.com/hdrtist/">HDRTist</a> (in der freien Version glaub ich). Aber das hier könnte ich auch mal ausprobieren. Gibts zur Zeit für 5 Euros im AppStore.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/sparrow-the-new-mail-for-mac.html" rel="bookmark" title="Permalink to sparrow - The New Mail for Mac">sparrow - The New Mail for Mac</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-20T12:56:00+01:00"> Mo 20 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.sparrowmailapp.com/">sparrow - The New Mail for Mac</a>. Sieht richtig gut aus und ist der erste Mailclient, der mich überlegen lässt ob ich nicht von MailPlane wechseln sollte. Denn MailPlain unterstützt zwar - zwangsläufig - alle GMail Features, aber sieht eben auch genau so aus wie das was es ist: eine Webseite. Wenn Sparrow …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/printopia-share-your-macs-printers-to-iphone-and-ipad-print-from-iphone-ecamm-network.html" rel="bookmark" title="Permalink to Printopia - Share Your Mac's Printers to iPhone and iPad - Print from iPhone - Ecamm Network">Printopia - Share Your Mac's Printers to iPhone and iPad - Print from iPhone - Ecamm Network</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-11-23T09:35:00+01:00"> Di 23 November 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.ecamm.com/mac/printopia/">Printopia</a> wandelt am Mac angeschlossene Drucker in einen virtuellen AirPrint-kompatiblen Drucker um. Ist Apple eigentlich klar, wie lächerlich die Beschränkung auf einige wenige HP Drucker bei AirPrint ist? Die tun gerade so, als wäre Drucken wahnsinnig kompliziert. Warum muss man sich eine Drittsoftware besorgen, wenn man nicht von HP gezwungen …</p> </div><!-- /.entry-content -->
+        </article></li>
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
 </html>

@@ -1,514 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Hugo's House of Blog Horror - Vim</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="rfc1437">
+<html lang="de-de">
+<head>
+        <title>Hugo's House of Blog Horror - Vim tag</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <link href="https://rfc1437.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Hugo's House of Blog Horror Full Atom Feed" />
+</head>
 
-    <!-- Le styles -->
-    <link rel="stylesheet" href="https://rfc1437.github.io/theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="https://rfc1437.github.io/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="https://rfc1437.github.io/theme/css/font-awesome.css" rel="stylesheet">
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://rfc1437.github.io/">Hugo's House of Blog Horror</a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="/impressum.html">Imprint</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="https://rfc1437.github.io/category/artikel.html">Artikel</a></li>
+            <li><a href="https://rfc1437.github.io/category/asides.html">Asides</a></li>
+            <li><a href="https://rfc1437.github.io/category/galerie.html">Galerie</a></li>
+            <li><a href="https://rfc1437.github.io/category/kochbuch.html">Kochbuch</a></li>
+            <li><a href="https://rfc1437.github.io/category/metaowl.html">Metaowl</a></li>
+            <li><a href="https://rfc1437.github.io/category/misc.html">misc</a></li>
+            <li><a href="https://rfc1437.github.io/category/spielelog.html">Spielelog</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content">
+<h2>Articles tagged with Vim</h2>
 
-    <link href="https://rfc1437.github.io/theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="https://rfc1437.github.io/theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="https://rfc1437.github.io/theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://rfc1437.github.io/theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="https://rfc1437.github.io/theme/images/apple-touch-icon-114x114.png">
-
-    <link href="https://rfc1437.github.io/" type="application/atom+xml" rel="alternate" title="Hugo's House of Blog Horror ATOM Feed" />
-
-  </head>
-
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="https://rfc1437.github.io/index.html">Hugo's House of Blog Horror </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                  <li><a href="/impressum.html">Imprint</a></li>
-                  <li><a href="/about.html">About</a></li>
-                          <li class="divider-vertical"></li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/artikel.html">
-						<i class="icon-folder-open icon-large"></i>Artikel
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/asides.html">
-						<i class="icon-folder-open icon-large"></i>Asides
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/galerie.html">
-						<i class="icon-folder-open icon-large"></i>Galerie
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/kochbuch.html">
-						<i class="icon-folder-open icon-large"></i>Kochbuch
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/metaowl.html">
-						<i class="icon-folder-open icon-large"></i>Metaowl
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/misc.html">
-						<i class="icon-folder-open icon-large"></i>misc
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/spielelog.html">
-						<i class="icon-folder-open icon-large"></i>Spielelog
-					</a>
-                  </li>
-
-                          <ul class="nav pull-right">
-                                <li><a href="https://rfc1437.github.io/archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/vim-orgmode-text-outlining-and-task-management-for-vim-based-on-emacs-org-mode-vim-online.html">vim-orgmode - Text outlining and task management for Vim based on Emacs' Org-Mode : vim online</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-10-17T15:16:00+02:00">
-        <i class="icon-calendar"></i>Mo 17 Oktober 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/plugin.html"><i class="icon-tag"></i>Plugin</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.vim.org/scripts/script.php?script_id=3642">vim-orgmode - Text outlining and task management for Vim based on Emacs' Org-Mode : vim online</a>. Wer OrgMode will, aber die Emacs Tastenbelegung einfach nur krank findet (was ca. 99% aller VIM User sein könnten), gibt jetzt OrgMode auch für VIM. So als Plugin. Ich selbst benutze ja meistens <a href="https://code.google.com/p/vimwiki/">VimWiki</a>, aber vielleicht …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/vim-orgmode-text-outlining-and-task-management-for-vim-based-on-emacs-org-mode-vim-online.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/tagbar-the-vim-class-browser.html">Tagbar, the Vim class browser</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-05-04T18:06:00+02:00">
-        <i class="icon-calendar"></i>Mi 04 Mai 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/plugin.html"><i class="icon-tag"></i>Plugin</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://majutsushi.github.com/tagbar/">Tagbar, the Vim class browser</a>. Scheint ein bischen ein aufgemotztes <a href="http://vim-taglist.sourceforge.net/">Taglist</a> für VIM zu sein. Liefert hierarchische Sichten auf definierte Klassen, Methoden und Funktionen in einem Projekt.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/tagbar-the-vim-class-browser.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/vundle-0-7-is-out-gmarik-info.html">Vundle 0.7 is out | gmarik.info</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-03-20T11:59:00+01:00">
-        <i class="icon-calendar"></i>So 20 März 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://gmarik.info/blog/2011/03/19/vundle-0.7-out">Vundle 0.7 is out</a>. Ich benutze ja normalerweise Pathogen, aber Vundle hat ein paar Eigenschaften die es doch recht interessant machen - vielleicht sollte ich doch mal damit rumspielen. Andererseits habe ich an meiner Vim-Installation schon länger keine Updates und Änderungen mehr gemacht. Aber da <a href="http://vim-scripts.org/">jetzt alle vim.org Scripts …</a></p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/vundle-0-7-is-out-gmarik-info.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/how-to-write-vim-plugins-with-python.html">How to write vim plugins with python</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-02-05T17:07:00+01:00">
-        <i class="icon-calendar"></i>Sa 05 Februar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://brainacle.com/how-to-write-vim-plugins-with-python.html">How to write vim plugins with python</a>. Weil ich Python mag, weil ich Vim mag und weil man immer mal wieder kleinere Sachen bauen will die einem das Leben erleichtern. Und weil die Script-Sprache von Vim selber doch eher grausig ist.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/how-to-write-vim-plugins-with-python.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/vimium-google-chrome-erweiterungsgalerie.html">Vimium - Google Chrome-Erweiterungsgalerie</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-15T10:48:00+01:00">
-        <i class="icon-calendar"></i>Sa 15 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/chrome.html"><i class="icon-tag"></i>Chrome</a>
-	<a href="https://rfc1437.github.io/tag/plugin.html"><i class="icon-tag"></i>Plugin</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p>Wer Vi gewohnt ist und Chrome benutzt: <a href="http://vimium.github.com/">Vimium</a> liefert Vi-ähnliche Tastaturbedienung für Chrome. Ist nach kurzer Eingewöhnung wirklich sehr brauchbar und kann deutlich bei der Reduzierung von Belastungen der Maus-Hand helfen.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/vimium-google-chrome-erweiterungsgalerie.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/slimv-vim-slime-like-lisp-and-clojure-repl-inside-vim-with-profiling-hyperspec-paredit-vim-online.html">slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit : vim online</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-09T09:18:00+01:00">
-        <i class="icon-calendar"></i>Do 09 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.vim.org/scripts/script.php?script_id=2531">slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit</a>. Ganz interessant, da deutlich leichtgewichtiger und simpler zu installieren als Slime oder VimClojure oder eine der anderen dicken Lösungen. Und man kann einfach aus Vim heraus Common Lisp oder Clojure programmieren. Ist zwar derzeit nur im "rumspielen …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/slimv-vim-slime-like-lisp-and-clojure-repl-inside-vim-with-profiling-hyperspec-paredit-vim-online.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/gundo-visualize-your-vim-undo-tree.html">Gundo - Visualize your Vim Undo Tree</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-08T13:30:00+01:00">
-        <i class="icon-calendar"></i>Mi 08 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/editor.html"><i class="icon-tag"></i>Editor</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.vim.org/scripts/script.php?script_id=3304">Gundo - Visualize your Vim Undo Tree</a>. Vim hat ja auch beim Undo etwas mehr als übliche Editoren haben - der ganz Baum an Undo/Do/Redo Aktionen wird gespeichert und man kann sich frei darin bewegen. Nur kapiert das niemand mit den normalen Vim Mitteln. Mit dem Gundo Plugin kann man …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/gundo-visualize-your-vim-undo-tree.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/snipmate-textmate-style-snippets-for-vim-vim-online.html">snipMate - TextMate-style snippets for Vim : vim online</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-06T23:52:00+01:00">
-        <i class="icon-calendar"></i>Mo 06 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.vim.org/scripts/script.php?script_id=2540">snipMate - TextMate-style snippets for Vim : vim online</a> - weil ich gerade Sachen liste die eigentlich für mich nicht so interessant sind, aber trotzdem irgendwie cool, hier eine Implementation von TextMate-ähnlichen Snippets für Vim.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/snipmate-textmate-style-snippets-for-vim-vim-online.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/vcscommand-vim-cvssvnsvkgithgbzr-integration-plugin-vim-online.html">vcscommand.vim - CVS/SVN/SVK/git/hg/bzr integration plugin : vim online</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-06T23:50:00+01:00">
-        <i class="icon-calendar"></i>Mo 06 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/mercurial.html"><i class="icon-tag"></i>Mercurial</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.vim.org/scripts/script.php?script_id=90">vcscommand.vim - CVS/SVN/SVK/git/hg/bzr integration plugin : vim online</a> - auch sowas das ich eher in einer Shell als im Editor mache. Allein schon weil ich selten single-file commits habe. Aber für die Abfragen der Historie könnte es doch noch interessant sein. Ist auch eines der aktiveren Vim …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/vcscommand-vim-cvssvnsvkgithgbzr-integration-plugin-vim-online.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/home-%e2%80%94-pyclewn.html">Home — pyclewn</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-06T23:40:00+01:00">
-        <i class="icon-calendar"></i>Mo 06 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://pyclewn.sourceforge.net/index.html">pyclewn</a>. Weiss noch nicht ob ich da mich reinwühlen will - ich benutze Debugger eigentlich nicht. Aber der hier ist in Vim integriert und damit direkt aus dem Editor nutzbar. Genutzt werden kann gdb und pdb (für Python).</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/home-%e2%80%94-pyclewn.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/vim-taglist-plugin-manual.html">Vim Taglist plugin manual</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-06T20:26:00+01:00">
-        <i class="icon-calendar"></i>Mo 06 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/editor.html"><i class="icon-tag"></i>Editor</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://vim-taglist.sourceforge.net/manual.html">Vim Taglist plugin manual</a>. Ein weiterer wichtiger Baustein um mit dem MacVim richtig arbeiten zu können. Empfehlenswert sich auch mit brew install ctags das exuberant-ctags zu installieren, wenn man richtige Sprachen benutzen will (wie z.B. Python).</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/vim-taglist-plugin-manual.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/vim-autocomplete-django-and-virtualenv-rosemanblog.html">Vim autocomplete, Django and virtualenv | rosemanblog</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-04T23:15:00+01:00">
-        <i class="icon-calendar"></i>Sa 04 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://blog.roseman.org.uk/2010/04/21/vim-autocomplete-django-and-virtualenv/">Vim autocomplete, Django and virtualenv | rosemanblog</a>. Besonders die Integration von VirtualEnv und MacVim ist hilfreich, weil sonst Omnicomplete nicht sauber mit VirtualEnv zusammenarbeitet, da es nix von den dort liegenden Modulen weiss. Übrigens ist das Installieren von MacVim mit Homebrew trivial ...</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/vim-autocomplete-django-and-virtualenv-rosemanblog.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/agr-ropevim-source-%e2%80%93-bitbucket.html">agr / ropevim / source – Bitbucket</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-01T10:25:00+01:00">
-        <i class="icon-calendar"></i>Mi 01 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://bitbucket.org/agr/ropevim/src">agr / ropevim / source – Bitbucket</a>. Auch für das andere Tool, das mich an Spyder interessiert hat, gibt es eine Vim-Integration: Rope. Ein Refactoring Tool für Python Code. Bei einer genügend großen Codebasis nicht ganz uninteressant.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/agr-ropevim-source-%e2%80%93-bitbucket.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/pyflakes-vim-pyflakes-on-the-fly-python-code-checking-vim-online.html">pyflakes.vim - PyFlakes on-the-fly Python code checking : vim online</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-01T10:22:00+01:00">
-        <i class="icon-calendar"></i>Mi 01 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.vim.org/scripts/script.php?script_id=2441">pyflakes.vim - PyFlakes on-the-fly Python code checking : vim online</a>. Gucke ich mir auch gerade an, denn es liefert einige interessante Tools für Python und speziell mit MacVim zusammen ist es recht gut zu benutzen.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pyflakes-vim-pyflakes-on-the-fly-python-code-checking-vim-online.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-<ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
-    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
-    <li><a href="https://palletsprojects.com/p/jinja/"><i class="icon-external-link"></i>Jinja2</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="https://rfc1437.github.io/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-    <li><a href="https://github.com/rfc1437/"><i class="icon-github-sign icon-large"></i>github</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="https://rfc1437.github.io/category/artikel.html">
-    <i class="icon-folder-open icon-large"></i>Artikel
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/asides.html">
-    <i class="icon-folder-open icon-large"></i>Asides
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/galerie.html">
-    <i class="icon-folder-open icon-large"></i>Galerie
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/kochbuch.html">
-    <i class="icon-folder-open icon-large"></i>Kochbuch
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/metaowl.html">
-    <i class="icon-folder-open icon-large"></i>Metaowl
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/misc.html">
-    <i class="icon-folder-open icon-large"></i>misc
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/spielelog.html">
-    <i class="icon-folder-open icon-large"></i>Spielelog
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://rfc1437.github.io/theme/js/jquery-1.7.2.min.js"></script>
-    <script src="https://rfc1437.github.io/theme/js/bootstrap.min.js"></script>
-  </body>
+<ol id="post-list">
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/vim-orgmode-text-outlining-and-task-management-for-vim-based-on-emacs-org-mode-vim-online.html" rel="bookmark" title="Permalink to vim-orgmode - Text outlining and task management for Vim based on Emacs' Org-Mode : vim online">vim-orgmode - Text outlining and task management for Vim based on Emacs' Org-Mode : vim online</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-10-17T15:16:00+02:00"> Mo 17 Oktober 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.vim.org/scripts/script.php?script_id=3642">vim-orgmode - Text outlining and task management for Vim based on Emacs' Org-Mode : vim online</a>. Wer OrgMode will, aber die Emacs Tastenbelegung einfach nur krank findet (was ca. 99% aller VIM User sein könnten), gibt jetzt OrgMode auch für VIM. So als Plugin. Ich selbst benutze ja meistens <a href="https://code.google.com/p/vimwiki/">VimWiki</a>, aber vielleicht …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/tagbar-the-vim-class-browser.html" rel="bookmark" title="Permalink to Tagbar, the Vim class browser">Tagbar, the Vim class browser</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-05-04T18:06:00+02:00"> Mi 04 Mai 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://majutsushi.github.com/tagbar/">Tagbar, the Vim class browser</a>. Scheint ein bischen ein aufgemotztes <a href="http://vim-taglist.sourceforge.net/">Taglist</a> für VIM zu sein. Liefert hierarchische Sichten auf definierte Klassen, Methoden und Funktionen in einem Projekt.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/vundle-0-7-is-out-gmarik-info.html" rel="bookmark" title="Permalink to Vundle 0.7 is out | gmarik.info">Vundle 0.7 is out | gmarik.info</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-03-20T11:59:00+01:00"> So 20 März 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://gmarik.info/blog/2011/03/19/vundle-0.7-out">Vundle 0.7 is out</a>. Ich benutze ja normalerweise Pathogen, aber Vundle hat ein paar Eigenschaften die es doch recht interessant machen - vielleicht sollte ich doch mal damit rumspielen. Andererseits habe ich an meiner Vim-Installation schon länger keine Updates und Änderungen mehr gemacht. Aber da <a href="http://vim-scripts.org/">jetzt alle vim.org Scripts …</a></p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/how-to-write-vim-plugins-with-python.html" rel="bookmark" title="Permalink to How to write vim plugins with python">How to write vim plugins with python</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-02-05T17:07:00+01:00"> Sa 05 Februar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://brainacle.com/how-to-write-vim-plugins-with-python.html">How to write vim plugins with python</a>. Weil ich Python mag, weil ich Vim mag und weil man immer mal wieder kleinere Sachen bauen will die einem das Leben erleichtern. Und weil die Script-Sprache von Vim selber doch eher grausig ist.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/vimium-google-chrome-erweiterungsgalerie.html" rel="bookmark" title="Permalink to Vimium - Google Chrome-Erweiterungsgalerie">Vimium - Google Chrome-Erweiterungsgalerie</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-15T10:48:00+01:00"> Sa 15 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Wer Vi gewohnt ist und Chrome benutzt: <a href="http://vimium.github.com/">Vimium</a> liefert Vi-ähnliche Tastaturbedienung für Chrome. Ist nach kurzer Eingewöhnung wirklich sehr brauchbar und kann deutlich bei der Reduzierung von Belastungen der Maus-Hand helfen.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/slimv-vim-slime-like-lisp-and-clojure-repl-inside-vim-with-profiling-hyperspec-paredit-vim-online.html" rel="bookmark" title="Permalink to slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit : vim online">slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit : vim online</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-09T09:18:00+01:00"> Do 09 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.vim.org/scripts/script.php?script_id=2531">slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit</a>. Ganz interessant, da deutlich leichtgewichtiger und simpler zu installieren als Slime oder VimClojure oder eine der anderen dicken Lösungen. Und man kann einfach aus Vim heraus Common Lisp oder Clojure programmieren. Ist zwar derzeit nur im "rumspielen …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/gundo-visualize-your-vim-undo-tree.html" rel="bookmark" title="Permalink to Gundo - Visualize your Vim Undo Tree">Gundo - Visualize your Vim Undo Tree</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-08T13:30:00+01:00"> Mi 08 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.vim.org/scripts/script.php?script_id=3304">Gundo - Visualize your Vim Undo Tree</a>. Vim hat ja auch beim Undo etwas mehr als übliche Editoren haben - der ganz Baum an Undo/Do/Redo Aktionen wird gespeichert und man kann sich frei darin bewegen. Nur kapiert das niemand mit den normalen Vim Mitteln. Mit dem Gundo Plugin kann man …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/snipmate-textmate-style-snippets-for-vim-vim-online.html" rel="bookmark" title="Permalink to snipMate - TextMate-style snippets for Vim : vim online">snipMate - TextMate-style snippets for Vim : vim online</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-06T23:52:00+01:00"> Mo 06 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.vim.org/scripts/script.php?script_id=2540">snipMate - TextMate-style snippets for Vim : vim online</a> - weil ich gerade Sachen liste die eigentlich für mich nicht so interessant sind, aber trotzdem irgendwie cool, hier eine Implementation von TextMate-ähnlichen Snippets für Vim.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/vcscommand-vim-cvssvnsvkgithgbzr-integration-plugin-vim-online.html" rel="bookmark" title="Permalink to vcscommand.vim - CVS/SVN/SVK/git/hg/bzr integration plugin : vim online">vcscommand.vim - CVS/SVN/SVK/git/hg/bzr integration plugin : vim online</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-06T23:50:00+01:00"> Mo 06 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.vim.org/scripts/script.php?script_id=90">vcscommand.vim - CVS/SVN/SVK/git/hg/bzr integration plugin : vim online</a> - auch sowas das ich eher in einer Shell als im Editor mache. Allein schon weil ich selten single-file commits habe. Aber für die Abfragen der Historie könnte es doch noch interessant sein. Ist auch eines der aktiveren Vim …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/home-%e2%80%94-pyclewn.html" rel="bookmark" title="Permalink to Home — pyclewn">Home — pyclewn</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-06T23:40:00+01:00"> Mo 06 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://pyclewn.sourceforge.net/index.html">pyclewn</a>. Weiss noch nicht ob ich da mich reinwühlen will - ich benutze Debugger eigentlich nicht. Aber der hier ist in Vim integriert und damit direkt aus dem Editor nutzbar. Genutzt werden kann gdb und pdb (für Python).</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/vim-taglist-plugin-manual.html" rel="bookmark" title="Permalink to Vim Taglist plugin manual">Vim Taglist plugin manual</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-06T20:26:00+01:00"> Mo 06 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://vim-taglist.sourceforge.net/manual.html">Vim Taglist plugin manual</a>. Ein weiterer wichtiger Baustein um mit dem MacVim richtig arbeiten zu können. Empfehlenswert sich auch mit brew install ctags das exuberant-ctags zu installieren, wenn man richtige Sprachen benutzen will (wie z.B. Python).</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/vim-autocomplete-django-and-virtualenv-rosemanblog.html" rel="bookmark" title="Permalink to Vim autocomplete, Django and virtualenv | rosemanblog">Vim autocomplete, Django and virtualenv | rosemanblog</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-04T23:15:00+01:00"> Sa 04 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://blog.roseman.org.uk/2010/04/21/vim-autocomplete-django-and-virtualenv/">Vim autocomplete, Django and virtualenv | rosemanblog</a>. Besonders die Integration von VirtualEnv und MacVim ist hilfreich, weil sonst Omnicomplete nicht sauber mit VirtualEnv zusammenarbeitet, da es nix von den dort liegenden Modulen weiss. Übrigens ist das Installieren von MacVim mit Homebrew trivial ...</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/agr-ropevim-source-%e2%80%93-bitbucket.html" rel="bookmark" title="Permalink to agr / ropevim / source – Bitbucket">agr / ropevim / source – Bitbucket</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-01T10:25:00+01:00"> Mi 01 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://bitbucket.org/agr/ropevim/src">agr / ropevim / source – Bitbucket</a>. Auch für das andere Tool, das mich an Spyder interessiert hat, gibt es eine Vim-Integration: Rope. Ein Refactoring Tool für Python Code. Bei einer genügend großen Codebasis nicht ganz uninteressant.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/pyflakes-vim-pyflakes-on-the-fly-python-code-checking-vim-online.html" rel="bookmark" title="Permalink to pyflakes.vim - PyFlakes on-the-fly Python code checking : vim online">pyflakes.vim - PyFlakes on-the-fly Python code checking : vim online</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-01T10:22:00+01:00"> Mi 01 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.vim.org/scripts/script.php?script_id=2441">pyflakes.vim - PyFlakes on-the-fly Python code checking : vim online</a>. Gucke ich mir auch gerade an, denn es liefert einige interessante Tools für Python und speziell mit MacVim zusammen ist es recht gut zu benutzen.</p> </div><!-- /.entry-content -->
+        </article></li>
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
 </html>

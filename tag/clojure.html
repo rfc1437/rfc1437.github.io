@@ -1,582 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Hugo's House of Blog Horror - Clojure</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="rfc1437">
+<html lang="de-de">
+<head>
+        <title>Hugo's House of Blog Horror - Clojure tag</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <link href="https://rfc1437.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Hugo's House of Blog Horror Full Atom Feed" />
+</head>
 
-    <!-- Le styles -->
-    <link rel="stylesheet" href="https://rfc1437.github.io/theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="https://rfc1437.github.io/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="https://rfc1437.github.io/theme/css/font-awesome.css" rel="stylesheet">
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://rfc1437.github.io/">Hugo's House of Blog Horror</a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="/impressum.html">Imprint</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="https://rfc1437.github.io/category/artikel.html">Artikel</a></li>
+            <li><a href="https://rfc1437.github.io/category/asides.html">Asides</a></li>
+            <li><a href="https://rfc1437.github.io/category/galerie.html">Galerie</a></li>
+            <li><a href="https://rfc1437.github.io/category/kochbuch.html">Kochbuch</a></li>
+            <li><a href="https://rfc1437.github.io/category/metaowl.html">Metaowl</a></li>
+            <li><a href="https://rfc1437.github.io/category/misc.html">misc</a></li>
+            <li><a href="https://rfc1437.github.io/category/spielelog.html">Spielelog</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content">
+<h2>Articles tagged with Clojure</h2>
 
-    <link href="https://rfc1437.github.io/theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="https://rfc1437.github.io/theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="https://rfc1437.github.io/theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://rfc1437.github.io/theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="https://rfc1437.github.io/theme/images/apple-touch-icon-114x114.png">
-
-    <link href="https://rfc1437.github.io/" type="application/atom+xml" rel="alternate" title="Hugo's House of Blog Horror ATOM Feed" />
-
-  </head>
-
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="https://rfc1437.github.io/index.html">Hugo's House of Blog Horror </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                  <li><a href="/impressum.html">Imprint</a></li>
-                  <li><a href="/about.html">About</a></li>
-                          <li class="divider-vertical"></li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/artikel.html">
-						<i class="icon-folder-open icon-large"></i>Artikel
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/asides.html">
-						<i class="icon-folder-open icon-large"></i>Asides
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/galerie.html">
-						<i class="icon-folder-open icon-large"></i>Galerie
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/kochbuch.html">
-						<i class="icon-folder-open icon-large"></i>Kochbuch
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/metaowl.html">
-						<i class="icon-folder-open icon-large"></i>Metaowl
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/misc.html">
-						<i class="icon-folder-open icon-large"></i>misc
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/spielelog.html">
-						<i class="icon-folder-open icon-large"></i>Spielelog
-					</a>
-                  </li>
-
-                          <ul class="nav pull-right">
-                                <li><a href="https://rfc1437.github.io/archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/tutorial-%c2%b7-alexander-yakushevlein-droid-wiki.html">Tutorial · alexander-yakushev/lein-droid Wiki</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-04-11T18:13:00+02:00">
-        <i class="icon-calendar"></i>Do 11 April 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/alexander-yakushev/lein-droid/wiki/Tutorial">lein-droid Wiki</a>. Bin ja mal wieder am Rumspielen mit Alternativen zur nackten Android-Java-Programmierung und das hier wäre ein interessanter Kandidat, da man mit Clojure rumspielen kann.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/tutorial-%c2%b7-alexander-yakushevlein-droid-wiki.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/sattvikneko.html">sattvik/neko</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-07-31T16:02:00+02:00">
-        <i class="icon-calendar"></i>Di 31 Juli 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/sattvik/neko">sattvik/neko</a>. Auch mal vorgemerkt für später, Clojure für die Programmierung von Android Anwendungen mit ein paar Bindings für die Android APIs. Wobei da natürlich die Frage ist, ob die das Startup-Problem in den Griff bekommen haben, oder ob das immer noch den Einsatz von Clojure limitiert.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sattvikneko.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/clojurecore-reducers-a-library-and-model-for-collection-processing.html">Clojure/core — Reducers - A Library and Model for Collection Processing</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-05-09T12:26:00+02:00">
-        <i class="icon-calendar"></i>Mi 09 Mai 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://clojure.com/blog/2012/05/08/reducers-a-library-and-model-for-collection-processing.html">Clojure/core — Reducers - A Library and Model for Collection Processing</a>. Warum eine neue Library? Weil die Standardfunktionen zwar interessant und sinnvoll sind, aber man eben manchmal doch eine striktere Implementierung braucht, die z.B. zwischendurch generierte temporäre Collections vermieden werden und eine direkte out-of-the-box Unterstützung für Parallelisierung geliefert wird. Ohne …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/clojurecore-reducers-a-library-and-model-for-collection-processing.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/heroku-clojure-on-heroku.html">Heroku | Clojure on Heroku</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-03-09T09:40:00+01:00">
-        <i class="icon-calendar"></i>Fr 09 März 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/sysadmin.html"><i class="icon-tag"></i>Sysadmin</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://blog.heroku.com/archives/2011/7/5/clojure_on_heroku/">Heroku | Clojure on Heroku</a>. Und noch mehr Lisp. Mit Clojure kann man jetzt auch auf Herok, der Cloud Plattform, arbeiten. Damit eventuell eine Alternative zu zum Beispiel Google App Engine (auf deren Java-Inkarnation läuft Clojure ja auch).</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/heroku-clojure-on-heroku.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/home-overtone.html">Home // Overtone</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-10-09T12:20:00+02:00">
-        <i class="icon-calendar"></i>So 09 Oktober 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/musik.html"><i class="icon-tag"></i>Musik</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://overtone.github.com/">Home // Overtone</a>. Bin ja immer begeistert von Krachmachern - das hier ist ein Tool zur interaktiven Soundprogrammierung und Livecoding und Instrumentenbau (also digitalem natürlich), und das ganze in Clojure geschrieben. Vielleicht für den einen oder anderen ein Grund sich mal Clojure näher anzugucken.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/home-overtone.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/clojurescript-demo-convex-hull.html">clojurescript demo convex hull</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-07-24T15:37:00+02:00">
-        <i class="icon-calendar"></i>So 24 Juli 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://jng.imagine27.com/articles/2011-07-23-101007_clojurescript_demo_convex_hull.html">clojurescript demo convex hull</a>. Eine Demo für die Programmierung von Clientside Code in Clojure mit Hilfe von <a href="https://github.com/clojure/clojurescript">Clojurescript</a>. Clojurescript compiliert Clojure nach JavaScript mit Hilfe des <a href="http://code.google.com/p/closure-compiler/">Google Closure Compilers</a> und der <a href="http://code.google.com/p/closure-library/">Closure Library</a>. Sieht nach einer sehr interessanten Möglichkeit der Clientprogrammierung aus, zumal Clojurescript unter Mithilfe von Rich Hickey steht …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/clojurescript-demo-convex-hull.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/remveeclj-android-github.html">remvee/clj-android - GitHub</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-05-27T13:35:00+02:00">
-        <i class="icon-calendar"></i>Fr 27 Mai 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/remvee/clj-android/">clj-android</a>. Und wenn ich schon dabei bin, auch gleich ein Framework für Clojure und Android. Ist allerdings alles scheinbar noch etwas roh (braucht zum Beispiel einen Fork von Clojure um ein paar Probleme mit Dalvik zu umgehen). Und nur zum Rumspielen mit Clojure für unterwegs ist vielleicht die <a href="http://www.deepbluelambda.org/programs/clojure-repl/">Clojure REPL …</a></p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/remveeclj-android-github.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/seesaw-github.html">Seesaw - GitHub</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-05-25T13:49:00+02:00">
-        <i class="icon-calendar"></i>Mi 25 Mai 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/daveray/seesaw/wiki">Seesaw - GitHub</a>. Da mich GUI-Programmierung fast immer nervt, ist das hier ganz interessant: eine Clojure-Library die Swing in eine sehr viel kompaktere Form bringt. So dass man sich für einfache GUIs nicht mehr die Finger wund schreiben muss. Und da <a href="http://mclide.in-progress.com/">MCL-IDE</a> ja jetzt auch Clojure unterstützt, wird es vielleicht ja …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/seesaw-github.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/counterclockwise-counterclockwise-is-an-eclipse-plugin-helping-developers-write-clojure-code-google-project-hosting.html">counterclockwise - Counterclockwise is an Eclipse plugin helping developers write Clojure code - Google Project Hosting</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-05-12T19:07:00+02:00">
-        <i class="icon-calendar"></i>Do 12 Mai 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://code.google.com/p/counterclockwise/">counterclockwise - Counterclockwise is an Eclipse plugin helping developers write Clojure code</a>. Und wenn man sich eh Eclipse auf die Platte kippt, ist vielleicht ein Clojure Plugin auch nicht uninteressant, damit man seine tägliche Ration Klammern bekommt.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/counterclockwise-counterclockwise-is-an-eclipse-plugin-helping-developers-write-clojure-code-google-project-hosting.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/icylisper-in-jark.html">icylisper.in - jark</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-05-06T14:22:00+02:00">
-        <i class="icon-calendar"></i>Fr 06 Mai 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://icylisper.in/jark/index.html">icylisper.in - jark</a>. Hmm, wieder eine von vielen Lösungen für Clojure, die ein vereinfachtes Deployment von Clojure-Scripten ermöglicht, komplett mit persistenter VM und #! Unterstützung. Irgendwie werden das ein bischen viele in letzter Zeit.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/icylisper-in-jark.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/nathanmarzelephantdb-github.html">nathanmarz/elephantdb - GitHub</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-03-28T10:30:00+02:00">
-        <i class="icon-calendar"></i>Mo 28 März 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/distributed.html"><i class="icon-tag"></i>Distributed</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/nathanmarz/elephantdb">nathanmarz/elephantdb</a>. Gleicher Autor wie für Cascalog, hier hat er auf  Hadoop mit Clojure einen verteilten Key/Value-Store aufgebaut. Auch nicht uncool.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/nathanmarzelephantdb-github.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/live-processing.html">live-processing</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-27T17:42:00+01:00">
-        <i class="icon-calendar"></i>Do 27 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://automata.cc/live-processing">live-processing</a> ist sowas wie Impromptu - also live coding Umgebung - in Clojure. Setzt natürlich stärker den Fokus auf Grafik, da es ja auf Processing aufbaut, und hat bisher noch nicht den vollen Umfang von Processing verfügbar, aber hey, zum Rumspielen mit einer neuen Sprache sollte es schon reichen.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/live-processing.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/dcolthorpmatchure-github.html">dcolthorp/matchure - GitHub</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-14T11:10:00+01:00">
-        <i class="icon-calendar"></i>Fr 14 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/dcolthorp/matchure">dcolthorp/matchure</a> - Pattern-Matching auf Clojure-Datenstrukturen (also nicht bl0ß Strings und Regular Expressions, sondern auch komplexere Matchings gegen  Listen, Vektoren, Maps).</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/dcolthorpmatchure-github.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/kriyativeclojurejs-github.html">kriyative/clojurejs - GitHub</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-13T18:41:00+01:00">
-        <i class="icon-calendar"></i>Do 13 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/kriyative/clojurejs">kriyative/clojurejs - GitHub</a> sollte ich mir mal angucken, ist eine weitere JS-Integration, hier für einen Subset von Clojure, der automatisch nach Clientside JavaScript übersetzt wird. Und der hier unterstützt rudimentär auch jQuery.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/kriyativeclojurejs-github.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/home-gloss-github.html">Home - gloss - GitHub</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-12T11:01:00+01:00">
-        <i class="icon-calendar"></i>So 12 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p>Wer mit Bytes in Clojure rumfummeln muss: <a href="https://github.com/ztellman/gloss/wiki">gloss</a>. Im Moment hab ich keine Anwendung dafür, aber mal geblogmarkt für später, wenn ich mal wieder mit Binärdaten zu tun habe.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/home-gloss-github.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/clojure-libs-and-namespaces-require-use-import-and-ns-8th-light-blog.html">Clojure Libs and Namespaces: require, use, import, and ns - 8th Light Blog</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-10T13:12:00+01:00">
-        <i class="icon-calendar"></i>Fr 10 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://blog.8thlight.com/articles/2010/12/6/clojure-libs-and-namespaces-require-use-import-and-ns">Clojure Libs and Namespaces: require, use, import, and ns - 8th Light Blog</a>. Einfach nur ein kurzer Abriss über die verschiedenen Namespace-Funktionen in Clojure.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/clojure-libs-and-namespaces-require-use-import-and-ns-8th-light-blog.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/slimv-vim-slime-like-lisp-and-clojure-repl-inside-vim-with-profiling-hyperspec-paredit-vim-online.html">slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit : vim online</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-09T09:18:00+01:00">
-        <i class="icon-calendar"></i>Do 09 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.vim.org/scripts/script.php?script_id=2531">slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit</a>. Ganz interessant, da deutlich leichtgewichtiger und simpler zu installieren als Slime oder VimClojure oder eine der anderen dicken Lösungen. Und man kann einfach aus Vim heraus Common Lisp oder Clojure programmieren. Ist zwar derzeit nur im "rumspielen …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/slimv-vim-slime-like-lisp-and-clojure-repl-inside-vim-with-profiling-hyperspec-paredit-vim-online.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-<ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
-    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
-    <li><a href="https://palletsprojects.com/p/jinja/"><i class="icon-external-link"></i>Jinja2</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="https://rfc1437.github.io/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-    <li><a href="https://github.com/rfc1437/"><i class="icon-github-sign icon-large"></i>github</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="https://rfc1437.github.io/category/artikel.html">
-    <i class="icon-folder-open icon-large"></i>Artikel
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/asides.html">
-    <i class="icon-folder-open icon-large"></i>Asides
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/galerie.html">
-    <i class="icon-folder-open icon-large"></i>Galerie
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/kochbuch.html">
-    <i class="icon-folder-open icon-large"></i>Kochbuch
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/metaowl.html">
-    <i class="icon-folder-open icon-large"></i>Metaowl
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/misc.html">
-    <i class="icon-folder-open icon-large"></i>misc
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/spielelog.html">
-    <i class="icon-folder-open icon-large"></i>Spielelog
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://rfc1437.github.io/theme/js/jquery-1.7.2.min.js"></script>
-    <script src="https://rfc1437.github.io/theme/js/bootstrap.min.js"></script>
-  </body>
+<ol id="post-list">
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/tutorial-%c2%b7-alexander-yakushevlein-droid-wiki.html" rel="bookmark" title="Permalink to Tutorial · alexander-yakushev/lein-droid Wiki">Tutorial · alexander-yakushev/lein-droid Wiki</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-04-11T18:13:00+02:00"> Do 11 April 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/alexander-yakushev/lein-droid/wiki/Tutorial">lein-droid Wiki</a>. Bin ja mal wieder am Rumspielen mit Alternativen zur nackten Android-Java-Programmierung und das hier wäre ein interessanter Kandidat, da man mit Clojure rumspielen kann.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/sattvikneko.html" rel="bookmark" title="Permalink to sattvik/neko">sattvik/neko</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-07-31T16:02:00+02:00"> Di 31 Juli 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/sattvik/neko">sattvik/neko</a>. Auch mal vorgemerkt für später, Clojure für die Programmierung von Android Anwendungen mit ein paar Bindings für die Android APIs. Wobei da natürlich die Frage ist, ob die das Startup-Problem in den Griff bekommen haben, oder ob das immer noch den Einsatz von Clojure limitiert.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/clojurecore-reducers-a-library-and-model-for-collection-processing.html" rel="bookmark" title="Permalink to Clojure/core — Reducers - A Library and Model for Collection Processing">Clojure/core — Reducers - A Library and Model for Collection Processing</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-05-09T12:26:00+02:00"> Mi 09 Mai 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://clojure.com/blog/2012/05/08/reducers-a-library-and-model-for-collection-processing.html">Clojure/core — Reducers - A Library and Model for Collection Processing</a>. Warum eine neue Library? Weil die Standardfunktionen zwar interessant und sinnvoll sind, aber man eben manchmal doch eine striktere Implementierung braucht, die z.B. zwischendurch generierte temporäre Collections vermieden werden und eine direkte out-of-the-box Unterstützung für Parallelisierung geliefert wird. Ohne …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/heroku-clojure-on-heroku.html" rel="bookmark" title="Permalink to Heroku | Clojure on Heroku">Heroku | Clojure on Heroku</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-03-09T09:40:00+01:00"> Fr 09 März 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://blog.heroku.com/archives/2011/7/5/clojure_on_heroku/">Heroku | Clojure on Heroku</a>. Und noch mehr Lisp. Mit Clojure kann man jetzt auch auf Herok, der Cloud Plattform, arbeiten. Damit eventuell eine Alternative zu zum Beispiel Google App Engine (auf deren Java-Inkarnation läuft Clojure ja auch).</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/home-overtone.html" rel="bookmark" title="Permalink to Home // Overtone">Home // Overtone</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-10-09T12:20:00+02:00"> So 09 Oktober 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://overtone.github.com/">Home // Overtone</a>. Bin ja immer begeistert von Krachmachern - das hier ist ein Tool zur interaktiven Soundprogrammierung und Livecoding und Instrumentenbau (also digitalem natürlich), und das ganze in Clojure geschrieben. Vielleicht für den einen oder anderen ein Grund sich mal Clojure näher anzugucken.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/clojurescript-demo-convex-hull.html" rel="bookmark" title="Permalink to clojurescript demo convex hull">clojurescript demo convex hull</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-07-24T15:37:00+02:00"> So 24 Juli 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://jng.imagine27.com/articles/2011-07-23-101007_clojurescript_demo_convex_hull.html">clojurescript demo convex hull</a>. Eine Demo für die Programmierung von Clientside Code in Clojure mit Hilfe von <a href="https://github.com/clojure/clojurescript">Clojurescript</a>. Clojurescript compiliert Clojure nach JavaScript mit Hilfe des <a href="http://code.google.com/p/closure-compiler/">Google Closure Compilers</a> und der <a href="http://code.google.com/p/closure-library/">Closure Library</a>. Sieht nach einer sehr interessanten Möglichkeit der Clientprogrammierung aus, zumal Clojurescript unter Mithilfe von Rich Hickey steht …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/remveeclj-android-github.html" rel="bookmark" title="Permalink to remvee/clj-android - GitHub">remvee/clj-android - GitHub</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-05-27T13:35:00+02:00"> Fr 27 Mai 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/remvee/clj-android/">clj-android</a>. Und wenn ich schon dabei bin, auch gleich ein Framework für Clojure und Android. Ist allerdings alles scheinbar noch etwas roh (braucht zum Beispiel einen Fork von Clojure um ein paar Probleme mit Dalvik zu umgehen). Und nur zum Rumspielen mit Clojure für unterwegs ist vielleicht die <a href="http://www.deepbluelambda.org/programs/clojure-repl/">Clojure REPL …</a></p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/seesaw-github.html" rel="bookmark" title="Permalink to Seesaw - GitHub">Seesaw - GitHub</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-05-25T13:49:00+02:00"> Mi 25 Mai 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/daveray/seesaw/wiki">Seesaw - GitHub</a>. Da mich GUI-Programmierung fast immer nervt, ist das hier ganz interessant: eine Clojure-Library die Swing in eine sehr viel kompaktere Form bringt. So dass man sich für einfache GUIs nicht mehr die Finger wund schreiben muss. Und da <a href="http://mclide.in-progress.com/">MCL-IDE</a> ja jetzt auch Clojure unterstützt, wird es vielleicht ja …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/counterclockwise-counterclockwise-is-an-eclipse-plugin-helping-developers-write-clojure-code-google-project-hosting.html" rel="bookmark" title="Permalink to counterclockwise - Counterclockwise is an Eclipse plugin helping developers write Clojure code - Google Project Hosting">counterclockwise - Counterclockwise is an Eclipse plugin helping developers write Clojure code - Google Project Hosting</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-05-12T19:07:00+02:00"> Do 12 Mai 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://code.google.com/p/counterclockwise/">counterclockwise - Counterclockwise is an Eclipse plugin helping developers write Clojure code</a>. Und wenn man sich eh Eclipse auf die Platte kippt, ist vielleicht ein Clojure Plugin auch nicht uninteressant, damit man seine tägliche Ration Klammern bekommt.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/icylisper-in-jark.html" rel="bookmark" title="Permalink to icylisper.in - jark">icylisper.in - jark</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-05-06T14:22:00+02:00"> Fr 06 Mai 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://icylisper.in/jark/index.html">icylisper.in - jark</a>. Hmm, wieder eine von vielen Lösungen für Clojure, die ein vereinfachtes Deployment von Clojure-Scripten ermöglicht, komplett mit persistenter VM und #! Unterstützung. Irgendwie werden das ein bischen viele in letzter Zeit.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/nathanmarzelephantdb-github.html" rel="bookmark" title="Permalink to nathanmarz/elephantdb - GitHub">nathanmarz/elephantdb - GitHub</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-03-28T10:30:00+02:00"> Mo 28 März 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/nathanmarz/elephantdb">nathanmarz/elephantdb</a>. Gleicher Autor wie für Cascalog, hier hat er auf  Hadoop mit Clojure einen verteilten Key/Value-Store aufgebaut. Auch nicht uncool.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/live-processing.html" rel="bookmark" title="Permalink to live-processing">live-processing</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-27T17:42:00+01:00"> Do 27 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://automata.cc/live-processing">live-processing</a> ist sowas wie Impromptu - also live coding Umgebung - in Clojure. Setzt natürlich stärker den Fokus auf Grafik, da es ja auf Processing aufbaut, und hat bisher noch nicht den vollen Umfang von Processing verfügbar, aber hey, zum Rumspielen mit einer neuen Sprache sollte es schon reichen.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/dcolthorpmatchure-github.html" rel="bookmark" title="Permalink to dcolthorp/matchure - GitHub">dcolthorp/matchure - GitHub</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-14T11:10:00+01:00"> Fr 14 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/dcolthorp/matchure">dcolthorp/matchure</a> - Pattern-Matching auf Clojure-Datenstrukturen (also nicht bl0ß Strings und Regular Expressions, sondern auch komplexere Matchings gegen  Listen, Vektoren, Maps).</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/kriyativeclojurejs-github.html" rel="bookmark" title="Permalink to kriyative/clojurejs - GitHub">kriyative/clojurejs - GitHub</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-13T18:41:00+01:00"> Do 13 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/kriyative/clojurejs">kriyative/clojurejs - GitHub</a> sollte ich mir mal angucken, ist eine weitere JS-Integration, hier für einen Subset von Clojure, der automatisch nach Clientside JavaScript übersetzt wird. Und der hier unterstützt rudimentär auch jQuery.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/home-gloss-github.html" rel="bookmark" title="Permalink to Home - gloss - GitHub">Home - gloss - GitHub</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-12T11:01:00+01:00"> So 12 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Wer mit Bytes in Clojure rumfummeln muss: <a href="https://github.com/ztellman/gloss/wiki">gloss</a>. Im Moment hab ich keine Anwendung dafür, aber mal geblogmarkt für später, wenn ich mal wieder mit Binärdaten zu tun habe.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/clojure-libs-and-namespaces-require-use-import-and-ns-8th-light-blog.html" rel="bookmark" title="Permalink to Clojure Libs and Namespaces: require, use, import, and ns - 8th Light Blog">Clojure Libs and Namespaces: require, use, import, and ns - 8th Light Blog</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-10T13:12:00+01:00"> Fr 10 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://blog.8thlight.com/articles/2010/12/6/clojure-libs-and-namespaces-require-use-import-and-ns">Clojure Libs and Namespaces: require, use, import, and ns - 8th Light Blog</a>. Einfach nur ein kurzer Abriss über die verschiedenen Namespace-Funktionen in Clojure.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/slimv-vim-slime-like-lisp-and-clojure-repl-inside-vim-with-profiling-hyperspec-paredit-vim-online.html" rel="bookmark" title="Permalink to slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit : vim online">slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit : vim online</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-09T09:18:00+01:00"> Do 09 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.vim.org/scripts/script.php?script_id=2531">slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit</a>. Ganz interessant, da deutlich leichtgewichtiger und simpler zu installieren als Slime oder VimClojure oder eine der anderen dicken Lösungen. Und man kann einfach aus Vim heraus Common Lisp oder Clojure programmieren. Ist zwar derzeit nur im "rumspielen …</p> </div><!-- /.entry-content -->
+        </article></li>
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
 </html>

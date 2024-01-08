@@ -1,1182 +1,476 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Hugo's House of Blog Horror - Lisp</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="rfc1437">
+<html lang="de-de">
+<head>
+        <title>Hugo's House of Blog Horror - Lisp tag</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <link href="https://rfc1437.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Hugo's House of Blog Horror Full Atom Feed" />
+</head>
 
-    <!-- Le styles -->
-    <link rel="stylesheet" href="https://rfc1437.github.io/theme/css/bootstrap.min.css" type="text/css" />
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-      .tag-1 {
-        font-size: 13pt;
-      }
-      .tag-2 {
-        font-size: 10pt;
-      }
-      .tag-2 {
-        font-size: 8pt;
-      }
-      .tag-4 {
-        font-size: 6pt;
-     }
-    </style>
-    <link href="https://rfc1437.github.io/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="https://rfc1437.github.io/theme/css/font-awesome.css" rel="stylesheet">
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://rfc1437.github.io/">Hugo's House of Blog Horror</a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="/impressum.html">Imprint</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="https://rfc1437.github.io/category/artikel.html">Artikel</a></li>
+            <li><a href="https://rfc1437.github.io/category/asides.html">Asides</a></li>
+            <li><a href="https://rfc1437.github.io/category/galerie.html">Galerie</a></li>
+            <li><a href="https://rfc1437.github.io/category/kochbuch.html">Kochbuch</a></li>
+            <li><a href="https://rfc1437.github.io/category/metaowl.html">Metaowl</a></li>
+            <li><a href="https://rfc1437.github.io/category/misc.html">misc</a></li>
+            <li><a href="https://rfc1437.github.io/category/spielelog.html">Spielelog</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content">
+<h2>Articles tagged with Lisp</h2>
 
-    <link href="https://rfc1437.github.io/theme/css/pygments.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="https://rfc1437.github.io/theme/images/favicon.ico">
-    <link rel="apple-touch-icon" href="https://rfc1437.github.io/theme/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://rfc1437.github.io/theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="https://rfc1437.github.io/theme/images/apple-touch-icon-114x114.png">
-
-    <link href="https://rfc1437.github.io/" type="application/atom+xml" rel="alternate" title="Hugo's House of Blog Horror ATOM Feed" />
-
-  </head>
-
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="https://rfc1437.github.io/index.html">Hugo's House of Blog Horror </a>
-          <div class="nav-collapse">
-            <ul class="nav">
-                  <li><a href="/impressum.html">Imprint</a></li>
-                  <li><a href="/about.html">About</a></li>
-                          <li class="divider-vertical"></li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/artikel.html">
-						<i class="icon-folder-open icon-large"></i>Artikel
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/asides.html">
-						<i class="icon-folder-open icon-large"></i>Asides
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/galerie.html">
-						<i class="icon-folder-open icon-large"></i>Galerie
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/kochbuch.html">
-						<i class="icon-folder-open icon-large"></i>Kochbuch
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/metaowl.html">
-						<i class="icon-folder-open icon-large"></i>Metaowl
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/misc.html">
-						<i class="icon-folder-open icon-large"></i>misc
-					</a>
-                  </li>
-                  <li >
-                    <a href="https://rfc1437.github.io/category/spielelog.html">
-						<i class="icon-folder-open icon-large"></i>Spielelog
-					</a>
-                  </li>
-
-                          <ul class="nav pull-right">
-                                <li><a href="https://rfc1437.github.io/archives.html"><i class="icon-th-list"></i>Archives</a></li>
-                          </ul>
-
-            </ul>
-            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="span9" id="content">
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/sharplisperscormanlisp.html">sharplispers/cormanlisp</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2015-01-05T16:50:00+01:00">
-        <i class="icon-calendar"></i>Mo 05 Januar 2015
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/sharplispers/cormanlisp">sharplispers/cormanlisp</a>. Schon lange nix mehr gelispelt. Corman Lisp - seiner Zeit eine der coolsten Implementierungen von Common Lisp auf Windows - ist jetzt Open Source und auf github. Allerdings brauchts wohl erst noch einiges an Überarbeitung, bevor es auf modernen Windows-Versionen wieder einwandfrei funktioniert. Aber ein erster Schritt ist ja jetzt …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/sharplisperscormanlisp.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/fricas-an-advanced-cas.html">FriCAS - an advanced CAS</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-09-18T19:32:00+02:00">
-        <i class="icon-calendar"></i>Mi 18 September 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/mathematik.html"><i class="icon-tag"></i>Mathematik</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/wissenschaft.html"><i class="icon-tag"></i>Wissenschaft</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://fricas.sourceforge.net/">FriCAS - an advanced CAS</a>. Habe ich ein bischen aus den Augen verloren - FriCAS ist ehemals Axiom, ein ziemlich weit ausgebautes Mathematik-Paket ala Mathematika, geschrieben in Common Lisp. Gibts für verschiedene Systeme, etwas spröde in der Oberfläche (halt eine Kommandozeile), aber sehr mächtig. Und etwas moderner als vielleicht Maxima (wobei für …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/fricas-an-advanced-cas.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/part-cwlambdanative.html">part-cw/lambdanative</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-08-30T19:29:00+02:00">
-        <i class="icon-calendar"></i>Fr 30 August 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/scheme.html"><i class="icon-tag"></i>Scheme</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/part-cw/lambdanative">part-cw/lambdanative</a>. Interessant - eine Cross-Plattform Programmierumgebung mit Zielen auf Android, iOS, OSX, Linux, Windows und BSD. Basierend auf Gambit-C, einem ziemlich guten (und schon recht lange verfügbaren, also auch "erwachsenen") Scheme Compiler.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/part-cwlambdanative.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/gcl-devel-gcl-2-6-8-and-2-6-9-are-released.html">[Gcl-devel] GCL 2.6.8 and 2.6.9 are released</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-08-30T19:25:00+02:00">
-        <i class="icon-calendar"></i>Fr 30 August 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p>"3 windows builds have been performed on win95. There is an as yetunidentified runtime error running the 2.6.9 images on win7. Moreinformation here will be forthcoming shortly." -  <a href="http://lists.gnu.org/archive/html/gcl-devel/2013-08/msg00011.html">[Gcl-devel] GCL 2.6.8 and 2.6.9 are released</a>. Abgesehen davon, dass ich dachte es wäre schon lange tot …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/gcl-devel-gcl-2-6-8-and-2-6-9-are-released.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/updated-contrib.html">Updated Contrib</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-05-15T17:32:00+02:00">
-        <i class="icon-calendar"></i>Mi 15 Mai 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/ccl.html"><i class="icon-tag"></i>CCL</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://permalink.gmane.org/gmane.lisp.openmcl.devel/8629">Updated Cocoa Contrib</a>. Wow - CCL bekommt damit ganz neue (und deutlich erweiterte) Möglichkeiten unter OSX GUI Programmierung zu machen. Das wächst so langsam.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/updated-contrib.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/davazpjscl-%c2%b7-github.html">davazp/jscl · GitHub</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-04-29T20:51:00+02:00">
-        <i class="icon-calendar"></i>Mo 29 April 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/davazp/jscl">davazp/jscl · GitHub</a>. Wow, beeindruckend. Ein Common Lisp, das als REPL im Browser läuft. Spannend daran ist, wie vollständig das ist - nach einem <strong>(defun anton (a b) (+ a b))</strong> ging direkt ein <strong>(disassemble #'anton)</strong> ohne Probleme und lieferte mir den generierten Javascript Code. Auch andere Konstrukte aus der CL Welt …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/davazpjscl-%c2%b7-github.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/wochentliche-leseliste-2.html">Wöchentliche Leseliste</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-04-14T18:49:00+02:00">
-        <i class="icon-calendar"></i>So 14 April 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/3d.html"><i class="icon-tag"></i>3D</a>
-	<a href="https://rfc1437.github.io/tag/fotografie.html"><i class="icon-tag"></i>Fotografie</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/politik.html"><i class="icon-tag"></i>Politik</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p>Was ich so im Laufe der Woche als lesenswert betrachtet habe und nicht extra verlinken wollte, hier gesammelt und unkommentiert.</p>
+<ol id="post-list">
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/sharplisperscormanlisp.html" rel="bookmark" title="Permalink to sharplispers/cormanlisp">sharplispers/cormanlisp</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2015-01-05T16:50:00+01:00"> Mo 05 Januar 2015 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/sharplispers/cormanlisp">sharplispers/cormanlisp</a>. Schon lange nix mehr gelispelt. Corman Lisp - seiner Zeit eine der coolsten Implementierungen von Common Lisp auf Windows - ist jetzt Open Source und auf github. Allerdings brauchts wohl erst noch einiges an Überarbeitung, bevor es auf modernen Windows-Versionen wieder einwandfrei funktioniert. Aber ein erster Schritt ist ja jetzt …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/fricas-an-advanced-cas.html" rel="bookmark" title="Permalink to FriCAS - an advanced CAS">FriCAS - an advanced CAS</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-09-18T19:32:00+02:00"> Mi 18 September 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://fricas.sourceforge.net/">FriCAS - an advanced CAS</a>. Habe ich ein bischen aus den Augen verloren - FriCAS ist ehemals Axiom, ein ziemlich weit ausgebautes Mathematik-Paket ala Mathematika, geschrieben in Common Lisp. Gibts für verschiedene Systeme, etwas spröde in der Oberfläche (halt eine Kommandozeile), aber sehr mächtig. Und etwas moderner als vielleicht Maxima (wobei für …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/part-cwlambdanative.html" rel="bookmark" title="Permalink to part-cw/lambdanative">part-cw/lambdanative</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-08-30T19:29:00+02:00"> Fr 30 August 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/part-cw/lambdanative">part-cw/lambdanative</a>. Interessant - eine Cross-Plattform Programmierumgebung mit Zielen auf Android, iOS, OSX, Linux, Windows und BSD. Basierend auf Gambit-C, einem ziemlich guten (und schon recht lange verfügbaren, also auch "erwachsenen") Scheme Compiler.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/gcl-devel-gcl-2-6-8-and-2-6-9-are-released.html" rel="bookmark" title="Permalink to [Gcl-devel] GCL 2.6.8 and 2.6.9 are released">[Gcl-devel] GCL 2.6.8 and 2.6.9 are released</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-08-30T19:25:00+02:00"> Fr 30 August 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>"3 windows builds have been performed on win95. There is an as yetunidentified runtime error running the 2.6.9 images on win7. Moreinformation here will be forthcoming shortly." -  <a href="http://lists.gnu.org/archive/html/gcl-devel/2013-08/msg00011.html">[Gcl-devel] GCL 2.6.8 and 2.6.9 are released</a>. Abgesehen davon, dass ich dachte es wäre schon lange tot …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/updated-contrib.html" rel="bookmark" title="Permalink to Updated Contrib">Updated Contrib</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-05-15T17:32:00+02:00"> Mi 15 Mai 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://permalink.gmane.org/gmane.lisp.openmcl.devel/8629">Updated Cocoa Contrib</a>. Wow - CCL bekommt damit ganz neue (und deutlich erweiterte) Möglichkeiten unter OSX GUI Programmierung zu machen. Das wächst so langsam.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/davazpjscl-%c2%b7-github.html" rel="bookmark" title="Permalink to davazp/jscl · GitHub">davazp/jscl · GitHub</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-04-29T20:51:00+02:00"> Mo 29 April 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/davazp/jscl">davazp/jscl · GitHub</a>. Wow, beeindruckend. Ein Common Lisp, das als REPL im Browser läuft. Spannend daran ist, wie vollständig das ist - nach einem <strong>(defun anton (a b) (+ a b))</strong> ging direkt ein <strong>(disassemble #'anton)</strong> ohne Probleme und lieferte mir den generierten Javascript Code. Auch andere Konstrukte aus der CL Welt …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/wochentliche-leseliste-2.html" rel="bookmark" title="Permalink to Wöchentliche Leseliste">Wöchentliche Leseliste</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-04-14T18:49:00+02:00"> So 14 April 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Was ich so im Laufe der Woche als lesenswert betrachtet habe und nicht extra verlinken wollte, hier gesammelt und unkommentiert.</p>
 <ul>
 <li><a href="http://www.pvk.ca/Blog/2013/04/13/starting-to-hack-on-sbcl/">Paul Khuong: Starting to hack on SBCL</a></li>
 <li><a href="http://www.tagesschau.de/ausland/hinrichtungenchina100.html">Chinas Exekutierte als Massenorganspender</a></li>
 <li><a href="http://tagesschau.de/wirtschaft/android-beschwerde100.html">Beschwerde der Konkurrenz bei der EU: Google-Rivalen kämpfen gegen Android</a></li>
 <li><a href="http://rss.feedsportal.com/c/33374/f/578069/p/1/s/6ddf1089/l/0L0Sgolem0Bde0Cnews0Cpanasonic0Esystemkamera0Elumix0Egf60Emit0Enahbereichsfunk0Eund0Ewlan0E130A40E985970Erss0Bhtml/story01.htm">Panasonic-Systemkamera: Lumix GF6 mit Nahbereichsfunk und WLAN</a></li>
-<li><a href="https://www.matterhackers.com/news/tips-on-printing-with-pla">Tips On …</a></li></ul>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/wochentliche-leseliste-2.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/tutorial-%c2%b7-alexander-yakushevlein-droid-wiki.html">Tutorial · alexander-yakushev/lein-droid Wiki</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-04-11T18:13:00+02:00">
-        <i class="icon-calendar"></i>Do 11 April 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/alexander-yakushev/lein-droid/wiki/Tutorial">lein-droid Wiki</a>. Bin ja mal wieder am Rumspielen mit Alternativen zur nackten Android-Java-Programmierung und das hier wäre ein interessanter Kandidat, da man mit Clojure rumspielen kann.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/tutorial-%c2%b7-alexander-yakushevlein-droid-wiki.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/write-yourself-a-haskell-in-lisp-17-february-2013.html">Write Yourself a Haskell... in Lisp 17 February 2013</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2013-02-18T09:52:00+01:00">
-        <i class="icon-calendar"></i>Mo 18 Februar 2013
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/haskell.html"><i class="icon-tag"></i>Haskell</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://gergo.erdi.hu/blog/2013-02-17-write_yourself_a_haskell..._in_lisp/">Write Yourself a Haskell... in Lisp 17 February 2013</a>. Sowas begeistert mich ja immer, auch wenn ich zugeben muss, dass ich aller Wahrscheinlichkeit nach nix damit machen werde. Trotzdem, interessant zu lesen.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/write-yourself-a-haskell-in-lisp-17-february-2013.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/moby-racket-for-mobile-phones.html">Moby: Racket for Mobile Phones</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-10-13T22:57:00+02:00">
-        <i class="icon-calendar"></i>Sa 13 Oktober 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/scheme.html"><i class="icon-tag"></i>Scheme</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://planet.racket-lang.org/package-source/dyoo/moby.plt/3/5/planet-docs/manual/index.html">Moby</a> ist ein Paket für Racket mit dem man Android Programme erzeugen kann. Integriert in DrRacket hat man auch gleich eine passende IDE in der das meiste auch getestet werden kann. So viel auszuprobieren, so wenig Zeit.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/moby-racket-for-mobile-phones.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/clojurecore-reducers-a-library-and-model-for-collection-processing.html">Clojure/core — Reducers - A Library and Model for Collection Processing</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-05-09T12:26:00+02:00">
-        <i class="icon-calendar"></i>Mi 09 Mai 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://clojure.com/blog/2012/05/08/reducers-a-library-and-model-for-collection-processing.html">Clojure/core — Reducers - A Library and Model for Collection Processing</a>. Warum eine neue Library? Weil die Standardfunktionen zwar interessant und sinnvoll sind, aber man eben manchmal doch eine striktere Implementierung braucht, die z.B. zwischendurch generierte temporäre Collections vermieden werden und eine direkte out-of-the-box Unterstützung für Parallelisierung geliefert wird. Ohne …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/clojurecore-reducers-a-library-and-model-for-collection-processing.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/mtraversheroku-buildpack-cl.html">mtravers/heroku-buildpack-cl</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-03-09T10:11:00+01:00">
-        <i class="icon-calendar"></i>Fr 09 März 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/mtravers/heroku-buildpack-cl">mtravers/heroku-buildpack-cl</a>. Und noch so ein Lisp-Link - hier hat sich jemand auf Herokus buildpack-capable stack gestützt und für Clozure CL ein Buildpack aufgebaut, so dass man darüber auch Common Lisp in die cloud stellen kann. Wobei das dann weniger Ähnlichkeit mit Google App Engine hat, sondern wohl eher mit sowas …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/mtraversheroku-buildpack-cl.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/terjenorderhaugecl-iphone-builder.html">TerjeNorderhaug/ecl-iphone-builder</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-03-09T09:33:00+01:00">
-        <i class="icon-calendar"></i>Fr 09 März 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p>Ganz tief drinnen bin ich ja immer noch ein Lisp-Fan. Deshalb ist der <a href="https://github.com/TerjeNorderhaug/ecl-iphone-builder">ecl-iphone-builder von Terje Norderhaug</a> für mich sehr interessant - damit kann man eine Version von Embeddable Common Lisp für das iPhone oder iPad compilieren und dann über XCode auf ein iOS Gerät bringen, dort einen Swank-Server starten und …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/terjenorderhaugecl-iphone-builder.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/practical-common-lisp-crawling-interfacelift-with-common-lisp-second-try.html">Practical Common Lisp - Crawling InterfaceLift with Common Lisp - second try</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2012-02-12T11:33:00+01:00">
-        <i class="icon-calendar"></i>So 12 Februar 2012
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://christian.ftwca.de:8080/post/practical-common-lisp---crawling-interfacelift-with-common-lisp---second-try">Practical Common Lisp - Crawling InterfaceLift with Common Lisp - second try</a>. Interessanter Durchlauf eines einfachen Projektes in Common Lisp bei Einsatz von Quicklisp. Mach wirklich einiges einfacher als wenn man roh in CL programmiert und die ganzen Pakete und Systeme von Hand verwaltet. Das Beispielscript sollte man allerdings nicht unbedingt laufen …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/practical-common-lisp-crawling-interfacelift-with-common-lisp-second-try.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/mac-app-store-clozure-cl.html">Mac App Store - Clozure CL</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-12-21T09:33:00+01:00">
-        <i class="icon-calendar"></i>Mi 21 Dezember 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://itunes.apple.com/us/app/clozure-cl/id489900618?ls=1&amp;mt=12">Mac App Store - Clozure CL</a>. Eine der netteren freien Common Lisp Implementierungen ist jetzt im App Store bei Apple. CCL ist im Prinzip die freie und portable Variante des alten Macintosh Common Lisp, mit einer Integration in Objective C Frameworks. Also durchaus interessant damit rumzuspielen wenn man sowohl Lisp als …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/mac-app-store-clozure-cl.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/snow-project.html">Snow project</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-09-14T15:04:00+02:00">
-        <i class="icon-calendar"></i>Mi 14 September 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://common-lisp.net/project/snow/">Snow project</a>. Sehe ich zum ersten Mal, ist aber schon seit ein paar Jahren raus - eine GUI Library für <a href="http://common-lisp.net/project/armedbear/">ABCL</a> (Armed Bear Common Lisp), welches ja bekanntlich auf der Java VM läuft. Liefert auch gleich als Standard eine grafische REPL mit in die man Common Lisp eingeben kann. Laut Doku …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/snow-project.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/elnode-an-emacs-version-of-node-js.html">Elnode - an Emacs version of node.js</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-07-18T11:07:00+02:00">
-        <i class="icon-calendar"></i>Mo 18 Juli 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://nic.ferrier.me.uk/blog/2010_10/elnode">Elnode - an Emacs version of node.js</a>. Mal wieder ein Projekt aus der Klasse "weil es geht" - ich glaube jedenfalls nicht, dass irgendjemand auf die Frage "wie will ich meine Webservices betreiben" als Antwort spontan "Emacs" sagen würde. Aber nunja, das Betriebssystem mit eingebauten Basisfunktionen zur Textverarbeitung kann eben auch …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/elnode-an-emacs-version-of-node-js.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/parenscript.html">Parenscript</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-07-12T11:53:00+02:00">
-        <i class="icon-calendar"></i>Di 12 Juli 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://common-lisp.net/project/parenscript/">Parenscript</a>. Darf man nicht vergessen, wenn man von Lisp-in-JavaScript redet, denn das ist wohl der Urvater und am weitesten ausgebaute Dialekt. Besonderheit ist auch noch: keine Runtime, es wird wirklich nur JavaScript direkt erzeugt ohne Abhängigkeiten (ausser natürlich den Abhängigkeiten die man selber in den Code reingebracht hat). Hatte ich …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/parenscript.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/manueledgelisp-github.html">manuel/edgelisp - GitHub</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-07-12T11:51:00+02:00">
-        <i class="icon-calendar"></i>Di 12 Juli 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/manuel/edgelisp">manuel/edgelisp</a>. Weil ich nie die Finger von Klammern lassen kann - ein Common Lisp Dialekt und dessen Implementation, die nach JavaScript compiliert un den Lisp-Code im Browser ausführbar macht. Macht einen recht vollständigen Eindruck - viele andere Projekte zeigen nur die rudimentären Elemente, aber hier gibts auch schon generische Funktionen und …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/manueledgelisp-github.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/what-is-inside-a-cat.html">What Is Inside A Cat</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-06-20T11:59:00+02:00">
-        <i class="icon-calendar"></i>Mo 20 Juni 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/scheme.html"><i class="icon-tag"></i>Scheme</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://web.mac.com/Jay_Reynolds_Freeman/WraithScheme.64/Wraith%20Scheme%20Internals.2.22.html">What Is Inside A Cat</a>. Ein sehr interessantes Dokument, das die Implementierung von <a href="http://web.mac.com/Jay_Reynolds_Freeman/My/Wraith_Scheme_%2864-bit_version%29.html">Wraith Scheme</a> sehr detailliert beschreibt, speziell auch die Implementierung der parallelen Prozesse.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/what-is-inside-a-cat.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/clack-web-application-environment-for-common-lisp.html">Clack - Web Application Environment for Common Lisp</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-06-04T10:08:00+02:00">
-        <i class="icon-calendar"></i>Sa 04 Juni 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://clacklisp.org/">Clack - Web Application Environment for Common Lisp</a>. Das sieht endlich mal richtig nett und schlank aus - die meisten Common Lisp Webframeworks sind mir einfach zu groß, zu kopfig. Das hier sieht sehr viel pragmatischer aus, ein simples Routing, ein schlanker Request und eine Funktion die drauf reagiert. Da könnte man …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/clack-web-application-environment-for-common-lisp.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/ai-art-painting-robot-art-expert-systems.html">AI art | painting robot | art | expert systems</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-05-18T16:47:00+02:00">
-        <i class="icon-calendar"></i>Mi 18 Mai 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/roboter.html"><i class="icon-tag"></i>Roboter</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.alproductions.org/">AI art | painting robot | art | expert systems</a>. Mal was anderes - ein richtiger Roboter der mit Lisp (also zumindestens das Prototyping) gesteuert mal. Also nicht so ein virtueller Roboter ala Turtlegrafik, sondern richtige Hardware die sich bewegt.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/ai-art-painting-robot-art-expert-systems.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/xmlisp-extreme-media-lisp-rich-media-cross-platform-programming-for-3d-opengl-and-2d-applications-google-project-hosting.html">xmlisp - eXtreme Media Lisp: Rich media cross-platform programming for 3D (OpenGL) and 2D applications - Google Project Hosting</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-05-18T13:41:00+02:00">
-        <i class="icon-calendar"></i>Mi 18 Mai 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://code.google.com/p/xmlisp/">xmlisp - eXtreme Media Lisp: Rich media cross-platform programming for 3D (OpenGL) and 2D applications</a>. Hatte ich glaube ich schon mal, bin mir aber nicht sicher. Egal, Wiederholungen sind ja nix ungewöhnliches, und das hier ist wirklich interessant - eine Lisp-Umgebung mit besonders guter Unterstützung für 2D und 3D Daten. Hat noch …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/xmlisp-extreme-media-lisp-rich-media-cross-platform-programming-for-3d-opengl-and-2d-applications-google-project-hosting.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/milkpack-edgar-goncalves.html">MilkPack - Edgar Gonçalves</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-05-18T13:37:00+02:00">
-        <i class="icon-calendar"></i>Mi 18 Mai 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/osx.html"><i class="icon-tag"></i>OSX</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://sites.google.com/site/edgargoncalves/work/software/milkpack">MilkPack - Edgar Gonçalves</a>. Interessantes Projekt das eine Taskliste implementiert, die mit Remember-the-Milk im Internet kommuniziert. Das interessante daran: es ist in Common Lisp geschrieben und nutzt intensiv die Objective-C Bridge für OpenMCL.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/milkpack-edgar-goncalves.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/dyoomoby-scheme-github.html">dyoo/moby-scheme - GitHub</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-05-09T10:35:00+02:00">
-        <i class="icon-calendar"></i>Mo 09 Mai 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/android.html"><i class="icon-tag"></i>Android</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/scheme.html"><i class="icon-tag"></i>Scheme</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/dyoo/moby-scheme">dyoo/moby-scheme</a>. Noch eine interessante Sache für Android: ein PLT Scheme (also Racket) Dialekt und eine passende Toolchain um aus Racket <a href="http://docs.racket-lang.org/htdp-langs/advanced.html">Advanced Student Language</a> + World Primitives (ASL ist ein schon recht weit gehender Scheme-Dialekt in Racket und die <a href="http://world.cs.brown.edu/">World Primitives sind für reaktives Programmieren in Scheme</a>) erstellte Anwendungen <a href="http://planet.racket-lang.org/package-source/dyoo/js-vm.plt/1/12/planet-docs/js-vm/index.html">in JavaScript …</a></p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/dyoomoby-scheme-github.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/spock-the-chicken-scheme-wiki.html">spock - The Chicken Scheme wiki</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-04-29T15:46:00+02:00">
-        <i class="icon-calendar"></i>Fr 29 April 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/scheme.html"><i class="icon-tag"></i>Scheme</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://wiki.call-cc.org/eggref/4/spock">spock - The Chicken Scheme wiki</a>. Wem Dylan auf JavaScript nicht passt, wie wäre es mit Scheme? Interessant hieran ist die Verbindung zu Chicken Scheme - chicken scheme ist eine der interessanteren Scheme-Implementierungen der letzten Zeit die sich speziell der Integration in normale Systemumgebungen widmet (FFI und einfaches Linken mit C-Libs), von …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/spock-the-chicken-scheme-wiki.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/turbolentralph-github.html">turbolent/ralph - GitHub</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-04-29T14:06:00+02:00">
-        <i class="icon-calendar"></i>Fr 29 April 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/dylan.html"><i class="icon-tag"></i>Dylan</a>
-	<a href="https://rfc1437.github.io/tag/javascript.html"><i class="icon-tag"></i>Javascript</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="https://github.com/turbolent/ralph">turbolent/ralph</a>. Und wem dann unter Flusspferd das JavaScript zu blöd wird, der kann ja einfach Ralph installieren und hat dann ein Dylan-ähnliches Lisp, das seine Funktionsdefinitionen nach JavaScript compiliert. Warum auch immer man das wollen würde, vielleicht einfach nur weil es geht.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/turbolentralph-github.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/ironscheme.html">IronScheme</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-04-28T16:52:00+02:00">
-        <i class="icon-calendar"></i>Do 28 April 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/scheme.html"><i class="icon-tag"></i>Scheme</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://ironscheme.codeplex.com/">IronScheme</a>. Interessant - ein Scheme für .NET. Und im Gegensatz zu einigen toten Projekten die ich gefunden habe, scheint hier auch noch was zu passieren. Ok, ich selber tendiere warscheinlich eher zu IronPython, F# oder wenn es Lisp sein soll, <a href="https://github.com/richhickey/clojure-clr">Clojure für .NET</a> (davon gibts mitlerweile auch recht aktuelle binäre Pakete …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/ironscheme.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/abcl-release-notes-v0-25.html">ABCL - Release notes v0.25</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-03-11T10:45:00+01:00">
-        <i class="icon-calendar"></i>Fr 11 März 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://common-lisp.net/project/armedbear/release-notes-0.25.shtml">ABCL - Release notes v0.25</a>. Neue Version raus und ABCL entwickelt sich immer mehr in eine wirklich brauchbare Common Lisp Implementation. Dadurch, dass es auf der JVM läuft, hat man auch leichten Zugriff auf viele Libraries (sofern man es denn will) und seit 0.24 läuft auch Quicklisp sauber mit …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/abcl-release-notes-v0-25.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/feeding-the-bit-bucket%c2%bb-blog-archive-%c2%bb-common-lisp-clojure-and-evolution.html">Feeding the Bit Bucket» Blog Archive » Common Lisp, Clojure and Evolution</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-02-27T21:45:00+01:00">
-        <i class="icon-calendar"></i>So 27 Februar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.adrianmouat.com/bit-bucket/2011/02/common-lisp-clojure-and-evolution/">Feeding the Bit Bucket» Blog Archive » Common Lisp, Clojure and Evolution</a>. Nein, Clojure wird nicht als Evolution von Common Lisp beschrieben - das ist einfach das Beispielprogramm "Evolution" aus dem Buch "Land of Lisp" in Clojure übersetzt von jemandem der mit dem Buch Clojure lernt indem er eben alle Beispiele in …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/feeding-the-bit-bucket%c2%bb-blog-archive-%c2%bb-common-lisp-clojure-and-evolution.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/introduction-to-pharen.html">Introduction to Pharen</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-30T14:08:00+01:00">
-        <i class="icon-calendar"></i>So 30 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/php.html"><i class="icon-tag"></i>PHP</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://scriptor.github.com/pharen/index.html">Introduction to Pharen</a>. Ein Lisp, welches nach PHP kompiliert. Weird. Ok,  könnte praktisch sein, wenn der Hoster nur PHP als Serversprache anbietet. Aber trotzdem. Weird.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/introduction-to-pharen.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/impromptu.html">impromptu</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-27T17:40:00+01:00">
-        <i class="icon-calendar"></i>Do 27 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/scheme.html"><i class="icon-tag"></i>Scheme</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://impromptu.moso.com.au/">impromptu</a> hatte ich schon in meinem alten Blog, meine ich. Egal, ist gut, darf man ruhig nochmal erwähnen - zumal es jetzt auch mit LLVM basiertem JIT Compiler daher kommt und daher auch für ernsthaftere Sachen interessant wird.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/impromptu.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/devrandom-random-thoughts-on-programming-in-parentheses-coops-an-introduction-to-chicken-schemes-object-system.html">/dev/random - Random Thoughts On Programming In Parentheses - Coops - An introduction to chicken scheme's object system</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-21T14:03:00+01:00">
-        <i class="icon-calendar"></i>Fr 21 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/scheme.html"><i class="icon-tag"></i>Scheme</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p>Genau. Wenn man schon sowas langweiliges wie "warum generic functions und nicht single-object-dispatch" erklären will, dann mit solchen Beispielen:</p>
+<li><a href="https://www.matterhackers.com/news/tips-on-printing-with-pla">Tips On …</a></li></ul> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/tutorial-%c2%b7-alexander-yakushevlein-droid-wiki.html" rel="bookmark" title="Permalink to Tutorial · alexander-yakushev/lein-droid Wiki">Tutorial · alexander-yakushev/lein-droid Wiki</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-04-11T18:13:00+02:00"> Do 11 April 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/alexander-yakushev/lein-droid/wiki/Tutorial">lein-droid Wiki</a>. Bin ja mal wieder am Rumspielen mit Alternativen zur nackten Android-Java-Programmierung und das hier wäre ein interessanter Kandidat, da man mit Clojure rumspielen kann.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/write-yourself-a-haskell-in-lisp-17-february-2013.html" rel="bookmark" title="Permalink to Write Yourself a Haskell... in Lisp 17 February 2013">Write Yourself a Haskell... in Lisp 17 February 2013</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2013-02-18T09:52:00+01:00"> Mo 18 Februar 2013 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://gergo.erdi.hu/blog/2013-02-17-write_yourself_a_haskell..._in_lisp/">Write Yourself a Haskell... in Lisp 17 February 2013</a>. Sowas begeistert mich ja immer, auch wenn ich zugeben muss, dass ich aller Wahrscheinlichkeit nach nix damit machen werde. Trotzdem, interessant zu lesen.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/moby-racket-for-mobile-phones.html" rel="bookmark" title="Permalink to Moby: Racket for Mobile Phones">Moby: Racket for Mobile Phones</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-10-13T22:57:00+02:00"> Sa 13 Oktober 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://planet.racket-lang.org/package-source/dyoo/moby.plt/3/5/planet-docs/manual/index.html">Moby</a> ist ein Paket für Racket mit dem man Android Programme erzeugen kann. Integriert in DrRacket hat man auch gleich eine passende IDE in der das meiste auch getestet werden kann. So viel auszuprobieren, so wenig Zeit.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/clojurecore-reducers-a-library-and-model-for-collection-processing.html" rel="bookmark" title="Permalink to Clojure/core — Reducers - A Library and Model for Collection Processing">Clojure/core — Reducers - A Library and Model for Collection Processing</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-05-09T12:26:00+02:00"> Mi 09 Mai 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://clojure.com/blog/2012/05/08/reducers-a-library-and-model-for-collection-processing.html">Clojure/core — Reducers - A Library and Model for Collection Processing</a>. Warum eine neue Library? Weil die Standardfunktionen zwar interessant und sinnvoll sind, aber man eben manchmal doch eine striktere Implementierung braucht, die z.B. zwischendurch generierte temporäre Collections vermieden werden und eine direkte out-of-the-box Unterstützung für Parallelisierung geliefert wird. Ohne …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/mtraversheroku-buildpack-cl.html" rel="bookmark" title="Permalink to mtravers/heroku-buildpack-cl">mtravers/heroku-buildpack-cl</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-03-09T10:11:00+01:00"> Fr 09 März 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/mtravers/heroku-buildpack-cl">mtravers/heroku-buildpack-cl</a>. Und noch so ein Lisp-Link - hier hat sich jemand auf Herokus buildpack-capable stack gestützt und für Clozure CL ein Buildpack aufgebaut, so dass man darüber auch Common Lisp in die cloud stellen kann. Wobei das dann weniger Ähnlichkeit mit Google App Engine hat, sondern wohl eher mit sowas …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/terjenorderhaugecl-iphone-builder.html" rel="bookmark" title="Permalink to TerjeNorderhaug/ecl-iphone-builder">TerjeNorderhaug/ecl-iphone-builder</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-03-09T09:33:00+01:00"> Fr 09 März 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Ganz tief drinnen bin ich ja immer noch ein Lisp-Fan. Deshalb ist der <a href="https://github.com/TerjeNorderhaug/ecl-iphone-builder">ecl-iphone-builder von Terje Norderhaug</a> für mich sehr interessant - damit kann man eine Version von Embeddable Common Lisp für das iPhone oder iPad compilieren und dann über XCode auf ein iOS Gerät bringen, dort einen Swank-Server starten und …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/practical-common-lisp-crawling-interfacelift-with-common-lisp-second-try.html" rel="bookmark" title="Permalink to Practical Common Lisp - Crawling InterfaceLift with Common Lisp - second try">Practical Common Lisp - Crawling InterfaceLift with Common Lisp - second try</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2012-02-12T11:33:00+01:00"> So 12 Februar 2012 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://christian.ftwca.de:8080/post/practical-common-lisp---crawling-interfacelift-with-common-lisp---second-try">Practical Common Lisp - Crawling InterfaceLift with Common Lisp - second try</a>. Interessanter Durchlauf eines einfachen Projektes in Common Lisp bei Einsatz von Quicklisp. Mach wirklich einiges einfacher als wenn man roh in CL programmiert und die ganzen Pakete und Systeme von Hand verwaltet. Das Beispielscript sollte man allerdings nicht unbedingt laufen …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/mac-app-store-clozure-cl.html" rel="bookmark" title="Permalink to Mac App Store - Clozure CL">Mac App Store - Clozure CL</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-12-21T09:33:00+01:00"> Mi 21 Dezember 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://itunes.apple.com/us/app/clozure-cl/id489900618?ls=1&amp;mt=12">Mac App Store - Clozure CL</a>. Eine der netteren freien Common Lisp Implementierungen ist jetzt im App Store bei Apple. CCL ist im Prinzip die freie und portable Variante des alten Macintosh Common Lisp, mit einer Integration in Objective C Frameworks. Also durchaus interessant damit rumzuspielen wenn man sowohl Lisp als …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/snow-project.html" rel="bookmark" title="Permalink to Snow project">Snow project</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-09-14T15:04:00+02:00"> Mi 14 September 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://common-lisp.net/project/snow/">Snow project</a>. Sehe ich zum ersten Mal, ist aber schon seit ein paar Jahren raus - eine GUI Library für <a href="http://common-lisp.net/project/armedbear/">ABCL</a> (Armed Bear Common Lisp), welches ja bekanntlich auf der Java VM läuft. Liefert auch gleich als Standard eine grafische REPL mit in die man Common Lisp eingeben kann. Laut Doku …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/elnode-an-emacs-version-of-node-js.html" rel="bookmark" title="Permalink to Elnode - an Emacs version of node.js">Elnode - an Emacs version of node.js</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-07-18T11:07:00+02:00"> Mo 18 Juli 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://nic.ferrier.me.uk/blog/2010_10/elnode">Elnode - an Emacs version of node.js</a>. Mal wieder ein Projekt aus der Klasse "weil es geht" - ich glaube jedenfalls nicht, dass irgendjemand auf die Frage "wie will ich meine Webservices betreiben" als Antwort spontan "Emacs" sagen würde. Aber nunja, das Betriebssystem mit eingebauten Basisfunktionen zur Textverarbeitung kann eben auch …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/parenscript.html" rel="bookmark" title="Permalink to Parenscript">Parenscript</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-07-12T11:53:00+02:00"> Di 12 Juli 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://common-lisp.net/project/parenscript/">Parenscript</a>. Darf man nicht vergessen, wenn man von Lisp-in-JavaScript redet, denn das ist wohl der Urvater und am weitesten ausgebaute Dialekt. Besonderheit ist auch noch: keine Runtime, es wird wirklich nur JavaScript direkt erzeugt ohne Abhängigkeiten (ausser natürlich den Abhängigkeiten die man selber in den Code reingebracht hat). Hatte ich …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/manueledgelisp-github.html" rel="bookmark" title="Permalink to manuel/edgelisp - GitHub">manuel/edgelisp - GitHub</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-07-12T11:51:00+02:00"> Di 12 Juli 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/manuel/edgelisp">manuel/edgelisp</a>. Weil ich nie die Finger von Klammern lassen kann - ein Common Lisp Dialekt und dessen Implementation, die nach JavaScript compiliert un den Lisp-Code im Browser ausführbar macht. Macht einen recht vollständigen Eindruck - viele andere Projekte zeigen nur die rudimentären Elemente, aber hier gibts auch schon generische Funktionen und …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/what-is-inside-a-cat.html" rel="bookmark" title="Permalink to What Is Inside A Cat">What Is Inside A Cat</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-06-20T11:59:00+02:00"> Mo 20 Juni 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://web.mac.com/Jay_Reynolds_Freeman/WraithScheme.64/Wraith%20Scheme%20Internals.2.22.html">What Is Inside A Cat</a>. Ein sehr interessantes Dokument, das die Implementierung von <a href="http://web.mac.com/Jay_Reynolds_Freeman/My/Wraith_Scheme_%2864-bit_version%29.html">Wraith Scheme</a> sehr detailliert beschreibt, speziell auch die Implementierung der parallelen Prozesse.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/clack-web-application-environment-for-common-lisp.html" rel="bookmark" title="Permalink to Clack - Web Application Environment for Common Lisp">Clack - Web Application Environment for Common Lisp</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-06-04T10:08:00+02:00"> Sa 04 Juni 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://clacklisp.org/">Clack - Web Application Environment for Common Lisp</a>. Das sieht endlich mal richtig nett und schlank aus - die meisten Common Lisp Webframeworks sind mir einfach zu groß, zu kopfig. Das hier sieht sehr viel pragmatischer aus, ein simples Routing, ein schlanker Request und eine Funktion die drauf reagiert. Da könnte man …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/ai-art-painting-robot-art-expert-systems.html" rel="bookmark" title="Permalink to AI art | painting robot | art | expert systems">AI art | painting robot | art | expert systems</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-05-18T16:47:00+02:00"> Mi 18 Mai 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.alproductions.org/">AI art | painting robot | art | expert systems</a>. Mal was anderes - ein richtiger Roboter der mit Lisp (also zumindestens das Prototyping) gesteuert mal. Also nicht so ein virtueller Roboter ala Turtlegrafik, sondern richtige Hardware die sich bewegt.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/xmlisp-extreme-media-lisp-rich-media-cross-platform-programming-for-3d-opengl-and-2d-applications-google-project-hosting.html" rel="bookmark" title="Permalink to xmlisp - eXtreme Media Lisp: Rich media cross-platform programming for 3D (OpenGL) and 2D applications - Google Project Hosting">xmlisp - eXtreme Media Lisp: Rich media cross-platform programming for 3D (OpenGL) and 2D applications - Google Project Hosting</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-05-18T13:41:00+02:00"> Mi 18 Mai 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://code.google.com/p/xmlisp/">xmlisp - eXtreme Media Lisp: Rich media cross-platform programming for 3D (OpenGL) and 2D applications</a>. Hatte ich glaube ich schon mal, bin mir aber nicht sicher. Egal, Wiederholungen sind ja nix ungewöhnliches, und das hier ist wirklich interessant - eine Lisp-Umgebung mit besonders guter Unterstützung für 2D und 3D Daten. Hat noch …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/milkpack-edgar-goncalves.html" rel="bookmark" title="Permalink to MilkPack - Edgar Gonçalves">MilkPack - Edgar Gonçalves</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-05-18T13:37:00+02:00"> Mi 18 Mai 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://sites.google.com/site/edgargoncalves/work/software/milkpack">MilkPack - Edgar Gonçalves</a>. Interessantes Projekt das eine Taskliste implementiert, die mit Remember-the-Milk im Internet kommuniziert. Das interessante daran: es ist in Common Lisp geschrieben und nutzt intensiv die Objective-C Bridge für OpenMCL.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/dyoomoby-scheme-github.html" rel="bookmark" title="Permalink to dyoo/moby-scheme - GitHub">dyoo/moby-scheme - GitHub</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-05-09T10:35:00+02:00"> Mo 09 Mai 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/dyoo/moby-scheme">dyoo/moby-scheme</a>. Noch eine interessante Sache für Android: ein PLT Scheme (also Racket) Dialekt und eine passende Toolchain um aus Racket <a href="http://docs.racket-lang.org/htdp-langs/advanced.html">Advanced Student Language</a> + World Primitives (ASL ist ein schon recht weit gehender Scheme-Dialekt in Racket und die <a href="http://world.cs.brown.edu/">World Primitives sind für reaktives Programmieren in Scheme</a>) erstellte Anwendungen <a href="http://planet.racket-lang.org/package-source/dyoo/js-vm.plt/1/12/planet-docs/js-vm/index.html">in JavaScript …</a></p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/spock-the-chicken-scheme-wiki.html" rel="bookmark" title="Permalink to spock - The Chicken Scheme wiki">spock - The Chicken Scheme wiki</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-04-29T15:46:00+02:00"> Fr 29 April 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://wiki.call-cc.org/eggref/4/spock">spock - The Chicken Scheme wiki</a>. Wem Dylan auf JavaScript nicht passt, wie wäre es mit Scheme? Interessant hieran ist die Verbindung zu Chicken Scheme - chicken scheme ist eine der interessanteren Scheme-Implementierungen der letzten Zeit die sich speziell der Integration in normale Systemumgebungen widmet (FFI und einfaches Linken mit C-Libs), von …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/turbolentralph-github.html" rel="bookmark" title="Permalink to turbolent/ralph - GitHub">turbolent/ralph - GitHub</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-04-29T14:06:00+02:00"> Fr 29 April 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="https://github.com/turbolent/ralph">turbolent/ralph</a>. Und wem dann unter Flusspferd das JavaScript zu blöd wird, der kann ja einfach Ralph installieren und hat dann ein Dylan-ähnliches Lisp, das seine Funktionsdefinitionen nach JavaScript compiliert. Warum auch immer man das wollen würde, vielleicht einfach nur weil es geht.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/ironscheme.html" rel="bookmark" title="Permalink to IronScheme">IronScheme</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-04-28T16:52:00+02:00"> Do 28 April 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://ironscheme.codeplex.com/">IronScheme</a>. Interessant - ein Scheme für .NET. Und im Gegensatz zu einigen toten Projekten die ich gefunden habe, scheint hier auch noch was zu passieren. Ok, ich selber tendiere warscheinlich eher zu IronPython, F# oder wenn es Lisp sein soll, <a href="https://github.com/richhickey/clojure-clr">Clojure für .NET</a> (davon gibts mitlerweile auch recht aktuelle binäre Pakete …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/abcl-release-notes-v0-25.html" rel="bookmark" title="Permalink to ABCL - Release notes v0.25">ABCL - Release notes v0.25</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-03-11T10:45:00+01:00"> Fr 11 März 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://common-lisp.net/project/armedbear/release-notes-0.25.shtml">ABCL - Release notes v0.25</a>. Neue Version raus und ABCL entwickelt sich immer mehr in eine wirklich brauchbare Common Lisp Implementation. Dadurch, dass es auf der JVM läuft, hat man auch leichten Zugriff auf viele Libraries (sofern man es denn will) und seit 0.24 läuft auch Quicklisp sauber mit …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/feeding-the-bit-bucket%c2%bb-blog-archive-%c2%bb-common-lisp-clojure-and-evolution.html" rel="bookmark" title="Permalink to Feeding the Bit Bucket» Blog Archive » Common Lisp, Clojure and Evolution">Feeding the Bit Bucket» Blog Archive » Common Lisp, Clojure and Evolution</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-02-27T21:45:00+01:00"> So 27 Februar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.adrianmouat.com/bit-bucket/2011/02/common-lisp-clojure-and-evolution/">Feeding the Bit Bucket» Blog Archive » Common Lisp, Clojure and Evolution</a>. Nein, Clojure wird nicht als Evolution von Common Lisp beschrieben - das ist einfach das Beispielprogramm "Evolution" aus dem Buch "Land of Lisp" in Clojure übersetzt von jemandem der mit dem Buch Clojure lernt indem er eben alle Beispiele in …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/introduction-to-pharen.html" rel="bookmark" title="Permalink to Introduction to Pharen">Introduction to Pharen</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-30T14:08:00+01:00"> So 30 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://scriptor.github.com/pharen/index.html">Introduction to Pharen</a>. Ein Lisp, welches nach PHP kompiliert. Weird. Ok,  könnte praktisch sein, wenn der Hoster nur PHP als Serversprache anbietet. Aber trotzdem. Weird.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/impromptu.html" rel="bookmark" title="Permalink to impromptu">impromptu</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-27T17:40:00+01:00"> Do 27 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://impromptu.moso.com.au/">impromptu</a> hatte ich schon in meinem alten Blog, meine ich. Egal, ist gut, darf man ruhig nochmal erwähnen - zumal es jetzt auch mit LLVM basiertem JIT Compiler daher kommt und daher auch für ernsthaftere Sachen interessant wird.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/devrandom-random-thoughts-on-programming-in-parentheses-coops-an-introduction-to-chicken-schemes-object-system.html" rel="bookmark" title="Permalink to /dev/random - Random Thoughts On Programming In Parentheses - Coops - An introduction to chicken scheme's object system">/dev/random - Random Thoughts On Programming In Parentheses - Coops - An introduction to chicken scheme's object system</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-21T14:03:00+01:00"> Fr 21 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Genau. Wenn man schon sowas langweiliges wie "warum generic functions und nicht single-object-dispatch" erklären will, dann mit solchen Beispielen:</p>
 <blockquote>
-<p>A short example: Imagine you have a class human which is inherited by a class male and female. Now as we all have an urge to reproduce where to put a …</p></blockquote>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/devrandom-random-thoughts-on-programming-in-parentheses-coops-an-introduction-to-chicken-schemes-object-system.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/app-development-tools-contrib.html">App Development Tools Contrib</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-20T18:06:00+01:00">
-        <i class="icon-calendar"></i>Do 20 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://article.gmane.org/gmane.lisp.openmcl.devel/6817">App Development Tools Contrib</a> - Jawoll! Das ist eine Sache auf die viele gewartet haben - bessere Werkzeuge für OSX Programmierung mit CCL direjt in der IDE. Ich hoffe die nächste Release von CCL ist bald stable und enthält diese Tools.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/app-development-tools-contrib.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/clpython-an-implementation-of-python-in-common-lisp.html">CLPython - an implementation of Python in Common Lisp</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-16T21:34:00+01:00">
-        <i class="icon-calendar"></i>So 16 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/python.html"><i class="icon-tag"></i>Python</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://common-lisp.net/project/clpython/">CLPython - an implementation of Python in Common Lisp</a>. Einfach weil es zwei meiner Lieblingssprachen verheiratet und pure-Python-Libraries für Common Lisp verfügbar macht. Viellericht sieht jetzt der eine oder andere wohin meine Suche geht - den Kuchen essen und ihn behalten. CLPython ist übrigens zu Python 2.5 kompatibel, also sogar ein …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/clpython-an-implementation-of-python-in-common-lisp.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/fset-on-common-lisp-net.html">FSet on Common-Lisp.net</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-16T19:26:00+01:00">
-        <i class="icon-calendar"></i>So 16 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://common-lisp.net/project/fset/">FSet on Common-Lisp.net</a> liefert auch funktionale Datenstrukturen. Diese Library ist auch in Quicklisp verfügbar, also einfacher zu installieren. Und sieht sehr interessant aus.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/fset-on-common-lisp-net.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/cl-stm.html">CL-STM</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-16T19:17:00+01:00">
-        <i class="icon-calendar"></i>So 16 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://common-lisp.net/project/cl-stm/">CL-STM</a> ist einfach Software Transactional Memory für Common Lisp (ja, ich gucke derzeit auf CL-alternativen für diverse Clojure-Features).</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/cl-stm.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/clazy-lazy-calling-in-common-lisp.html">CLAZY: Lazy Calling in Common Lisp</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-16T19:07:00+01:00">
-        <i class="icon-calendar"></i>So 16 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://common-lisp.net/project/clazy/">CLAZY: Lazy Calling in Common Lisp</a> bietet erweiterte lazy-evaluation für Common Lisp die über das übliche delay/force Pärchen hinaus geht.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/clazy-lazy-calling-in-common-lisp.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/funds.html">Funds</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-16T18:54:00+01:00">
-        <i class="icon-calendar"></i>So 16 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://common-lisp.net/project/funds/">Funds</a> liefert voll funktionale Datenstrukturen für Common Lisp. Gerade für multi-threaded Code kann das sehr hilfreich sein. Leider noch nicht in Quicklisp drin.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/funds.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/welcome-to-wuwei.html">Welcome to WuWei</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2011-01-12T17:48:00+01:00">
-        <i class="icon-calendar"></i>Mi 12 Januar 2011
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/ajax.html"><i class="icon-tag"></i>Ajax</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://wuwei.name/">Welcome to WuWei</a>. Interessante Common Lisp Library, die Ajax User Interfaces rein in Common Lisp programmierbar macht, ohne sich mit der Umsetzung auf JavaScript rumschlagen zu müssen. Allerdings leider nicht für meine präferierte JS-Library jQuery, sondern für Prototype und Scriptaculous.</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/welcome-to-wuwei.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/slimv-vim-slime-like-lisp-and-clojure-repl-inside-vim-with-profiling-hyperspec-paredit-vim-online.html">slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit : vim online</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-12-09T09:18:00+01:00">
-        <i class="icon-calendar"></i>Do 09 Dezember 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/clojure.html"><i class="icon-tag"></i>Clojure</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-	<a href="https://rfc1437.github.io/tag/vim.html"><i class="icon-tag"></i>Vim</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://www.vim.org/scripts/script.php?script_id=2531">slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit</a>. Ganz interessant, da deutlich leichtgewichtiger und simpler zu installieren als Slime oder VimClojure oder eine der anderen dicken Lösungen. Und man kann einfach aus Vim heraus Common Lisp oder Clojure programmieren. Ist zwar derzeit nur im "rumspielen …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/slimv-vim-slime-like-lisp-and-clojure-repl-inside-vim-with-profiling-hyperspec-paredit-vim-online.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/zachs-journal-making-a-small-lisp-project-with-quickproject-and-quicklisp.html">Zach's Journal - Making a small Lisp project with quickproject and Quicklisp</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-11-24T23:53:00+01:00">
-        <i class="icon-calendar"></i>Mi 24 November 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p>Als Gedankenstütze geblogmarkt: <a href="http://xach.livejournal.com/278047.html">Zach's Journal - Making a small Lisp project with quickproject and Quicklisp</a>. Einfach weil ich sonst <a href="https://github.com/xach/quickproject/">quickproject</a> und ähnliches eh wieder vergesse. Mit Clozure CL 1.6 tuts auch <a href="http://www.quicklisp.org/">Quicklisp</a> recht vollständig (speziell ist cl-fad funktionsfähig und daher kann man einen grösseren Stapel von Paketen endlich zum Fliegen …</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/zachs-journal-making-a-small-lisp-project-with-quickproject-and-quicklisp.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="https://rfc1437.github.io/pixie-scheme-iii.html">Pixie Scheme III</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2010-11-22T16:57:00+01:00">
-        <i class="icon-calendar"></i>Mo 22 November 2010
-</abbr>
-<span class="label">By</span>
-<a href="https://rfc1437.github.io/author/hugo.html"><i class="icon-user"></i>hugo</a>
-<span class="label">Category</span>
-<a href="https://rfc1437.github.io/category/asides.html"><i class="icon-folder-open"></i>Asides</a>.
-
-
-<span class="label">Tags</span>
-	<a href="https://rfc1437.github.io/tag/ipad.html"><i class="icon-tag"></i>iPad</a>
-	<a href="https://rfc1437.github.io/tag/lisp.html"><i class="icon-tag"></i>Lisp</a>
-	<a href="https://rfc1437.github.io/tag/programmieren.html"><i class="icon-tag"></i>Programmieren</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p><a href="http://web.mac.com/Jay_reynolds_freeman/My/Pixie_Scheme_III.html">Pixie Scheme III</a>. Für das iPad. Zum Rumdoodlen vielleicht nicht ganz uninteressant (sofern es auch brauchbare Integration in das iOS API hat).</p>
-                        <a class="btn primary xsmall" href="https://rfc1437.github.io/pixie-scheme-iii.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-
-        </div><!--/span-->
-
-                <div class="span3 well sidebar-nav" id="sidebar">
-<ul class="nav nav-list">
-<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
-    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
-    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
-    <li><a href="https://palletsprojects.com/p/jinja/"><i class="icon-external-link"></i>Jinja2</a></li>
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
-<li><a href="https://rfc1437.github.io/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
-    <li><a href="https://github.com/rfc1437/"><i class="icon-github-sign icon-large"></i>github</a></li>
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
-<li>
-<a href="https://rfc1437.github.io/category/artikel.html">
-    <i class="icon-folder-open icon-large"></i>Artikel
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/asides.html">
-    <i class="icon-folder-open icon-large"></i>Asides
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/galerie.html">
-    <i class="icon-folder-open icon-large"></i>Galerie
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/kochbuch.html">
-    <i class="icon-folder-open icon-large"></i>Kochbuch
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/metaowl.html">
-    <i class="icon-folder-open icon-large"></i>Metaowl
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/misc.html">
-    <i class="icon-folder-open icon-large"></i>misc
-</a>
-</li>
-<li>
-<a href="https://rfc1437.github.io/category/spielelog.html">
-    <i class="icon-folder-open icon-large"></i>Spielelog
-</a>
-</li>
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-
-
-</ul>        </div><!--/.well -->
-
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
-
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
-
-    </div><!--/.fluid-container-->
-
-
-
-    <!-- Le javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://rfc1437.github.io/theme/js/jquery-1.7.2.min.js"></script>
-    <script src="https://rfc1437.github.io/theme/js/bootstrap.min.js"></script>
-  </body>
+<p>A short example: Imagine you have a class human which is inherited by a class male and female. Now as we all have an urge to reproduce where to put a …</p></blockquote> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/app-development-tools-contrib.html" rel="bookmark" title="Permalink to App Development Tools Contrib">App Development Tools Contrib</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-20T18:06:00+01:00"> Do 20 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://article.gmane.org/gmane.lisp.openmcl.devel/6817">App Development Tools Contrib</a> - Jawoll! Das ist eine Sache auf die viele gewartet haben - bessere Werkzeuge für OSX Programmierung mit CCL direjt in der IDE. Ich hoffe die nächste Release von CCL ist bald stable und enthält diese Tools.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/clpython-an-implementation-of-python-in-common-lisp.html" rel="bookmark" title="Permalink to CLPython - an implementation of Python in Common Lisp">CLPython - an implementation of Python in Common Lisp</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-16T21:34:00+01:00"> So 16 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://common-lisp.net/project/clpython/">CLPython - an implementation of Python in Common Lisp</a>. Einfach weil es zwei meiner Lieblingssprachen verheiratet und pure-Python-Libraries für Common Lisp verfügbar macht. Viellericht sieht jetzt der eine oder andere wohin meine Suche geht - den Kuchen essen und ihn behalten. CLPython ist übrigens zu Python 2.5 kompatibel, also sogar ein …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/fset-on-common-lisp-net.html" rel="bookmark" title="Permalink to FSet on Common-Lisp.net">FSet on Common-Lisp.net</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-16T19:26:00+01:00"> So 16 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://common-lisp.net/project/fset/">FSet on Common-Lisp.net</a> liefert auch funktionale Datenstrukturen. Diese Library ist auch in Quicklisp verfügbar, also einfacher zu installieren. Und sieht sehr interessant aus.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/cl-stm.html" rel="bookmark" title="Permalink to CL-STM">CL-STM</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-16T19:17:00+01:00"> So 16 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://common-lisp.net/project/cl-stm/">CL-STM</a> ist einfach Software Transactional Memory für Common Lisp (ja, ich gucke derzeit auf CL-alternativen für diverse Clojure-Features).</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/clazy-lazy-calling-in-common-lisp.html" rel="bookmark" title="Permalink to CLAZY: Lazy Calling in Common Lisp">CLAZY: Lazy Calling in Common Lisp</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-16T19:07:00+01:00"> So 16 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://common-lisp.net/project/clazy/">CLAZY: Lazy Calling in Common Lisp</a> bietet erweiterte lazy-evaluation für Common Lisp die über das übliche delay/force Pärchen hinaus geht.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/funds.html" rel="bookmark" title="Permalink to Funds">Funds</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-16T18:54:00+01:00"> So 16 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://common-lisp.net/project/funds/">Funds</a> liefert voll funktionale Datenstrukturen für Common Lisp. Gerade für multi-threaded Code kann das sehr hilfreich sein. Leider noch nicht in Quicklisp drin.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/welcome-to-wuwei.html" rel="bookmark" title="Permalink to Welcome to WuWei">Welcome to WuWei</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2011-01-12T17:48:00+01:00"> Mi 12 Januar 2011 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://wuwei.name/">Welcome to WuWei</a>. Interessante Common Lisp Library, die Ajax User Interfaces rein in Common Lisp programmierbar macht, ohne sich mit der Umsetzung auf JavaScript rumschlagen zu müssen. Allerdings leider nicht für meine präferierte JS-Library jQuery, sondern für Prototype und Scriptaculous.</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/slimv-vim-slime-like-lisp-and-clojure-repl-inside-vim-with-profiling-hyperspec-paredit-vim-online.html" rel="bookmark" title="Permalink to slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit : vim online">slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit : vim online</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-12-09T09:18:00+01:00"> Do 09 Dezember 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://www.vim.org/scripts/script.php?script_id=2531">slimv.vim - SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit</a>. Ganz interessant, da deutlich leichtgewichtiger und simpler zu installieren als Slime oder VimClojure oder eine der anderen dicken Lösungen. Und man kann einfach aus Vim heraus Common Lisp oder Clojure programmieren. Ist zwar derzeit nur im "rumspielen …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/zachs-journal-making-a-small-lisp-project-with-quickproject-and-quicklisp.html" rel="bookmark" title="Permalink to Zach's Journal - Making a small Lisp project with quickproject and Quicklisp">Zach's Journal - Making a small Lisp project with quickproject and Quicklisp</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-11-24T23:53:00+01:00"> Mi 24 November 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Als Gedankenstütze geblogmarkt: <a href="http://xach.livejournal.com/278047.html">Zach's Journal - Making a small Lisp project with quickproject and Quicklisp</a>. Einfach weil ich sonst <a href="https://github.com/xach/quickproject/">quickproject</a> und ähnliches eh wieder vergesse. Mit Clozure CL 1.6 tuts auch <a href="http://www.quicklisp.org/">Quicklisp</a> recht vollständig (speziell ist cl-fad funktionsfähig und daher kann man einen grösseren Stapel von Paketen endlich zum Fliegen …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://rfc1437.github.io/pixie-scheme-iii.html" rel="bookmark" title="Permalink to Pixie Scheme III">Pixie Scheme III</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2010-11-22T16:57:00+01:00"> Mo 22 November 2010 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://rfc1437.github.io/author/hugo.html">hugo</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p><a href="http://web.mac.com/Jay_reynolds_freeman/My/Pixie_Scheme_III.html">Pixie Scheme III</a>. Für das iPad. Zum Rumdoodlen vielleicht nicht ganz uninteressant (sofern es auch brauchbare Integration in das iOS API hat).</p> </div><!-- /.entry-content -->
+        </article></li>
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
 </html>
